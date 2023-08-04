@@ -1,8 +1,12 @@
 $primary-color: rgb(15, 63, 63);
+$primary-color-dark: rgb(11, 45, 45);
 $secondary-color: rgb(192, 168, 31);
 $primary-color-dark: rgb(8, 31, 31);
 $gray-color: gray;
 $gray-color-dark: rgb(101, 99, 99);
+
+
+
 
 body {
 	background-color: whitesmoke;
@@ -56,6 +60,32 @@ h1 {
 				text-decoration: none;
 				padding: 0.5rem 1rem;
 				transition: background-color 0.3s ease;
+			}
+
+			.offer {
+				position: relative;
+				.title {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+
+				.offer_dropdown {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					background-color: $primary-color;
+					padding: 1rem 0;
+
+					.offer_link {
+						color: $gray-color;
+						font-weight: bold;
+						text-decoration: none;
+						padding: 0.5rem;
+						transition: background-color 0.3s ease;
+						font-size: 12px;
+					}
+				}
 			}
 		}
 	}

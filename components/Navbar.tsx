@@ -7,7 +7,7 @@ import { useState } from "react";
 import NavbarDropdown from "./NavbarDropdown";
 
 const Navbar = () => {
-	const [toggleBurger, setToggleBurger] = useState<boolean>(false);
+	const [toggleBurger, setToggleBurger] = useState<boolean>(true);
 
 	return (
 		<nav className="navbar">
