@@ -120,6 +120,8 @@ body {
 		}
 
 		.desktop {
+			display: flex;
+
 			.dropdown {
 				.dropdown_link {
 					color: $gray-color;
