@@ -5,8 +5,7 @@ $primary-color-dark: rgb(8, 31, 31);
 $gray-color: gray;
 $gray-color-dark: rgb(101, 99, 99);
 
-
-
+@use "./offer/youngest/style.scss";
 
 body {
 	background-color: whitesmoke;
@@ -68,6 +67,7 @@ h1 {
 					display: flex;
 					justify-content: center;
 					align-items: center;
+					cursor: pointer;
 				}
 
 				.offer_dropdown {
@@ -137,6 +137,41 @@ h1 {
 	color: rgb(99, 99, 95);
 }
 
+@media only screen and (min-width: 375px) {
+	.navbar {
+		.mobile {
+			.dropdown {
+				.offer {
+					.offer_dropdown {
+						.offer_link {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 414px) {
+	.navbar {
+		.mobile {
+			.dropdown {
+				.dropdown_link {
+					font-size: 22px;
+				}
+				.offer {
+					.offer_dropdown {
+						.offer_link {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 @media only screen and (min-width: 768px) {
 	h1 {
 		font-size: 32px;
@@ -144,6 +179,19 @@ h1 {
 
 	.navbar {
 		padding: 1rem 2rem;
+
+		.mobile {
+			.dropdown {
+				.offer {
+					.offer_dropdown {
+						.offer_link {
+							font-size: 24px;
+							padding: 15px;
+						}
+					}
+				}
+			}
+		}
 
 		.logo {
 			width: 80px;
@@ -196,6 +244,18 @@ h1 {
 				}
 			}
 		}
+
+		.mobile {
+			.dropdown {
+				.offer {
+					.offer_dropdown {
+						.offer_link {
+							font-size: 26px;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 @media only screen and (min-width: 1200px) {
@@ -214,6 +274,7 @@ h1 {
 			display: flex;
 
 			.dropdown {
+				display: flex;
 				.dropdown_link {
 					color: $gray-color;
 					font-weight: bold;
@@ -222,8 +283,36 @@ h1 {
 					padding: 15px;
 					transition: color 0.3s ease;
 
+					.icon {
+						display: none;
+					}
+
 					&:hover {
 						color: $gray-color-dark;
+					}
+				}
+
+				.offer {
+					.offer_dropdown {
+						position: absolute;
+						display: flex;
+						flex-direction: column;
+						background-color: $primary-color;
+						border-radius: 15px;
+						margin-top: 10px;
+
+						.offer_link {
+							color: $gray-color;
+							font-weight: bold;
+							text-decoration: none;
+							transition: background-color 0.3s ease;
+							font-size: 16px;
+							padding: 10px;
+
+							&:hover {
+								color: $gray-color-dark;
+							}
+						}
 					}
 				}
 

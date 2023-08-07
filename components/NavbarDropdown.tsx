@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
@@ -10,48 +12,57 @@ type Props = {
 
 const NavbarDropdown = ({ toggleBurger, setToggleBurger }: Props) => {
 	const [toggleArrow, setToggleArrow] = useState<boolean>(false);
+	const [showDropdown, setShowDropdown] = useState<boolean>(false);
 
 	return (
 		<div className="dropdown">
-			<div className="dropdown_link offer">
-				<div className="title" onClick={() => setToggleArrow((prev) => !prev)}>
+			<div
+				className="dropdown_link offer"
+				onMouseLeave={() => setShowDropdown(false)}
+			>
+				<div
+					className="title"
+					onClick={() => setToggleArrow((prev) => !prev)}
+					onMouseOver={() => setShowDropdown(true)}
+				>
 					<div>Oferta</div>
 					<div className="icon">
 						{toggleArrow ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
 					</div>
 				</div>
-				{toggleArrow && (
-					<div className="offer_dropdown">
-						<Link
-							href="/offer/youngest"
-							className="offer_link"
-							onClick={() => setToggleBurger(false)}
-						>
-							Dla najmłodszych
-						</Link>
-						<Link
-							href="/offer/adults"
-							className="offer_link"
-							onClick={() => setToggleBurger(false)}
-						>
-							Dla dorosłych
-						</Link>
-						<Link
-							href="/offer/exams"
-							className="offer_link"
-							onClick={() => setToggleBurger(false)}
-						>
-							Przygotowanie do egzaminu
-						</Link>
-						<Link
-							href="/offer/certificates"
-							className="offer_link"
-							onClick={() => setToggleBurger(false)}
-						>
-							Przygotowanie do certyfikatu
-						</Link>
-					</div>
-				)}
+				{toggleArrow ||
+					(showDropdown && (
+						<div className="offer_dropdown">
+							<Link
+								href="/offer/youngest"
+								className="offer_link"
+								onClick={() => setToggleBurger(false)}
+							>
+								Dla najmłodszych
+							</Link>
+							<Link
+								href="/offer/adults"
+								className="offer_link"
+								onClick={() => setToggleBurger(false)}
+							>
+								Dla dorosłych
+							</Link>
+							<Link
+								href="/offer/exams"
+								className="offer_link"
+								onClick={() => setToggleBurger(false)}
+							>
+								Przygotowanie do egzaminu
+							</Link>
+							<Link
+								href="/offer/certificates"
+								className="offer_link"
+								onClick={() => setToggleBurger(false)}
+							>
+								Przygotowanie do certyfikatu
+							</Link>
+						</div>
+					))}
 			</div>
 			<Link
 				href="/prices"
