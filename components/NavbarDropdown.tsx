@@ -34,28 +34,28 @@ const NavbarDropdown = ({ toggleBurger, setToggleBurger }: Props) => {
 					(showDropdown && (
 						<div className="offer_dropdown">
 							<Link
-								href="/offer/youngest"
+								href="/oferta/dla-najmlodszych"
 								className="offer_link"
 								onClick={() => setToggleBurger(false)}
 							>
 								Dla najmłodszych
 							</Link>
 							<Link
-								href="/offer/adults"
+								href="/oferta/dla-doroslych"
 								className="offer_link"
 								onClick={() => setToggleBurger(false)}
 							>
 								Dla dorosłych
 							</Link>
 							<Link
-								href="/offer/exams"
+								href="/oferta/egzamin"
 								className="offer_link"
 								onClick={() => setToggleBurger(false)}
 							>
 								Przygotowanie do egzaminu
 							</Link>
 							<Link
-								href="/offer/certificates"
+								href="/oferta/certyfikat"
 								className="offer_link"
 								onClick={() => setToggleBurger(false)}
 							>
@@ -65,49 +65,49 @@ const NavbarDropdown = ({ toggleBurger, setToggleBurger }: Props) => {
 					))}
 			</div>
 			<Link
-				href="/prices"
+				href="/cennik"
 				className="dropdown_link"
 				onClick={() => setToggleBurger(false)}
 			>
 				Cennik
 			</Link>
 			<Link
-				href="/translations"
+				href="/tlumaczenia"
 				className="dropdown_link"
 				onClick={() => setToggleBurger(false)}
 			>
 				Tłumaczenia
 			</Link>
 			<Link
-				href="/teachers"
+				href="/lektorzy"
 				className="dropdown_link"
 				onClick={() => setToggleBurger(false)}
 			>
 				Lektorzy
 			</Link>
 			<Link
-				href="/articles"
+				href="/artykuly"
 				className="dropdown_link"
 				onClick={() => setToggleBurger(false)}
 			>
 				Artykuły
 			</Link>
 			<Link
-				href="/feedback"
+				href="/opinie"
 				className="dropdown_link"
 				onClick={() => setToggleBurger(false)}
 			>
 				Opinie
 			</Link>
 			<Link
-				href="/contact"
+				href="/kontakt"
 				className="dropdown_link"
 				onClick={() => setToggleBurger(false)}
 			>
 				Kontakt
 			</Link>
 			<Link
-				href="/shop"
+				href="/sklep"
 				className="dropdown_link shop"
 				onClick={() => setToggleBurger(false)}
 			>
