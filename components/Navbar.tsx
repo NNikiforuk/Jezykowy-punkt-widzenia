@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
-import NavbarDropdown from "./NavbarDropdown";
+import Navbar_links from "./Navbar_links";
 
 const Navbar = () => {
 	const [toggleBurger, setToggleBurger] = useState<boolean>(false);
@@ -29,7 +29,7 @@ const Navbar = () => {
 					onClick={() => setToggleBurger((prev) => !prev)}
 				/>
 				{toggleBurger && (
-					<NavbarDropdown
+					<Navbar_links
 						toggleBurger={toggleBurger}
 						setToggleBurger={setToggleBurger}
 					/>
@@ -38,7 +38,7 @@ const Navbar = () => {
 
 			{/* Desktop navbar */}
 			<div className="desktop">
-				<NavbarDropdown
+				<Navbar_links
 					toggleBurger={toggleBurger}
 					setToggleBurger={setToggleBurger}
 				/>

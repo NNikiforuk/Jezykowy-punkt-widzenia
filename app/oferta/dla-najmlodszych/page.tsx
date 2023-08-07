@@ -1,5 +1,7 @@
 import Image from "next/image";
-import InfoIcon from "@mui/icons-material/Info";
+import Info from "@/components/Info";
+import { text } from "../../../data/oferta_youngest";
+import Packages from "@/components/Packages";
 
 const Youngest = () => {
 	return (
@@ -25,7 +27,7 @@ const Youngest = () => {
 							className="img"
 							priority={false}
 						/>
-						<p className="text">Zajęcia w różnych grupach wiekowych</p>
+						<p className="text">Różne grupy wiekowe</p>
 					</div>
 					<div className="desc_element">
 						<Image
@@ -36,58 +38,14 @@ const Youngest = () => {
 							className="img"
 							priority={false}
 						/>
-						<p className="text">Uczymy się poprzez zabawę</p>
+						<p className="text">Nauka poprzez zabawę</p>
 					</div>
 				</div>
 			</div>
-			<h2>Pakiety godzinowe</h2>
-			<div className="packages">
-				<div className="package">
-					<div className="title">6h</div>
-					<div className="desc">
-						<p>gramatyka 3h</p>
-						<p>+</p>
-						<p>konwersacja 3h</p>
-					</div>
-				</div>
-				<div className="package">
-					<div className="title">12h</div>
-					<div className="desc">
-						<p>gramatyka 6h</p>
-						<p>+</p>
-						<p>konwersacja 6h</p>
-					</div>
-				</div>
-				<div className="package">
-					<div className="title">18h</div>
-					<div className="desc">
-						<p>gramatyka 9h</p>
-						<p>+</p>
-						<p>konwersacja 9h</p>
-					</div>
-				</div>
-			</div>
-			<div className="info">
-				<div>
-					<InfoIcon className="icon" />
-				</div>
-				<p className="text">
-					Na część gramatyczną składają się części mowy: przymiotnik,
-					rzeczownik, czasownik, zaimek, przyimek, przysłówek, liczebnik,
-					partykuły, szyk zdań/nauka o zdaniu
-				</p>
-			</div>
+			<Packages />
+			<Info text={text} text2={""} />
 		</div>
 	);
 };
 
 export default Youngest;
-
-{
-	/* <p>
-
-				Napisz do nas, a wyślemy Ci
-				nasz test językowy. Po jego wypełnieniu przedstawimy Ci naszą ofertę i
-				razem dobierzemy pakiety godzinowe dla Twojego dziecka.
-			</p> */
-}

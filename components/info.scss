@@ -1,0 +1,54 @@
+.info {
+	margin: 15px 0 20px 0;
+	color: rgb(97, 100, 99);
+	font-size: 12px;
+	display: flex;
+
+	.desc {
+		padding: 0;
+
+		.text {
+			margin: 0 5px 5px 5px;
+		}
+	}
+}
+
+@media only screen and (min-width: 360px) {
+	.info {
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.info {
+		font-size: 20px;
+		padding: 20px;
+
+		.text {
+			margin: 0 0 0 20px;
+		}
+
+		.icon {
+			font-size: 30px;
+		}
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.info {
+		font-size: 22px;
+		padding: 30px;
+
+		.icon {
+			font-size: 42px;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.youngest {
+		.info {
+			align-items: center;
+		}
+	}
+}

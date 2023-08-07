@@ -5,7 +5,10 @@ $primary-color-dark: rgb(8, 31, 31);
 $gray-color: gray;
 $gray-color-dark: rgb(101, 99, 99);
 
-@use "./oferta/dla-najmlodszych/style.scss";
+@use "./oferta/dla-najmlodszych/youngest.scss";
+@use "./oferta/dla-doroslych/adults.scss";
+@use "./../components/info.scss";
+@use "./../components/packages.scss";
 
 body {
 	background-color: whitesmoke;

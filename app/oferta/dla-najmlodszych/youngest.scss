@@ -1,0 +1,22 @@
+$primary-color: rgb(190, 209, 209);
+
+.youngest {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+
+	.desc {
+		text-align: center;
+		color: rgb(97, 100, 99);
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.youngest {
+		.desc {
+			font-size: 24px;
+		}
+	}
+}
