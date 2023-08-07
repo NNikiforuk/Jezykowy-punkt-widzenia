@@ -27,7 +27,7 @@ const NavbarDropdown = ({ toggleBurger, setToggleBurger }: Props) => {
 				>
 					<div>Oferta</div>
 					<div className="icon">
-						{toggleArrow ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+						{toggleArrow ? <KeyboardArrowDownIcon /> : <KeyboardArrowUpIcon />}
 					</div>
 				</div>
 				{toggleArrow ||
