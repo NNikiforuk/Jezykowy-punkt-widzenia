@@ -6,10 +6,11 @@ $primary-color: rgb(190, 209, 209);
 	justify-content: center;
 	align-items: center;
 	padding: 15px;
+	color: rgb(97, 100, 99);
+	font-size: 14px;
 
 	.desc {
 		padding: 15px;
-		color: rgb(97, 100, 99);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -24,7 +25,6 @@ $primary-color: rgb(190, 209, 209);
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			font-size: 14px;
 			width: 190px;
 			height: 150px;
 
@@ -37,6 +37,10 @@ $primary-color: rgb(190, 209, 209);
 				font-weight: bold;
 			}
 		}
+	}
+
+	.bold {
+		font-weight: bold;
 	}
 }
 
@@ -64,7 +68,6 @@ $primary-color: rgb(190, 209, 209);
 			justify-content: center;
 			align-items: center;
 			flex-direction: row;
-
 		}
 	}
 }

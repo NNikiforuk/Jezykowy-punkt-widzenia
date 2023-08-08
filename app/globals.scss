@@ -11,6 +11,7 @@ $gray-color-dark: rgb(101, 99, 99);
 @use "./oferta/egzamin/exam.scss";
 @use "./../components/info.scss";
 @use "./../components/packages.scss";
+@use "./opinie/feedback.scss";
 
 body {
 	background-color: whitesmoke;
@@ -108,37 +109,6 @@ h2 {
 	}
 }
 
-//Feedback
-.feedback {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-
-	.container {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: 50px;
-
-		.feed {
-			display: flex;
-			flex-direction: column;
-			font-size: 12px;
-			margin: 10px 20px;
-			padding: 15px;
-			background-color: rgb(224, 228, 226);
-			border-radius: 8px;
-
-			.name {
-				font-weight: 600;
-				margin: 0 auto;
-				padding: 5px;
-			}
-		}
-	}
-}
-
 //Footer
 .footer {
 	margin-top: auto;
@@ -233,23 +203,9 @@ h2 {
 		font-size: 22px;
 		padding: 20px;
 	}
-
-	.feedback {
-		.container {
-			.feed {
-				font-size: 24px;
-				margin: 20px 40px;
-				padding: 25px;
-
-				.name {
-					padding: 10px;
-				}
-			}
-		}
-	}
 }
-@media only screen and (min-width: 1024px) {
 
+@media only screen and (min-width: 1024px) {
 	h1 {
 		font-size: 36px;
 	}
@@ -285,8 +241,8 @@ h2 {
 		}
 	}
 }
-@media only screen and (min-width: 1200px) {
 
+@media only screen and (min-width: 1200px) {
 	.navbar {
 		padding: 0.5em;
 
@@ -357,21 +313,5 @@ h2 {
 	.footer {
 		font-size: 18px;
 		padding: 15px;
-	}
-
-	.feedback {
-		.container {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			.feed {
-				font-size: 18px;
-				margin: 20px 40px;
-				padding: 25px;
-
-				.name {
-					padding: 0;
-				}
-			}
-		}
 	}
 }

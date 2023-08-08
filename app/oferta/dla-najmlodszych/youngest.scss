@@ -6,10 +6,15 @@ $primary-color: rgb(190, 209, 209);
 	justify-content: center;
 	align-items: center;
 	padding: 15px;
+	font-size: 14px;
+	color: rgb(97, 100, 99);
+
+	.bold {
+		font-weight: bold;
+	}
 
 	.youngest_desc {
 		text-align: center;
-		color: rgb(97, 100, 99);
 	}
 }
 
