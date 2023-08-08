@@ -1,0 +1,39 @@
+.certificate {
+	.certificate_offer {
+		padding: 25px;
+		color: rgb(97, 100, 99);
+
+		.bold {
+			font-weight: bold;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.certificate {
+		.certificate_offer {
+			padding: 40px;
+			font-size: 24px;
+
+			.bold {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.certificate {
+		.certificate_offer {
+			margin-bottom: 150px;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.certificate {
+		.certificate_offer {
+			font-size: 22px;
+		}
+	}
+}

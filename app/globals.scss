@@ -7,6 +7,7 @@ $gray-color-dark: rgb(101, 99, 99);
 
 @use "./oferta/dla-najmlodszych/youngest.scss";
 @use "./oferta/dla-doroslych/adults.scss";
+@use "./oferta/certyfikat/certificate.scss";
 @use "./oferta/egzamin/exam.scss";
 @use "./../components/info.scss";
 @use "./../components/packages.scss";
