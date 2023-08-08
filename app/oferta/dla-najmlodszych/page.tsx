@@ -6,7 +6,7 @@ import Packages from "@/components/Packages";
 const Youngest = () => {
 	return (
 		<div className="youngest">
-			<h1>Dla najmłodszych</h1>
+			<h1>Oferta dla najmłodszych</h1>
 			<div className="desc">
 				<div className="desc_element">
 					<Image

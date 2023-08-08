@@ -9,7 +9,7 @@
 		border-radius: 15px;
 		padding: 10px;
 
-		.title {
+		.package_title {
 			background-color: rgb(15, 63, 63);
 			color: rgb(190, 209, 209);
 			font-weight: bold;
@@ -18,38 +18,45 @@
 			margin-bottom: 5px;
 		}
 
-		.desc {
+		.package_desc {
 			p {
 				padding: 0;
 				margin: 5px;
 				color: rgb(97, 100, 99);
+				text-align: center;
 			}
 		}
 	}
 }
 
 @media only screen and (min-width: 768px) {
-	.youngest {
-		.packages {
-			display: flex;
+	.packages {
+		.packages_container {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
 
 			.package {
 				padding: 15px;
 
-				.title {
+				.package_title {
 					font-size: 24px;
+				}
+
+				.package_desc {
+					p {
+						font-size: 24px;
+						text-align: center;
+					}
 				}
 			}
 		}
 	}
 }
 
-@media only screen and (min-width: 1024px) {
-	.youngest {
-		.packages {
-			.package {
-				margin: 20px;
-			}
+@media only screen and (min-width: 1200px) {
+	.packages {
+		.packages_container {
+			
 		}
 	}
 }

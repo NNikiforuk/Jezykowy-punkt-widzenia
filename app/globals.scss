@@ -24,12 +24,14 @@ h1 {
 	font-size: 22px;
 	color: $secondary-color;
 	padding: 20px;
+	text-align: center;
 }
 
 h2 {
 	font-size: 18px;
 	color: $secondary-color;
 	padding: 20px;
+	text-align: center;
 }
 
 // Navbar
@@ -245,6 +247,16 @@ h2 {
 	}
 }
 @media only screen and (min-width: 1024px) {
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 32px;
+		margin-top: 60px;
+	}
+
 	.navbar {
 		.mobile {
 			.menu-icon {
@@ -272,9 +284,6 @@ h2 {
 	}
 }
 @media only screen and (min-width: 1200px) {
-	h1 {
-		font-size: 26px;
-	}
 
 	.navbar {
 		padding: 0.5em;

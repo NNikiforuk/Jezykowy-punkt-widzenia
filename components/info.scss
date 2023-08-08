@@ -4,7 +4,7 @@
 	font-size: 12px;
 	display: flex;
 
-	.desc {
+	.info_desc {
 		padding: 0;
 
 		.text {
@@ -24,11 +24,13 @@
 		font-size: 20px;
 		padding: 20px;
 
-		.text {
-			margin: 0 0 0 20px;
+		.info_desc {
+			.text {
+				margin: 0 0 0 20px;
+			}
 		}
 
-		.icon {
+		.info_icon {
 			font-size: 30px;
 		}
 	}
@@ -39,16 +41,14 @@
 		font-size: 22px;
 		padding: 30px;
 
-		.icon {
+		.info_icon {
 			font-size: 42px;
 		}
 	}
 }
 
 @media only screen and (min-width: 1200px) {
-	.youngest {
-		.info {
-			align-items: center;
-		}
+	.info {
+		align-items: center;
 	}
 }
