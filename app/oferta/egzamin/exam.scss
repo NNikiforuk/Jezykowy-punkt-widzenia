@@ -1,0 +1,37 @@
+.exam {
+	color: rgb(97, 100, 99);
+    margin-bottom: 40px;
+    padding: 20px 20px 0 20px;
+
+    .exam_offer {
+        margin-bottom: 50px;
+    }
+
+	.bold {
+		font-weight: bold;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+    .exam {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .exam {
+        font-size: 26px;
+        padding: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .exam {
+        font-size: 22px;
+        padding: 50px;
+
+        .exam_offer {
+            margin-bottom: 150px;
+        }
+    }
+}
