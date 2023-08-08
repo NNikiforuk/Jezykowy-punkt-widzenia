@@ -7,7 +7,7 @@ $primary-color: rgb(190, 209, 209);
 	align-items: center;
 	padding: 15px;
 
-	.desc {
+	.youngest_desc {
 		text-align: center;
 		color: rgb(97, 100, 99);
 	}
@@ -15,8 +15,26 @@ $primary-color: rgb(190, 209, 209);
 
 @media only screen and (min-width: 768px) {
 	.youngest {
-		.desc {
+		.youngest_desc {
 			font-size: 24px;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.youngest {
+		.youngest_desc {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.desc_element {
+				width: 550px;
+				height: 150px;
+
+				.img {
+					height: 90px;
+				}
+			}
 		}
 	}
 }
