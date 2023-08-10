@@ -46,6 +46,7 @@ $primary-color: rgb(190, 209, 209);
 
 @media only screen and (min-width: 768px) {
 	.adults {
+		font-size: 20px;
 		.desc {
 			padding: 0;
 			display: grid;
@@ -53,7 +54,6 @@ $primary-color: rgb(190, 209, 209);
 
 			.box {
 				margin: 10px;
-				font-size: 20px;
 				width: 300px;
 				height: 170px;
 			}
@@ -63,6 +63,8 @@ $primary-color: rgb(190, 209, 209);
 
 @media only screen and (min-width: 1200px) {
 	.adults {
+		font-size: 18px;
+
 		.desc {
 			display: flex;
 			justify-content: center;

@@ -47,7 +47,6 @@ const Youngest = () => {
 			<p>
 				Wybór części gramatycznej zostanie dobrany po rozmowie z kursanetem.
 				<br />
-				<br />
 				<span className="bold">
 					Napisz do nas, a wyślemy Ci nasz test językowy. Po jego wypełnieniu
 					przedstawimy Ci naszą ofertę i razem dobierzemy pakiet godzinowy dla

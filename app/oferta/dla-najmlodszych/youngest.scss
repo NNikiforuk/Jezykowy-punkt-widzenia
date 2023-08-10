@@ -20,14 +20,15 @@ $primary-color: rgb(190, 209, 209);
 
 @media only screen and (min-width: 768px) {
 	.youngest {
-		.youngest_desc {
-			font-size: 24px;
-		}
+		font-size: 24px;
+		padding: 25px;
 	}
 }
 
 @media only screen and (min-width: 1200px) {
 	.youngest {
+		font-size: 22px;
+		
 		.youngest_desc {
 			display: flex;
 			justify-content: center;

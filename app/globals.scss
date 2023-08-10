@@ -12,12 +12,17 @@ $gray-color-dark: rgb(101, 99, 99);
 @use "./../components/info.scss";
 @use "./../components/packages.scss";
 @use "./opinie/feedback.scss";
+@use "../components/navigation/navbar.scss";
+@use "../components/footer/footer.scss";
 
-body {
-	background-color: whitesmoke;
+* {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	background-color: whitesmoke;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -37,124 +42,6 @@ h2 {
 	text-align: center;
 }
 
-// Navbar
-.navbar {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	position: relative;
-	padding: 0.5rem 1rem;
-	background-color: $primary-color;
-	box-shadow: 0 2px 2px 2px rgba(15, 63, 63, 0.9);
-
-	.mobile {
-		display: flex;
-		align-items: center;
-
-		.menu-icon {
-			color: gray;
-			font-size: 40px;
-		}
-
-		.dropdown {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			position: absolute;
-			background-color: $primary-color;
-			top: 100%;
-			right: 0;
-			width: 100%;
-			padding: 1rem 0;
-
-			.dropdown_link {
-				color: $gray-color;
-				font-weight: bold;
-				text-decoration: none;
-				padding: 0.5rem 1rem;
-				transition: background-color 0.3s ease;
-			}
-
-			.offer {
-				position: relative;
-				.title {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					cursor: pointer;
-				}
-
-				.offer_dropdown {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					background-color: $primary-color;
-					padding: 1rem 0;
-
-					.offer_link {
-						color: $gray-color;
-						font-weight: bold;
-						text-decoration: none;
-						padding: 0.5rem;
-						transition: background-color 0.3s ease;
-						font-size: 12px;
-					}
-				}
-			}
-		}
-	}
-
-	.desktop {
-		display: none;
-	}
-}
-
-//Footer
-.footer {
-	margin-top: auto;
-	padding: 10px;
-	font-size: 12px;
-	text-align: center;
-	background-color: rgb(223, 209, 134);
-	box-shadow: 0 2px 2px 2px rgba(224, 216, 216, 0.9);
-	color: rgb(99, 99, 95);
-}
-
-@media only screen and (min-width: 375px) {
-	.navbar {
-		.mobile {
-			.dropdown {
-				.offer {
-					.offer_dropdown {
-						.offer_link {
-							font-size: 14px;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-@media only screen and (min-width: 414px) {
-	.navbar {
-		.mobile {
-			.dropdown {
-				.dropdown_link {
-					font-size: 22px;
-				}
-				.offer {
-					.offer_dropdown {
-						.offer_link {
-							font-size: 16px;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
 @media only screen and (min-width: 768px) {
 	h1 {
 		font-size: 32px;
@@ -162,46 +49,6 @@ h2 {
 
 	h2 {
 		font-size: 26px;
-	}
-
-	.navbar {
-		padding: 1rem 2rem;
-
-		.mobile {
-			.dropdown {
-				.offer {
-					.offer_dropdown {
-						.offer_link {
-							font-size: 24px;
-							padding: 15px;
-						}
-					}
-				}
-			}
-		}
-
-		.logo {
-			width: 80px;
-			height: 80px;
-		}
-
-		.mobile {
-			.menu-icon {
-				font-size: 56px;
-			}
-
-			.dropdown {
-				.dropdown_link {
-					font-size: 28px;
-					padding: 1rem 2rem;
-				}
-			}
-		}
-	}
-
-	.footer {
-		font-size: 22px;
-		padding: 20px;
 	}
 }
 
@@ -213,105 +60,5 @@ h2 {
 	h2 {
 		font-size: 32px;
 		margin-top: 60px;
-	}
-
-	.navbar {
-		.mobile {
-			.menu-icon {
-				font-size: 72px;
-			}
-
-			.dropdown {
-				.dropdown_link {
-					font-size: 32px;
-				}
-			}
-		}
-
-		.mobile {
-			.dropdown {
-				.offer {
-					.offer_dropdown {
-						.offer_link {
-							font-size: 26px;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	.navbar {
-		padding: 0.5em;
-
-		.mobile {
-			display: none;
-		}
-
-		.desktop {
-			display: flex;
-
-			.dropdown {
-				display: flex;
-				.dropdown_link {
-					color: $gray-color;
-					font-weight: bold;
-					text-decoration: none;
-					font-size: 22px;
-					padding: 15px;
-					transition: color 0.3s ease;
-
-					.icon {
-						display: none;
-					}
-
-					&:hover {
-						color: $gray-color-dark;
-					}
-				}
-
-				.offer {
-					.offer_dropdown {
-						position: absolute;
-						display: flex;
-						flex-direction: column;
-						background-color: $primary-color;
-						border-radius: 15px;
-						margin-top: 10px;
-
-						.offer_link {
-							color: $gray-color;
-							font-weight: bold;
-							text-decoration: none;
-							transition: background-color 0.3s ease;
-							font-size: 16px;
-							padding: 10px;
-
-							&:hover {
-								color: $gray-color-dark;
-							}
-						}
-					}
-				}
-
-				.shop {
-					background-color: $gray-color;
-					color: $primary-color;
-					border-radius: 50px;
-					transition: background-color 0.3s ease;
-
-					&:hover {
-						background-color: $primary-color-dark;
-					}
-				}
-			}
-		}
-	}
-
-	.footer {
-		font-size: 18px;
-		padding: 15px;
 	}
 }
