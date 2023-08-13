@@ -25,6 +25,7 @@ const Navbar = () => {
 					priority={false}
 				/>
 			</Link>
+
 			{/* Mobile */}
 			<div className="mobile">
 				<nav>
@@ -42,6 +43,13 @@ const Navbar = () => {
 						<FaTimes className="icon" />
 					</button>
 				</div>
+			</div>
+
+			{/* Desktop */}
+			<div className="desktop">
+				<nav>
+					<PrimaryDropdown onSelect={function (): void {}} />
+				</nav>
 			</div>
 		</header>
 	);
