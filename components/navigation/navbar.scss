@@ -1,14 +1,12 @@
-$primary-color: rgb(15, 63, 63);
-$gray-color: gray;
-$gray-color-dark: rgb(101, 99, 99);
-$primary-color-dark: rgb(11, 45, 45);
+$primary-color: #f2acc6;
+$text: rgb(147, 143, 147);
 
 .nav-btn {
 	background: transparent;
 	border: none;
-	color: $gray-color;
 	font-size: 32px;
 	cursor: pointer;
+	color: $text;
 }
 
 header {
@@ -18,37 +16,90 @@ header {
 	height: 80px;
 	padding: 0 2rem;
 	background-color: $primary-color;
-	color: $gray-color;
 
-	.mobileNavDropdown {
-		position: fixed;
-		top: -100vh;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 1.5rem;
-		background-color: $primary-color;
-		transition: 1s;
+	.mobile {
+		.mobileNavDropdown {
+			position: fixed;
+			top: -100vh;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 1.5rem;
+			background-color: $primary-color;
+			transition: 1s;
 
-		a {
-			color: $gray-color;
-			text-decoration: none;
-			font-size: 22px;
-			font-weight: bold;
+			a {
+				text-decoration: none;
+				font-size: 22px;
+				font-weight: bold;
+				color: $text;
+			}
+
+			.nav-close-btn {
+				position: absolute;
+				top: 2rem;
+				right: 2rem;
+			}
 		}
 
-		.nav-close-btn {
-			position: absolute;
-			top: 2rem;
-			right: 2rem;
+		.active {
+			transform: translateY(100vh);
 		}
 	}
+}
 
-	.active {
-		transform: translateY(100vh);
+@media only screen and (min-width: 768px) {
+	.nav-btn {
+		font-size: 52px;
+		padding: 20px;
+	}
+
+	header {
+		height: 100px;
+
+		.logo {
+			width: 80px;
+			height: 80px;
+		}
+
+		.mobile {
+			.mobileNavDropdown {
+				a {
+					font-size: 32px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.nav-btn {
+		font-size: 62px;
+	}
+
+	header {
+		height: 150px;
+
+		.mobile {
+			.mobileNavDropdown {
+				a {
+					font-size: 42px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	header {
+		height: 100px;
+
+		.mobile {
+			display: none;
+		}
 	}
 }
