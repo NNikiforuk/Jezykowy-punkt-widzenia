@@ -13,7 +13,7 @@ const Navbarmenu = () => {
 		setResponsiveclose(isResponsiveclose === false ? true : false);
 	};
 
-	let boxClass = ["main-menu menu-right menuq1"];
+	let boxClass = ["main-menu menuq1"];
 	if (isMenu) {
 		boxClass.push("menuq2");
 	} else {
@@ -34,25 +34,24 @@ const Navbarmenu = () => {
 	}
 
 	return (
-		<header>
+		<header className="header__middle">
 			<div className="container">
 				<div className="row">
-					<div className="header_logo">
-						<Link className="is-active" href="/">
+					<div className="header__middle__logo">
+						<Link href="/">
 							<Image
 								src="/assets/images/logo.png"
 								alt="logo"
-								width={50}
-								height={50}
-								className="object-contain logo link"
+								width={70}
+								height={70}
+								className="object-contain logo"
 								priority={false}
 							/>
 						</Link>
 					</div>
 
-					<div className="header_menu">
+					<div className="header__middle__menus">
 						<nav className="main-nav ">
-							{/* Responsive Menu Button */}
 							{isResponsiveclose === true ? (
 								<>
 									<span
@@ -94,7 +93,7 @@ const Navbarmenu = () => {
 									onClick={toggleSubmenu}
 									className="menu-item sub__menus__arrows"
 								>
-									<Link href="/shop">
+									<Link href="/">
 										Shop <FiChevronDown />
 									</Link>
 									<ul className={boxClassSubMenu.join(" ")}>
@@ -117,15 +116,6 @@ const Navbarmenu = () => {
 											</Link>
 										</li>
 									</ul>
-								</li>
-								<li className="menu-item ">
-									<Link
-										onClick={toggleClass}
-										className="is-active"
-										href="/contact"
-									>
-										Contact
-									</Link>
 								</li>
 							</ul>
 						</nav>
