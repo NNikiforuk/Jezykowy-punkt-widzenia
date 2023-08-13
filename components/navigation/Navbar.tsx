@@ -8,9 +8,16 @@ import PrimaryDropdown from "./PrimaryDropdown";
 
 const Navbar = () => {
 	const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
+	const [showSecondaryMobileNav, setShowSecondaryMobileNav] =
+		useState<boolean>(false);
 
 	const toggleMobileNav = () => {
 		setShowMobileNav((prev) => !prev);
+	};
+
+	const closeBothNav = () => {
+		setShowMobileNav(false);
+		setShowSecondaryMobileNav(false);
 	};
 
 	return (
@@ -21,7 +28,7 @@ const Navbar = () => {
 					alt="logo"
 					width={50}
 					height={50}
-					className="object-contain logo"
+					className="object-contain logo link"
 					priority={false}
 				/>
 			</Link>
@@ -38,8 +45,10 @@ const Navbar = () => {
 						onSelect={() => {
 							setShowMobileNav(false);
 						}}
+						setShowSecondaryMobileNav={setShowSecondaryMobileNav}
+						showSecondaryMobileNav={showSecondaryMobileNav}
 					/>
-					<button className="nav-btn nav-close-btn" onClick={toggleMobileNav}>
+					<button className="nav-btn nav-close-btn" onClick={closeBothNav}>
 						<FaTimes className="icon" />
 					</button>
 				</div>

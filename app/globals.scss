@@ -12,8 +12,8 @@ $gray-color-dark: rgb(101, 99, 99);
 @use "./../components/info.scss";
 @use "./../components/packages.scss";
 @use "./opinie/feedback.scss";
-@use "../components/navigation/navbar.scss";
 @use "../components/footer/footer.scss";
+@use "../components//navigation/nav.scss";
 
 * {
 	box-sizing: border-box;
