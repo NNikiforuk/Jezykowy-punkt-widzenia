@@ -3,6 +3,14 @@ $gray-color: gray;
 $gray-color-dark: rgb(101, 99, 99);
 $primary-color-dark: rgb(11, 45, 45);
 
+.nav-btn {
+	background: transparent;
+	border: none;
+	color: $gray-color;
+	font-size: 32px;
+	cursor: pointer;
+}
+
 header {
 	display: flex;
 	align-items: center;
@@ -12,9 +20,7 @@ header {
 	background-color: $primary-color;
 	color: $gray-color;
 
-	//Mobile
-
-	.nav_mobile {
+	.mobileNavDropdown {
 		position: fixed;
 		top: -100vh;
 		left: 0;
@@ -28,32 +34,21 @@ header {
 		background-color: $primary-color;
 		transition: 1s;
 
-		.nav_mobile_link,
-		.nav_mobile a {
-			margin: 0 1rem;
-			text-decoration: none;
+		a {
 			color: $gray-color;
-			font-size: 1.5rem;
-			translate: 0.5s;
-
-			.dropdown_title-desktop {
-				display: flex;
-				align-items: center;
-
-				.rightIcon {
-					margin-left: 5px;
-					font-size: 22px;
-				}
-			}
+			text-decoration: none;
+			font-size: 22px;
+			font-weight: bold;
 		}
 
-		.nav_mobile_link:hover,
-		.nav_mobile a:hover {
-			color: $gray-color-dark;
+		.nav-close-btn {
+			position: absolute;
+			top: 2rem;
+			right: 2rem;
 		}
 	}
 
-	.toggle_primaryDropdown {
+	.active {
 		transform: translateY(100vh);
 	}
 }
