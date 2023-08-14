@@ -2,9 +2,17 @@
 	color: rgb(97, 100, 99);
     margin-bottom: 40px;
     padding: 20px;
+    font-size: 14px;
 
     .exam_offer {
-        margin-bottom: 50px;
+
+        .center {
+            text-align: center;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
     }
 
 	.bold {

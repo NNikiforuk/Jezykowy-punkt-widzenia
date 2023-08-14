@@ -8,9 +8,14 @@ import { FiAlignRight, FiXCircle, FiChevronDown } from "react-icons/fi";
 const Navbarmenu = () => {
 	const [isMenu, setisMenu] = useState(false);
 	const [isResponsiveclose, setResponsiveclose] = useState(false);
+
 	const toggleClass = () => {
 		setisMenu(isMenu === false ? true : false);
 		setResponsiveclose(isResponsiveclose === false ? true : false);
+	};
+
+	const hideNavbar = () => {
+		setisMenu(false);
 	};
 
 	const [isMenuSubMenu, setMenuSubMenu] = useState(false);
@@ -32,6 +37,7 @@ const Navbarmenu = () => {
 								height={70}
 								className="logo"
 								priority={false}
+								onClick={hideNavbar}
 							/>
 						</Link>
 					</div>
@@ -57,9 +63,12 @@ const Navbarmenu = () => {
 									onClick={toggleSubmenu}
 									className="menu_item sub_menus_arrows"
 								>
-									<Link href="/oferta">
-										Oferta <FiChevronDown />
-									</Link>
+									<div className="link">
+										<div>Oferta</div>
+										<div>
+											<FiChevronDown />
+										</div>
+									</div>
 									<ul
 										className={`sub_menus ${
 											isMenuSubMenu && "sub_menus_active"

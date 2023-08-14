@@ -9,11 +9,10 @@ $gray-color-dark: rgb(101, 99, 99);
 @use "./oferta/dla-doroslych/adults.scss";
 @use "./oferta/certyfikat/certificate.scss";
 @use "./oferta/egzamin/exam.scss";
-@use "./../components/info.scss";
 @use "./../components/packages.scss";
 @use "./opinie/feedback.scss";
 @use "../components/footer/footer.scss";
-@use "../components//navigation/nav.scss";
+@use "../components/navigation/nav.scss";
 
 * {
 	box-sizing: border-box;

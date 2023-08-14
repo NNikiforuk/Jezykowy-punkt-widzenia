@@ -1,4 +1,3 @@
-import Info from "@/components/Info";
 import { text } from "../../../data/oferta_adults";
 import { text2 } from "../../../data/oferta_adults";
 import Packages from "@/components/Packages";
@@ -40,18 +39,14 @@ const Adults = () => {
 				</div>
 			</div>
 
-			<Info text={text} text2={text2} />
-
 			<Packages />
 
-			<p>
-				Wybór części gramatycznej zostanie dobrany po rozmowie z kursanetem.
-				<br />
-				<br />
-				<span className="bold">
-					Napisz do nas, a wyślemy Ci nasz test językowy. Po jego wypełnieniu
-					przedstawimy Ci naszą ofertę i razem dobierzemy pakiet godzinowy
-				</span>
+			<p className="normal_text">
+				Wybór części gramatycznej zostanie dobrany po rozmowie z kursantem.
+			</p>
+			<p className="bold normal_text">
+				Napisz do nas, a wyślemy Ci nasz test językowy. Po jego wypełnieniu
+				przedstawimy Ci naszą ofertę i dobierzemy pakiet dla Twojego dziecka.
 			</p>
 		</div>
 	);

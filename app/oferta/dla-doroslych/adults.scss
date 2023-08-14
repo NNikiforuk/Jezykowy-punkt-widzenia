@@ -7,7 +7,7 @@ $primary-color: rgb(190, 209, 209);
 	align-items: center;
 	padding: 15px;
 	color: rgb(97, 100, 99);
-	font-size: 14px;
+	font-size: 12px;
 
 	.desc {
 		padding: 15px;
@@ -41,6 +41,10 @@ $primary-color: rgb(190, 209, 209);
 
 	.bold {
 		font-weight: bold;
+	}
+
+	.normal_text {
+		margin-top: 10px;
 	}
 }
 

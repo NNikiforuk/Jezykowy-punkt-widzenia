@@ -1,4 +1,3 @@
-import Info from "@/components/Info";
 import { text } from "../../../data/oferta_certificate";
 
 const Certificate = () => {
@@ -32,8 +31,6 @@ const Certificate = () => {
 					godzinowych.
 				</p>
 			</div>
-
-			<Info text={text} text2={""} />
 		</div>
 	);
 };

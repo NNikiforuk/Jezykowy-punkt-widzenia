@@ -16,6 +16,17 @@ $primary-color: rgb(190, 209, 209);
 	.youngest_desc {
 		text-align: center;
 	}
+
+	.desc_element {
+		margin: 25px;
+	}
+
+	.normal_text {
+		margin-top: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -28,7 +39,7 @@ $primary-color: rgb(190, 209, 209);
 @media only screen and (min-width: 1200px) {
 	.youngest {
 		font-size: 22px;
-		
+
 		.youngest_desc {
 			display: flex;
 			justify-content: center;
