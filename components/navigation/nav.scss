@@ -1,141 +1,286 @@
-$primary-color: #f2acc6;
+$primary-color: rgb(242, 172, 198);
 $text: rgb(147, 143, 147);
 
-.row {
-	display: flex;
-	align-items: center;
-}
-
-.container {
-	width: 100%;
-	padding: 0 15px 0 15px;
-}
-
-.main_menu {
-	display: flex;
-	justify-content: flex-end;
-}
-
-li {
-	list-style-type: none;
-}
-
-.main_nav .burger_btn {
-	display: none;
-}
-
-.menu_item a {
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 40px;
-	position: relative;
-	display: block;
-	color: $text;
-	margin: 20px;
-	text-decoration: none;
-	cursor: pointer;
-}
-.header_logo {
-	width: 30%;
-}
-.header_menus {
-	width: 70%;
-}
-
 .header {
+	padding: 10px;
 	display: flex;
 	width: 100%;
-
 	border-bottom: 1px dashed lavender;
 	position: relative;
 	background-color: $primary-color;
-}
 
-.sub_menus_arrows {
-	position: relative;
-}
-
-.sub_menus_arrows svg {
-	position: absolute;
-	top: 10px;
-}
-.sub__menus {
-	position: absolute;
-	display: none;
-	background: $primary-color;
-	border-left: 1px dashed lavender;
-	border-bottom: 1px dashed lavender;
-	border-right: 1px dashed lavender;
-	z-index: 1000;
-	box-shadow: 0 10px 12px rgb(22 33 39 / 25%);
-}
-
-.menu_item:hover > a {
-	color: #07a8ff;
-}
-.menu_item .sub__menus li:hover a {
-	color: #07a8ff !important;
-}
-
-//Desktop
-@media (min-width: 992px) {
-	.sub_menus_arrows:hover .sub__menus {
-		display: block;
-	}
-	.sub_menus_arrows__full:hover .sub__menus {
-		display: block;
-		z-index: 1000000;
-	}
-}
-
-//Mobile
-
-@media (max-width: 991px) {
-	.header {
-		padding: 10px;
-	}
-	.header_logo .logo {
-		width: 50px;
-		height: 50px;
-	}
-
-	.main_nav .burger_btn {
-		display: flex;
-		justify-content: flex-end;
-		cursor: pointer;
-		position: relative;
-		z-index: 10037;
-	}
-	.main_nav .burger_btn svg {
-		font-size: 36px;
-		color: $text;
-	}
-
-	.main_nav .menu_item a {
-		margin: 10px;
-		text-align: center;
-		color: $text;
-	}
-
-	.main_nav ul.main_menu {
-		display: none;
-	}
-
-	.main_nav ul.secondary_menu {
-		display: flex;
-		flex-direction: column;
-		position: absolute;
-		left: 0;
-		z-index: 10007;
-		background-color: $primary-color;
-		right: 0;
-		padding-top: 50px;
-	}
-
-	.sub_menus_active {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	.container {
 		width: 100%;
+		padding: 0 15px 0 15px;
+
+		.row {
+			display: flex;
+			align-items: center;
+
+			.header_logo {
+				width: 30%;
+
+				.logo {
+					width: 50px;
+					height: 50px;
+				}
+			}
+			.header_menus {
+				width: 70%;
+
+				.main_nav {
+					.burger_btn {
+						display: flex;
+						justify-content: flex-end;
+						cursor: pointer;
+						position: relative;
+						z-index: 10037;
+
+						svg {
+							font-size: 36px;
+							color: $text;
+						}
+					}
+
+					.main_menu {
+						display: none;
+
+						li {
+							list-style-type: none;
+						}
+
+						.sub_menus {
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							width: 100%;
+							position: absolute;
+							z-index: 50000;
+							background-color: $primary-color;
+							padding-bottom: 150px;
+
+							a {
+								font-size: 16px;
+							}
+						}
+
+						.sub_menus_active {
+							display: none;
+						}
+					}
+
+					.secondary_menu {
+						display: flex;
+						flex-direction: column;
+						position: absolute;
+						left: 0;
+						z-index: 10007;
+						background-color: $primary-color;
+						right: 0;
+						padding-top: 50px;
+					}
+
+					.menu_item a {
+						margin: 10px;
+						text-align: center;
+						color: $text;
+						font-size: 20px;
+						font-weight: bold;
+						position: relative;
+						display: block;
+						text-decoration: none;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 320px) {
+	.header {
+		.container {
+			.row {
+				.header_menus {
+					.main_nav {
+						.main_menu {
+							.sub_menus {
+								a {
+									font-size: 18px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 414px) {
+	.header {
+		.container {
+			.row {
+				.header_menus {
+					.main_nav {
+						.main_menu {
+							.sub_menus {
+								padding-bottom: 200px;
+								a {
+									font-size: 20px;
+								}
+							}
+						}
+						.menu_item a {
+							font-size: 26px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.header {
+		padding: 20px;
+
+		.container {
+			.row {
+				.header_logo {
+					.logo {
+						width: 70px;
+						height: 70px;
+					}
+				}
+				.header_menus {
+					.main_nav {
+						.burger_btn {
+							svg {
+								font-size: 62px;
+							}
+						}
+
+						.main_menu {
+							.sub_menus {
+								padding-bottom: 200px;
+
+								a {
+									font-size: 26px;
+								}
+							}
+						}
+
+						.menu_item a {
+							font-size: 32px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.header {
+		padding: 40px;
+
+		.container {
+			.row {
+				.header_logo {
+					.logo {
+						width: 90px;
+						height: 90px;
+					}
+				}
+				.header_menus {
+					.main_nav {
+						.burger_btn {
+							svg {
+								font-size: 62px;
+							}
+						}
+
+						.main_menu {
+							padding-bottom: 30px;
+
+							.sub_menus {
+								padding-bottom: 200px;
+
+								a {
+									font-size: 32px;
+								}
+							}
+						}
+
+						.menu_item a {
+							font-size: 36px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.header {
+		padding: 0;
+
+		.container {
+			.row {
+				.header_menus {
+					.main_nav {
+						.burger_btn {
+							display: none;
+						}
+
+						.main_menu {
+							display: flex;
+							justify-content: flex-end;
+							margin-top: 40px;
+
+							.menu_item a {
+								font-size: 20px;
+								font-weight: bold;
+								line-height: 40px;
+								position: relative;
+								display: block;
+								color: $text;
+								margin: 20px;
+								text-decoration: none;
+								cursor: pointer;
+							}
+
+							.sub_menus_arrows {
+								position: relative;
+
+								svg {
+									position: absolute;
+									top: 10px;
+								}
+
+								.sub_menus {
+									display: none;
+									position: absolute;
+									background: $primary-color;
+									z-index: 1000;
+								}
+
+								.sub_menus_active {
+									display: flex;
+									width: 150px;
+									padding-bottom: 0;
+
+									a {
+										margin: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

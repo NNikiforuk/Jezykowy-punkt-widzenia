@@ -61,7 +61,7 @@ const Navbarmenu = () => {
 										Oferta <FiChevronDown />
 									</Link>
 									<ul
-										className={`sub__menus ${
+										className={`sub_menus ${
 											isMenuSubMenu && "sub_menus_active"
 										}`}
 									>
