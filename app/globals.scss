@@ -13,6 +13,10 @@ $gray-color-dark: rgb(101, 99, 99);
 @use "./opinie/feedback.scss";
 @use "../components/footer/footer.scss";
 @use "../components/navigation/nav.scss";
+@use "../app/cennik/prices.scss";
+
+
+
 
 * {
 	box-sizing: border-box;
