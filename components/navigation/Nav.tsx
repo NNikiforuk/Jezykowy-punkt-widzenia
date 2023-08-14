@@ -13,109 +13,146 @@ const Navbarmenu = () => {
 		setResponsiveclose(isResponsiveclose === false ? true : false);
 	};
 
-	let boxClass = ["main-menu menuq1"];
-	if (isMenu) {
-		boxClass.push("menuq2");
-	} else {
-		boxClass.push("");
-	}
-
 	const [isMenuSubMenu, setMenuSubMenu] = useState(false);
 
 	const toggleSubmenu = () => {
 		setMenuSubMenu(isMenuSubMenu === false ? true : false);
 	};
 
-	let boxClassSubMenu = ["sub__menus"];
-	if (isMenuSubMenu) {
-		boxClassSubMenu.push("sub__menus__Active");
-	} else {
-		boxClassSubMenu.push("");
-	}
-
 	return (
-		<header className="header__middle">
+		<header className="header">
 			<div className="container">
 				<div className="row">
-					<div className="header__middle__logo">
+					<div className="header_logo">
 						<Link href="/">
 							<Image
 								src="/assets/images/logo.png"
 								alt="logo"
 								width={70}
 								height={70}
-								className="object-contain logo"
+								className="logo"
 								priority={false}
 							/>
 						</Link>
 					</div>
 
-					<div className="header__middle__menus">
-						<nav className="main-nav ">
+					<div className="header_menus">
+						<nav className="main_nav ">
 							{isResponsiveclose === true ? (
 								<>
-									<span
-										className="menubar__button"
-										style={{ display: "none" }}
-										onClick={toggleClass}
-									>
+									<span className="burger_btn" onClick={toggleClass}>
 										<FiXCircle />
 									</span>
 								</>
 							) : (
 								<>
-									<span
-										className="menubar__button"
-										style={{ display: "none" }}
-										onClick={toggleClass}
-									>
+									<span className="burger_btn" onClick={toggleClass}>
 										<FiAlignRight />
 									</span>
 								</>
 							)}
 
-							<ul className={boxClass.join(" ")}>
-								<li className="menu-item">
-									<Link className="is-active" onClick={toggleClass} href="/">
-										Home
-									</Link>
-								</li>
-								<li className="menu-item ">
-									<Link
-										onClick={toggleClass}
-										className="is-active"
-										href="/about"
-									>
-										About
-									</Link>
-								</li>
+							<ul className={`main_menu ${isMenu && "secondary_menu"}`}>
 								<li
 									onClick={toggleSubmenu}
-									className="menu-item sub__menus__arrows"
+									className="menu_item sub_menus_arrows"
 								>
-									<Link href="/">
-										Shop <FiChevronDown />
+									<Link href="/oferta">
+										Oferta <FiChevronDown />
 									</Link>
-									<ul className={boxClassSubMenu.join(" ")}>
+									<ul
+										className={`sub__menus ${
+											isMenuSubMenu && "sub_menus_active"
+										}`}
+									>
 										<li>
 											<Link
 												onClick={toggleClass}
-												className="is-active"
-												href="/online"
+												className="active"
+												href="/oferta/dla-najmlodszych"
 											>
-												Online Shop
+												Najmłodsi
 											</Link>
 										</li>
 										<li>
 											<Link
 												onClick={toggleClass}
-												className="is-active"
-												href="/offline"
+												className="active"
+												href="/oferta/dla-doroslych"
 											>
-												Offline Shop
+												Dorośli
+											</Link>
+										</li>
+										<li>
+											<Link
+												onClick={toggleClass}
+												className="active"
+												href="/oferta/egzamin"
+											>
+												Egzamin
+											</Link>
+										</li>
+										<li>
+											<Link
+												onClick={toggleClass}
+												className="active"
+												href="/oferta/certyfikat"
+											>
+												Certyfikat
 											</Link>
 										</li>
 									</ul>
+								</li>
+								<li className="menu_item">
+									<Link onClick={toggleClass} className="active" href="/cennik">
+										Cennik
+									</Link>
+								</li>
+								<li className="menu_item">
+									<Link
+										onClick={toggleClass}
+										className="active"
+										href="/tlumaczenia"
+									>
+										Tłumaczenia
+									</Link>
+								</li>
+								<li className="menu_item">
+									<Link
+										onClick={toggleClass}
+										className="active"
+										href="/lektorzy"
+									>
+										Lektorzy
+									</Link>
+								</li>
+								<li className="menu_item">
+									<Link
+										onClick={toggleClass}
+										className="active"
+										href="/artykuly"
+									>
+										Artykuly
+									</Link>
+								</li>
+								<li className="menu_item">
+									<Link onClick={toggleClass} className="active" href="/opinie">
+										Opinie
+									</Link>
+								</li>
+								<li className="menu_item">
+									<Link onClick={toggleClass} className="active" href="/sklep">
+										Sklep
+									</Link>
+								</li>
+								<li className="menu_item">
+									<Link
+										onClick={toggleClass}
+										className="active"
+										href="/kontakt"
+									>
+										Kontakt
+									</Link>
 								</li>
 							</ul>
 						</nav>
