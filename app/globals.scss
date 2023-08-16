@@ -14,9 +14,7 @@ $gray-color-dark: rgb(101, 99, 99);
 @use "../components/footer/footer.scss";
 @use "../components/navigation/nav.scss";
 @use "../app/cennik/prices.scss";
-
-
-
+@use "../app/kontakt/contact.scss";
 
 * {
 	box-sizing: border-box;
@@ -63,5 +61,11 @@ h2 {
 	h2 {
 		font-size: 32px;
 		margin-top: 60px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	h1 {
+		font-size: 28px;
 	}
 }
