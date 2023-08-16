@@ -58,6 +58,14 @@ $text: rgb(147, 143, 147);
 						}
 
 						.sub_menus {
+							display: none;
+
+							a {
+								font-size: 16px;
+							}
+						}
+
+						.sub_menus_active {
 							display: flex;
 							flex-direction: column;
 							align-items: center;
@@ -66,14 +74,9 @@ $text: rgb(147, 143, 147);
 							z-index: 50000;
 							background-color: $primary-color;
 							padding-bottom: 150px;
-
-							a {
-								font-size: 16px;
-							}
-						}
-
-						.sub_menus_active {
-							display: none;
+							border-bottom-left-radius: 15px;
+							border-bottom-right-radius: 15px;
+							border-bottom: 1px dashed lavender;
 						}
 					}
 
@@ -211,7 +214,6 @@ $text: rgb(147, 143, 147);
 						}
 
 						.main_menu {
-
 							.sub_menus {
 								padding-bottom: 200px;
 
@@ -247,7 +249,6 @@ $text: rgb(147, 143, 147);
 
 						.main_menu {
 							display: flex;
-
 
 							.menu_item a {
 								font-size: 20px;

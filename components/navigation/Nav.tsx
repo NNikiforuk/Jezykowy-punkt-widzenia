@@ -17,7 +17,10 @@ const Navbar = () => {
 	};
 
 	const hideNavbar = () => {
+		setWantToCloseBurger(false);
 		setIsMenuVisible(false);
+		setOfferSubMenuVisible(false);
+		setMaterialsSubMenuVisible(false);
 	};
 
 	const toggleSubmenu = (setter: {
@@ -46,18 +49,14 @@ const Navbar = () => {
 
 					<div className="header_menus">
 						<nav className="main_nav ">
-							{wantToCloseBurger === true ? (
-								<>
-									<span className="burger_btn" onClick={toggleClass}>
-										<FiXCircle />
-									</span>
-								</>
+							{wantToCloseBurger ? (
+								<div className="burger_btn" onClick={toggleClass}>
+									<FiXCircle />
+								</div>
 							) : (
-								<>
-									<span className="burger_btn" onClick={toggleClass}>
-										<FiAlignRight />
-									</span>
-								</>
+								<div className="burger_btn" onClick={toggleClass}>
+									<FiAlignRight />
+								</div>
 							)}
 
 							<ul className={`main_menu ${isMenuVisible && "secondary_menu"}`}>
@@ -137,15 +136,7 @@ const Navbar = () => {
 										Lektorzy
 									</Link>
 								</li>
-								<li className="menu_item">
-									<Link
-										onClick={toggleClass}
-										className="active"
-										href="/materialy"
-									>
-										Materiały do pobrania
-									</Link>
-								</li>
+
 								<li className="menu_item">
 									<Link onClick={toggleClass} className="active" href="/opinie">
 										Opinie
