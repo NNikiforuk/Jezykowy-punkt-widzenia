@@ -1,27 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FiAlignRight, FiXCircle, FiChevronDown } from "react-icons/fi";
 
-const Navbarmenu = () => {
-	const [isMenu, setisMenu] = useState(false);
-	const [isResponsiveclose, setResponsiveclose] = useState(false);
+const Navbar = () => {
+	const [isMenuVisible, setIsMenuVisible] = useState(false);
+	const [wantToCloseBurger, setWantToCloseBurger] = useState(false);
+	const [offerSubMenuVisible, setOfferSubMenuVisible] = useState(false);
+	const [materialsSubMenuVisible, setMaterialsSubMenuVisible] = useState(false);
 
 	const toggleClass = () => {
-		setisMenu(isMenu === false ? true : false);
-		setResponsiveclose(isResponsiveclose === false ? true : false);
+		setIsMenuVisible((prev) => !prev);
+		setWantToCloseBurger((prev) => !prev);
 	};
 
 	const hideNavbar = () => {
-		setisMenu(false);
+		setIsMenuVisible(false);
 	};
 
-	const [isMenuSubMenu, setMenuSubMenu] = useState(false);
-
-	const toggleSubmenu = () => {
-		setMenuSubMenu(isMenuSubMenu === false ? true : false);
+	const toggleSubmenu = (setter: {
+		(value: SetStateAction<boolean>): void;
+	}) => {
+		setter((prev) => !prev);
 	};
 
 	return (
@@ -44,7 +46,7 @@ const Navbarmenu = () => {
 
 					<div className="header_menus">
 						<nav className="main_nav ">
-							{isResponsiveclose === true ? (
+							{wantToCloseBurger === true ? (
 								<>
 									<span className="burger_btn" onClick={toggleClass}>
 										<FiXCircle />
@@ -58,9 +60,9 @@ const Navbarmenu = () => {
 								</>
 							)}
 
-							<ul className={`main_menu ${isMenu && "secondary_menu"}`}>
+							<ul className={`main_menu ${isMenuVisible && "secondary_menu"}`}>
 								<li
-									onClick={toggleSubmenu}
+									onClick={() => toggleSubmenu(setOfferSubMenuVisible)}
 									className="menu_item sub_menus_arrows"
 								>
 									<div className="link">
@@ -71,7 +73,7 @@ const Navbarmenu = () => {
 									</div>
 									<ul
 										className={`sub_menus ${
-											isMenuSubMenu && "sub_menus_active"
+											offerSubMenuVisible && "sub_menus_active"
 										}`}
 									>
 										<li>
@@ -139,9 +141,9 @@ const Navbarmenu = () => {
 									<Link
 										onClick={toggleClass}
 										className="active"
-										href="/artykuly"
+										href="/materialy"
 									>
-										Artykuly
+										Materiały do pobrania
 									</Link>
 								</li>
 								<li className="menu_item">
@@ -172,4 +174,4 @@ const Navbarmenu = () => {
 	);
 };
 
-export default Navbarmenu;
+export default Navbar;
