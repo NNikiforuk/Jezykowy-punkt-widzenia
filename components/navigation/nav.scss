@@ -50,10 +50,13 @@ $text: rgb(147, 143, 147);
 						}
 
 						.link {
+							display: flex;
+							text-align: center;
+							align-items: center;
+							justify-content: center;
+
 							svg {
-								position: absolute;
-								top: 3px;
-								right: 75px;
+								display: flex;
 							}
 						}
 
@@ -76,7 +79,6 @@ $text: rgb(147, 143, 147);
 							padding-bottom: 150px;
 							border-bottom-left-radius: 15px;
 							border-bottom-right-radius: 15px;
-							border-bottom: 1px dashed lavender;
 						}
 					}
 
@@ -85,10 +87,11 @@ $text: rgb(147, 143, 147);
 						flex-direction: column;
 						position: absolute;
 						left: 0;
-						z-index: 10007;
+						z-index: 70000;
 						background-color: $primary-color;
 						right: 0;
 						padding-top: 50px;
+						height: 90vh;
 					}
 
 					.menu_item a,
@@ -260,6 +263,11 @@ $text: rgb(147, 143, 147);
 								margin: 20px;
 								text-decoration: none;
 								cursor: pointer;
+								transition: 0.3s;
+							}
+
+							.menu_item a:hover {
+								color: rgb(120, 117, 120);
 							}
 
 							.sub_menus_arrows {
@@ -269,12 +277,17 @@ $text: rgb(147, 143, 147);
 
 								.link {
 									margin-right: 15px;
+									transition: 0.3s;
 
 									svg {
 										position: absolute;
 										top: 3px;
 										left: 65px;
 									}
+								}
+
+								.link:hover {
+									color: rgb(120, 117, 120);
 								}
 
 								.sub_menus {

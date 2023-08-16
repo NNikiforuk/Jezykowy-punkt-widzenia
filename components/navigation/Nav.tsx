@@ -66,9 +66,8 @@ const Navbar = () => {
 								>
 									<div className="link">
 										<div>Oferta</div>
-										<div>
-											<FiChevronDown />
-										</div>
+
+										<FiChevronDown />
 									</div>
 									<ul
 										className={`sub_menus ${
@@ -135,6 +134,51 @@ const Navbar = () => {
 									>
 										Lektorzy
 									</Link>
+								</li>
+
+								<li
+									onClick={() => toggleSubmenu(setMaterialsSubMenuVisible)}
+									className="menu_item sub_menus_arrows"
+								>
+									<div className="link">
+										<div>Materiały do pobrania</div>
+										<div>
+											<FiChevronDown />
+										</div>
+									</div>
+									<ul
+										className={`sub_menus ${
+											materialsSubMenuVisible && "sub_menus_active"
+										}`}
+									>
+										<li>
+											<Link
+												onClick={toggleClass}
+												className="active"
+												href="/materialy/niemiecki"
+											>
+												Język niemiecki
+											</Link>
+										</li>
+										<li>
+											<Link
+												onClick={toggleClass}
+												className="active"
+												href="/materialy/angielski"
+											>
+												Język angielski
+											</Link>
+										</li>
+										<li>
+											<Link
+												onClick={toggleClass}
+												className="active"
+												href="/materialy/niderlandzki"
+											>
+												Język niderlandzki
+											</Link>
+										</li>
+									</ul>
 								</li>
 
 								<li className="menu_item">
