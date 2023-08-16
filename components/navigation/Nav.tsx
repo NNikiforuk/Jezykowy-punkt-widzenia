@@ -148,7 +148,8 @@ const Navbar = () => {
 									</div>
 									<ul
 										className={`sub_menus ${
-											materialsSubMenuVisible && "sub_menus_active"
+											materialsSubMenuVisible &&
+											"sub_menus_active sub_menus_active-materials"
 										}`}
 									>
 										<li>

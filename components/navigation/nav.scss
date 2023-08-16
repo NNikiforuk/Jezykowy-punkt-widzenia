@@ -76,9 +76,7 @@ $text: rgb(147, 143, 147);
 							position: absolute;
 							z-index: 50000;
 							background-color: $primary-color;
-							padding-bottom: 150px;
-							border-bottom-left-radius: 15px;
-							border-bottom-right-radius: 15px;
+							padding-bottom: 50px;
 						}
 					}
 
@@ -91,7 +89,6 @@ $text: rgb(147, 143, 147);
 						background-color: $primary-color;
 						right: 0;
 						padding-top: 50px;
-						height: 90vh;
 					}
 
 					.menu_item a,
@@ -132,6 +129,22 @@ $text: rgb(147, 143, 147);
 	}
 }
 
+@media only screen and (min-width: 360px) {
+	.header {
+		.container {
+			.row {
+				.header_menus {
+					.main_nav {
+						.secondary_menu {
+							height: 91vh;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 @media only screen and (min-width: 414px) {
 	.header {
 		.container {
@@ -146,7 +159,8 @@ $text: rgb(147, 143, 147);
 								}
 							}
 						}
-						.menu_item a {
+						.menu_item a,
+						.link {
 							font-size: 26px;
 						}
 					}
@@ -186,8 +200,10 @@ $text: rgb(147, 143, 147);
 							}
 						}
 
-						.menu_item a {
+						.menu_item a,
+						.link {
 							font-size: 32px;
+							padding: 5px;
 						}
 					}
 				}
@@ -226,7 +242,8 @@ $text: rgb(147, 143, 147);
 							}
 						}
 
-						.menu_item a {
+						.menu_item a,
+						.link {
 							font-size: 36px;
 						}
 					}
@@ -253,7 +270,8 @@ $text: rgb(147, 143, 147);
 						.main_menu {
 							display: flex;
 
-							.menu_item a {
+							.menu_item a,
+							.link {
 								font-size: 20px;
 								font-weight: bold;
 								line-height: 40px;
@@ -276,14 +294,8 @@ $text: rgb(147, 143, 147);
 								align-items: center;
 
 								.link {
-									margin-right: 15px;
 									transition: 0.3s;
-
-									svg {
-										position: absolute;
-										top: 3px;
-										left: 65px;
-									}
+									display: flex;
 								}
 
 								.link:hover {
@@ -302,11 +314,16 @@ $text: rgb(147, 143, 147);
 									width: 150px;
 									padding-bottom: 0;
 									top: 70px;
-									left: -20px;
+									left: -15px;
 
 									a {
 										margin: 0;
 									}
+								}
+
+								.sub_menus_active-materials {
+									left: -10px;
+									width: 300px;
 								}
 							}
 						}
@@ -317,6 +334,7 @@ $text: rgb(147, 143, 147);
 							position: relative;
 							padding: 0;
 							margin: 0;
+							height: auto;
 						}
 					}
 				}
