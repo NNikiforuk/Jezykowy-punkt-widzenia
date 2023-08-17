@@ -1,6 +1,6 @@
 "use client";
 
-import { SetStateAction, useState, useRef, useEffect } from "react";
+import { SetStateAction, useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FiAlignRight, FiXCircle, FiChevronDown } from "react-icons/fi";
@@ -17,6 +17,14 @@ const Navbar = () => {
 	const ref = checkIfClickedOutside(() => {
 		hideNavbar();
 	});
+
+	useEffect(() => {
+		if (offerSubMenuVisible) setMaterialsSubMenuVisible(false);
+	}, [offerSubMenuVisible]);
+
+	useEffect(() => {
+		if (materialsSubMenuVisible) setOfferSubMenuVisible(false);
+	}, [materialsSubMenuVisible]);
 
 	const toggleClass = () => {
 		setIsMenuVisible((prev) => !prev);
