@@ -1,6 +1,6 @@
 export const prices_A1A2 = [
 	{
-		id: "A1/A2",
+		id: "A1/A2/6h",
 		title: "Pakiet 6h A1/A2",
 		time: "60 min",
 		desc: [
@@ -11,7 +11,7 @@ export const prices_A1A2 = [
 		],
 	},
 	{
-		id: "A1/A2",
+		id: "A1/A2/12h",
 		title: "Pakiet 12h A1/A2",
 		time: "60 min",
 		desc: [
@@ -22,7 +22,7 @@ export const prices_A1A2 = [
 		],
 	},
 	{
-		id: "A1/A2",
+		id: "A1/A2/18h",
 		title: "Pakiet 18h A1/A2",
 		time: "60 min",
 		desc: [
@@ -36,7 +36,7 @@ export const prices_A1A2 = [
 
 export const prices_B1B2 = [
 	{
-		id: "B1/B2",
+		id: "B1/B2/6h",
 		title: "Pakiet 6h B1/B2",
 		time: "60 min",
 		desc: [
@@ -47,7 +47,7 @@ export const prices_B1B2 = [
 		],
 	},
 	{
-		id: "B1/B2",
+		id: "B1/B/12h",
 		title: "Pakiet 12h B1/B2",
 		time: "60 min",
 		desc: [
@@ -58,7 +58,7 @@ export const prices_B1B2 = [
 		],
 	},
 	{
-		id: "B1/B2",
+		id: "B1/B2/18h",
 		title: "Pakiet 18h B1/B2",
 		time: "60 min",
 		desc: [
@@ -72,7 +72,7 @@ export const prices_B1B2 = [
 
 export const prices_C1C2 = [
 	{
-		id: "C1/C2",
+		id: "C1/C2/6h",
 		title: "Pakiet 6h C1/C2",
 		time: "60 min",
 		desc: [
@@ -83,7 +83,7 @@ export const prices_C1C2 = [
 		],
 	},
 	{
-		id: "C1/C2",
+		id: "C1/C2/12h",
 		title: "Pakiet 12h C1/C2",
 		time: "60 min",
 		desc: [
@@ -94,7 +94,7 @@ export const prices_C1C2 = [
 		],
 	},
 	{
-		id: "C1/C2",
+		id: "C1/C2/18h",
 		title: "Pakiet 18h C1/C2",
 		time: "60 min",
 		desc: [

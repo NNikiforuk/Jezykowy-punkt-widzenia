@@ -1,9 +1,10 @@
 "use client";
 
-import { SetStateAction, useState } from "react";
+import { SetStateAction, useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FiAlignRight, FiXCircle, FiChevronDown } from "react-icons/fi";
+import checkIfClickedOutside from "./checkIfClickedOutside";
 
 const Navbar = () => {
 	const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -12,6 +13,10 @@ const Navbar = () => {
 	const [materialsSubMenuVisible, setMaterialsSubMenuVisible] = useState(false);
 	const [materialsENGSubMenuVisible, setMaterialsENGSubMenuVisible] =
 		useState(false);
+
+	const ref = checkIfClickedOutside(() => {
+		hideNavbar();
+	});
 
 	const toggleClass = () => {
 		setIsMenuVisible((prev) => !prev);
@@ -76,6 +81,7 @@ const Navbar = () => {
 										className={`sub_menus ${
 											offerSubMenuVisible && "sub_menus_active"
 										}`}
+										ref={ref}
 									>
 										<li>
 											<Link
@@ -155,14 +161,43 @@ const Navbar = () => {
 											"sub_menus_active sub_menus_active-materials"
 										}`}
 									>
-										<li>
-											<Link
-												onClick={toggleClass}
-												className="active"
-												href="/materialy/niemiecki"
+										<li
+											onClick={() =>
+												toggleSubmenu(setMaterialsENGSubMenuVisible)
+											}
+											className="menu_item sub_menus_arrows"
+										>
+											<div className="link">
+												<div>Język niemiecki</div>
+												<div>
+													<FiChevronDown />
+												</div>
+											</div>
+
+											<ul
+												className={`sub_menus ${
+													materialsENGSubMenuVisible && "sub_menus_active"
+												}`}
 											>
-												Język niemiecki
-											</Link>
+												<li>
+													<Link
+														onClick={toggleClass}
+														className="active"
+														href="/materialy/niemiecki/A1A2"
+													>
+														A1/A2
+													</Link>
+												</li>
+												<li>
+													<Link
+														onClick={toggleClass}
+														className="active"
+														href="/materialy/niemiecki/B1B2"
+													>
+														B1/B2
+													</Link>
+												</li>
+											</ul>
 										</li>
 									</ul>
 								</li>
