@@ -10,6 +10,8 @@ const Navbar = () => {
 	const [wantToCloseBurger, setWantToCloseBurger] = useState(false);
 	const [offerSubMenuVisible, setOfferSubMenuVisible] = useState(false);
 	const [materialsSubMenuVisible, setMaterialsSubMenuVisible] = useState(false);
+	const [materialsENGSubMenuVisible, setMaterialsENGSubMenuVisible] =
+		useState(false);
 
 	const toggleClass = () => {
 		setIsMenuVisible((prev) => !prev);
@@ -21,6 +23,7 @@ const Navbar = () => {
 		setIsMenuVisible(false);
 		setOfferSubMenuVisible(false);
 		setMaterialsSubMenuVisible(false);
+		setMaterialsENGSubMenuVisible(false);
 	};
 
 	const toggleSubmenu = (setter: {
@@ -141,7 +144,7 @@ const Navbar = () => {
 									className="menu_item sub_menus_arrows"
 								>
 									<div className="link">
-										<div>Materiały do pobrania</div>
+										<div>Materiały</div>
 										<div>
 											<FiChevronDown />
 										</div>
@@ -159,24 +162,6 @@ const Navbar = () => {
 												href="/materialy/niemiecki"
 											>
 												Język niemiecki
-											</Link>
-										</li>
-										<li>
-											<Link
-												onClick={toggleClass}
-												className="active"
-												href="/materialy/angielski"
-											>
-												Język angielski
-											</Link>
-										</li>
-										<li>
-											<Link
-												onClick={toggleClass}
-												className="active"
-												href="/materialy/niderlandzki"
-											>
-												Język niderlandzki
 											</Link>
 										</li>
 									</ul>
