@@ -80,3 +80,18 @@ $text: rgb(147, 143, 147);
 		}
 	}
 }
+
+@media only screen and (min-width: 768px) {
+	.teachers {
+		font-size: 24px;
+
+		.teacher {
+			.teacher_img {
+				img {
+					width: 250px;
+                    height: 170px;
+				}
+			}
+		}
+	}
+}
