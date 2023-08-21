@@ -3,7 +3,6 @@ import "./globals.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer/Footer";
-// import Nav from "../components/navigation/Nav";
 import Navigation from "../components/navigation/Navigation";
 import "bootstrap/dist/css/bootstrap.min.css";
 
