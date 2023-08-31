@@ -1,10 +1,14 @@
+import "mdb-react-ui-kit/dist/css/mdb.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 import "./globals.scss";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer/Footer";
-import Navigation from "../components/navigation/Navigation";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import Navigation from "../components/navigation/Navigation";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import Nav from "../components/navigation/Navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +26,7 @@ export default function RootLayout({
 	return (
 		<html lang="pl">
 			<body className={inter.className}>
-				<Navigation />
+				<Nav />
 				{children}
 				<Footer />
 			</body>
