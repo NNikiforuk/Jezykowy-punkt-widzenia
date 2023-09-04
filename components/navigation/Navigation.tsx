@@ -3,6 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { NavLinksOffer, NavLinksMaterials } from "./NavLinks";
+import { RiMenu3Line } from "react-icons/ri";
+import { RxCross1 } from "react-icons/rx";
 
 const Navigation = () => {
 	const [open, setOpen] = useState<boolean>(false);
@@ -10,21 +13,59 @@ const Navigation = () => {
 	return (
 		<nav>
 			<div className="nav_container">
-				<Link href="/">
-					<Image
-						src="/assets/images/logo.png"
-						alt="logo"
-						width={50}
-						height={50}
-						className="logo"
-					/>
-				</Link>
-				<ul
-					className={`nav_ul_mobile ${
-						open ? "nav_ul_mobile-open" : "nav_ul_mobile-closed"
-					}`}
-				>
-					{/* <li></li> */}
+				<div className="logo_container">
+					<Link href="/">
+						<Image
+							src="/assets/images/logo.png"
+							alt="logo"
+							width={70}
+							height={70}
+							className="logo"
+						/>
+					</Link>
+					<div className="burger_btn" onClick={() => setOpen(!open)}>
+						{open ? <RxCross1 /> : <RiMenu3Line />}
+					</div>
+				</div>
+				<ul className="navlist">
+					<NavLinksOffer />
+					<li>
+						<Link href="/cennik">Cennik</Link>
+					</li>
+					<li>
+						<Link href="/tlumaczenia">Tłumaczenia</Link>
+					</li>
+					<li>
+						<Link href="/lektorzy">Lektorzy</Link>
+					</li>
+					<NavLinksMaterials />
+					<li>
+						<Link href="/opinie">Opinie</Link>
+					</li>
+					<li>
+						<Link href="/kontakt">Kontakt</Link>
+					</li>
+				</ul>
+
+				{/* Mobile */}
+				<ul className={`navlist_mobile ${open ? "left0" : "left100"}`}>
+					<NavLinksOffer />
+					<li>
+						<Link href="/cennik">Cennik</Link>
+					</li>
+					<li>
+						<Link href="/tlumaczenia">Tłumaczenia</Link>
+					</li>
+					<li>
+						<Link href="/lektorzy">Lektorzy</Link>
+					</li>
+					<NavLinksMaterials />
+					<li>
+						<Link href="/opinie">Opinie</Link>
+					</li>
+					<li>
+						<Link href="/kontakt">Kontakt</Link>
+					</li>
 				</ul>
 			</div>
 		</nav>

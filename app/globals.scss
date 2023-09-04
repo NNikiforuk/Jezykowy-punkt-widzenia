@@ -18,6 +18,7 @@ $gray-color-dark: rgb(101, 99, 99);
 @use "../app/lektorzy/teachers.scss";
 @use "../components/home.scss";
 @use "../components/navigation/navigation.scss";
+@use "../components/navigation/navlinks.scss";
 
 
 * {
@@ -36,14 +37,12 @@ body {
 h1 {
 	font-size: 22px;
 	color: $secondary-color;
-	padding: 20px;
 	text-align: center;
 }
 
 h2 {
 	font-size: 18px;
 	color: $secondary-color;
-	padding: 20px;
 	text-align: center;
 }
 
@@ -64,7 +63,6 @@ h2 {
 
 	h2 {
 		font-size: 32px;
-		margin-top: 60px;
 	}
 }
 
