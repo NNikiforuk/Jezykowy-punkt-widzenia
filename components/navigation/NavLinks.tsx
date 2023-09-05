@@ -1,19 +1,16 @@
 import { useState } from "react";
-import {
-	links_offer,
-	links_materials,
-	Sublink,
-	Sublinks,
-	OfferSection,
-	SectionMat,
-} from "./MyLinks";
+import { Sublink, OfferSection, SectionMat } from "./MyLinks";
+import Link from "next/link";
 
 interface Props {
 	link: OfferSection | SectionMat;
+	close: () => void;
 }
 
-export const MyLinks = ({ link }: Props) => {
+export const MyLinks = ({ link, close }: Props) => {
 	const [showingDropdown, setShowingDropdown] = useState<boolean>(false);
+	const [showingDropdownMobile, setShowingDropdownMobile] =
+		useState<boolean>(false);
 
 	return (
 		<div>
@@ -37,12 +34,14 @@ export const MyLinks = ({ link }: Props) => {
 
 						<div className="list_container-sec">
 							{typeof link.sublinks === "object" && "Head" in link.sublinks && (
-								<div>{link.sublinks.Head}</div>
+								<div className="mainlink_subtitle">{link.sublinks.Head}</div>
 							)}
 							<ul className="mainlink_list">
 								{link.sublinks.sublink.map((el: Sublink) => (
 									<li key={el.name} className="item">
-										{el.name}
+										<Link href={el.link}>
+											{el.name}
+										</Link>
 									</li>
 								))}
 							</ul>
@@ -52,17 +51,28 @@ export const MyLinks = ({ link }: Props) => {
 			</div>
 			{/* Mobile */}
 			<div className="navlinks_mobile">
-				<div className="mainlink_title">{link.name}</div>
-				{typeof link.sublinks === "object" && "Head" in link.sublinks && (
-					<div>{link.sublinks.Head}</div>
+				<div
+					className="mainlink_title"
+					onClick={() => setShowingDropdownMobile((current) => !current)}
+				>
+					{link.name}
+				</div>
+				{showingDropdownMobile && (
+					<div className="mobile_dropdown">
+						{typeof link.sublinks === "object" && "Head" in link.sublinks && (
+							<div className="mainlink_subtitle">{link.sublinks.Head}</div>
+						)}
+						<ul className="mainlink_list-mobile">
+							{link.sublinks.sublink.map((el: Sublink) => (
+								<li key={el.name} className="item">
+									<Link href={el.link} onClick={close}>
+										{el.name}
+									</Link>
+								</li>
+							))}
+						</ul>
+					</div>
 				)}
-				<ul>
-					{link.sublinks.sublink.map((el: Sublink) => (
-						<li key={el.name} className="item">
-							{el.name}
-						</li>
-					))}
-				</ul>
 			</div>
 		</div>
 	);

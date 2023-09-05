@@ -11,6 +11,10 @@ import { MyLinks } from "./NavLinks";
 const Navigation = () => {
 	const [open, setOpen] = useState<boolean>(false);
 
+	const close = () => {
+		setOpen(false);
+	};
+
 	return (
 		<nav>
 			<div className="nav_container">
@@ -29,43 +33,63 @@ const Navigation = () => {
 					</div>
 				</div>
 				<ul className="navlist">
-					<MyLinks link={links_offer} />
+					<MyLinks link={links_offer} close={close} />
 					<li>
-						<Link href="/cennik">Cennik</Link>
+						<Link onClick={close} href="/cennik">
+							Cennik
+						</Link>
 					</li>
 					<li>
-						<Link href="/tlumaczenia">Tłumaczenia</Link>
+						<Link onClick={close} href="/tlumaczenia">
+							Tłumaczenia
+						</Link>
 					</li>
 					<li>
-						<Link href="/lektorzy">Lektorzy</Link>
+						<Link onClick={close} href="/lektorzy">
+							Lektorzy
+						</Link>
 					</li>
-					<MyLinks link={links_materials} />
+					<MyLinks link={links_materials} close={close} />
 					<li>
-						<Link href="/opinie">Opinie</Link>
+						<Link onClick={close} href="/opinie">
+							Opinie
+						</Link>
 					</li>
 					<li>
-						<Link href="/kontakt">Kontakt</Link>
+						<Link onClick={close} href="/kontakt">
+							Kontakt
+						</Link>
 					</li>
 				</ul>
 
 				{/* Mobile */}
 				<ul className={`navlist_mobile ${open ? "left0" : "left100"}`}>
-					<MyLinks link={links_offer} />
+					<MyLinks link={links_offer} close={close} />
 					<li>
-						<Link href="/cennik">Cennik</Link>
+						<Link onClick={close} href="/cennik">
+							Cennik
+						</Link>
 					</li>
 					<li>
-						<Link href="/tlumaczenia">Tłumaczenia</Link>
+						<Link onClick={close} href="/tlumaczenia">
+							Tłumaczenia
+						</Link>
 					</li>
 					<li>
-						<Link href="/lektorzy">Lektorzy</Link>
+						<Link onClick={close} href="/lektorzy">
+							Lektorzy
+						</Link>
 					</li>
-					<MyLinks link={links_materials} />
+					<MyLinks link={links_materials} close={close} />
 					<li>
-						<Link href="/opinie">Opinie</Link>
+						<Link onClick={close} href="/opinie">
+							Opinie
+						</Link>
 					</li>
 					<li>
-						<Link href="/kontakt">Kontakt</Link>
+						<Link onClick={close} href="/kontakt">
+							Kontakt
+						</Link>
 					</li>
 				</ul>
 			</div>

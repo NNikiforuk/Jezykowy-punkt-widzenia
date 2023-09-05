@@ -20,15 +20,58 @@
 		}
 
 		.list_container-sec {
-			background-color: rgb(242, 172, 198);
 			background-color: white;
+			border-radius: 15px;
+			min-width: 190px;
+
+			.mainlink_subtitle {
+				font-size: 20px;
+				padding: 20px 0 0 20px;
+				font-weight: bold;
+			}
 
 			.mainlink_list {
 				padding: 20px;
 
 				.item {
-					font-size: 18px;
-					margin-top: 20px;
+					font-size: 20px;
+					padding-top: 20px;
+				}
+			}
+		}
+	}
+}
+
+.navlinks_mobile {
+	.mobile_dropdown {
+		.mainlink_subtitle {
+			font-size: 20px;
+			font-weight: bold;
+			color: rgb(147, 143, 147);
+			margin-left: 10px;
+		}
+
+		.mainlink_list-mobile {
+			.item {
+				font-size: 20px;
+				margin-top: 5px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.navlinks_mobile {
+		.mobile_dropdown {
+			.mainlink_subtitle {
+				font-size: 28px;
+				margin-left: 20px;
+			}
+
+			.mainlink_list-mobile {
+				.item {
+					font-size: 28px;
+					margin-top: 5px;
 				}
 			}
 		}

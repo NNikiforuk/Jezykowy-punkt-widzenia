@@ -24,11 +24,11 @@ export const links_offer: OfferSection = {
 	sublinks: {
 		sublink: [
 			{
-				name: "Oferta dla najmłodszych",
+				name: "Dla najmłodszych",
 				link: "/oferta/dla-najmlodszych",
 			},
 			{
-				name: "Oferta dla dorosłych",
+				name: "Dla dorosłych",
 				link: "/oferta/dla-doroslych",
 			},
 			{
