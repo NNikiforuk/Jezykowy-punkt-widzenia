@@ -3,9 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { NavLinksOffer, NavLinksMaterials } from "./NavLinks";
 import { RiMenu3Line } from "react-icons/ri";
 import { RxCross1 } from "react-icons/rx";
+import { links_offer, links_materials } from "./MyLinks";
+import { MyLinks } from "./NavLinks";
 
 const Navigation = () => {
 	const [open, setOpen] = useState<boolean>(false);
@@ -28,7 +29,7 @@ const Navigation = () => {
 					</div>
 				</div>
 				<ul className="navlist">
-					<NavLinksOffer />
+					<MyLinks link={links_offer} />
 					<li>
 						<Link href="/cennik">Cennik</Link>
 					</li>
@@ -38,7 +39,7 @@ const Navigation = () => {
 					<li>
 						<Link href="/lektorzy">Lektorzy</Link>
 					</li>
-					<NavLinksMaterials />
+					<MyLinks link={links_materials} />
 					<li>
 						<Link href="/opinie">Opinie</Link>
 					</li>
@@ -49,7 +50,7 @@ const Navigation = () => {
 
 				{/* Mobile */}
 				<ul className={`navlist_mobile ${open ? "left0" : "left100"}`}>
-					<NavLinksOffer />
+					<MyLinks link={links_offer} />
 					<li>
 						<Link href="/cennik">Cennik</Link>
 					</li>
@@ -59,7 +60,7 @@ const Navigation = () => {
 					<li>
 						<Link href="/lektorzy">Lektorzy</Link>
 					</li>
-					<NavLinksMaterials />
+					<MyLinks link={links_materials} />
 					<li>
 						<Link href="/opinie">Opinie</Link>
 					</li>

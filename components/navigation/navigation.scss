@@ -64,7 +64,6 @@ nav {
 			.mainlink_title {
 				font-size: 23px;
 				font-weight: bold;
-				cursor: pointer;
 				list-style-type: none;
 				color: $text;
 
@@ -72,7 +71,6 @@ nav {
 					color: $text;
 				}
 			}
-
 		}
 
 		.left0 {
@@ -102,7 +100,6 @@ nav {
 		.nav_container {
 			.navlist {
 				display: flex;
-				
 			}
 
 			.navlist_mobile {

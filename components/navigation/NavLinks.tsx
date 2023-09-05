@@ -1,67 +1,68 @@
+import { useState } from "react";
 import {
 	links_offer,
 	links_materials,
 	Sublink,
+	Sublinks,
 	OfferSection,
 	SectionMat,
-	SublinkMat,
 } from "./MyLinks";
 
-export const NavLinksOffer = () => {
-	const xxx = () => {
-		console.log("gggg");
-	};
+interface Props {
+	link: OfferSection | SectionMat;
+}
+
+export const MyLinks = ({ link }: Props) => {
+	const [showingDropdown, setShowingDropdown] = useState<boolean>(false);
 
 	return (
 		<div>
-			<div>
-				<div className="mainlink_title">Oferta</div>
-				<div className="list_container" onClick={xxx}>
-					<div className="arrow">
-						<div className="up"></div>
-					</div>
-					<div className="list_container-sec">
-						<ul className="mainlink_list">
-							{links_offer.sublinks.map((sublink: Sublink) => (
-								<li key={sublink.name} className="item">
-									{sublink.name}
-								</li>
-							))}
-						</ul>
-					</div>
+			<div className="navlinks_desktop">
+				<div
+					className="mainlink_title"
+					onMouseEnter={() => setShowingDropdown(true)}
+					onMouseLeave={() => setShowingDropdown(false)}
+				>
+					{link.name}
 				</div>
-			</div>
-		</div>
-	);
-};
+				{showingDropdown && (
+					<div
+						className="list_container"
+						onMouseEnter={() => setShowingDropdown(true)}
+						onMouseLeave={() => setShowingDropdown(false)}
+					>
+						<div className="arrow">
+							<div className="up"></div>
+						</div>
 
-export const NavLinksMaterials = () => {
-
-	const xxx = () => {
-		console.log("gggg")
-	}
-
-	return (
-		<div>
-			<div>
-				<div className="mainlink_title">Materiały</div>
-				<div className="list_container" onClick={xxx}>
-					<div className="arrow">
-						<div className="up"></div>
-					</div>
-					<div className="list_container-sec">
-						<ul className="mainlink_list">
-							<div>
-								{links_materials.sublinks.Head}
-								{links_materials.sublinks.sublink.map((sublink: SublinkMat) => (
-									<li key={sublink.name} className="item">
-										{sublink.name}
+						<div className="list_container-sec">
+							{typeof link.sublinks === "object" && "Head" in link.sublinks && (
+								<div>{link.sublinks.Head}</div>
+							)}
+							<ul className="mainlink_list">
+								{link.sublinks.sublink.map((el: Sublink) => (
+									<li key={el.name} className="item">
+										{el.name}
 									</li>
 								))}
-							</div>
-						</ul>
+							</ul>
+						</div>
 					</div>
-				</div>
+				)}
+			</div>
+			{/* Mobile */}
+			<div className="navlinks_mobile">
+				<div className="mainlink_title">{link.name}</div>
+				{typeof link.sublinks === "object" && "Head" in link.sublinks && (
+					<div>{link.sublinks.Head}</div>
+				)}
+				<ul>
+					{link.sublinks.sublink.map((el: Sublink) => (
+						<li key={el.name} className="item">
+							{el.name}
+						</li>
+					))}
+				</ul>
 			</div>
 		</div>
 	);

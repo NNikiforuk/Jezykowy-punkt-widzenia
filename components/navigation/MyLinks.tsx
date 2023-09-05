@@ -2,46 +2,46 @@ export interface Sublink {
 	name: string;
 	link: string;
 }
+export interface Sublinks {
+	sublink: Sublink[];
+}
 
 export interface OfferSection {
 	name: string;
-	sublinks: Sublink[];
-}
-
-export const links_offer: OfferSection = {
-	name: "Oferta",
-	sublinks: [
-		{
-			name: "Oferta dla najmłodszych",
-			link: "/oferta/dla-najmlodszych",
-		},
-		{
-			name: "Oferta dla dorosłych",
-			link: "/oferta/dla-doroslych",
-		},
-		{
-			name: "Przygotowanie do egzaminu",
-			link: "/oferta/egzamin",
-		},
-		{
-			name: "Przygotowanie do certyfikatu",
-			link: "/oferta/certyfikat",
-		},
-	],
-};
-
-export interface SublinkMat {
-	name: string;
-	link: string;
+	sublinks: Sublinks;
 }
 
 export interface SectionMat {
 	name: string;
 	sublinks: {
 		Head: string;
-		sublink: SublinkMat[];
+		sublink: Sublink[];
 	};
 }
+
+export const links_offer: OfferSection = {
+	name: "Oferta",
+	sublinks: {
+		sublink: [
+			{
+				name: "Oferta dla najmłodszych",
+				link: "/oferta/dla-najmlodszych",
+			},
+			{
+				name: "Oferta dla dorosłych",
+				link: "/oferta/dla-doroslych",
+			},
+			{
+				name: "Przygotowanie do egzaminu",
+				link: "/oferta/egzamin",
+			},
+			{
+				name: "Przygotowanie do certyfikatu",
+				link: "/oferta/certyfikat",
+			},
+		],
+	},
+};
 
 export const links_materials: SectionMat = {
 	name: "Materiały",
