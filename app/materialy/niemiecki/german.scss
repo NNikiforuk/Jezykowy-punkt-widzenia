@@ -1,9 +1,9 @@
-.germanA1A2 {
+.german {
 	padding: 40px;
 	display: flex;
 	flex-direction: column;
 
-	.germanA1A2_container {
+	.german_container {
 		margin-top: 30px;
 
 		.text_container {
@@ -23,6 +23,30 @@
 				.text {
 					.paragraph {
 						text-align: start;
+					}
+
+					.bold {
+						font-weight: bold;
+					}
+
+					.italic {
+						font-style: italic;
+					}
+
+					.photos {
+						.photo {
+							margin-bottom: 15px;
+
+							.desc {
+								font-size: 14px;
+							}
+
+							.image {
+								img {
+									border-radius: 15px;
+								}
+							}
+						}
 					}
 				}
 
@@ -47,8 +71,8 @@
 }
 
 @media only screen and (min-width: 768px) {
-	.germanA1A2 {
-		.germanA1A2_container {
+	.german {
+		.german_container {
 			.text_container {
 				.title {
 					font-size: 24px;
@@ -73,10 +97,10 @@
 }
 
 @media only screen and (min-width: 1200px) {
-	.germanA1A2 {
+	.german {
 		margin: 0 400px 0 400px;
 
-		.germanA1A2_container {
+		.german_container {
 			margin-top: 50px;
 
 			.text_container {
@@ -88,14 +112,14 @@
 					display: flex;
 
 					.text {
-                        flex: 3;
+						flex: 3;
 						.paragraph {
 							font-size: 16px;
 						}
 					}
 
 					.legend {
-                        flex: 1;
+						flex: 1;
 
 						ul {
 							font-size: 12px;
