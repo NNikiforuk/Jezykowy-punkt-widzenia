@@ -30,6 +30,10 @@ nav {
 					color: $text;
 				}
 			}
+
+			.site_name {
+				display: none;
+			}
 		}
 
 		.navlist {
@@ -123,8 +127,15 @@ nav {
 			flex-direction: row;
 
 			.logo_container {
+				justify-content: flex-start;
+
 				.burger_btn {
 					display: none;
+				}
+
+				.site_name {
+					display: block;
+					margin-left: 10px;
 				}
 			}
 			.navlist {
