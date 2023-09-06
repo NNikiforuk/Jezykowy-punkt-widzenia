@@ -24,7 +24,7 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="home_desktop">
-				<Image src={img} alt="background image" width={1600} priority={false} />
+				<Image src={img} alt="background image" width={1200} priority={false} />
 			</div>
 		</>
 	);
