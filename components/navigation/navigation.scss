@@ -117,7 +117,7 @@ nav {
 	}
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
 	nav {
 		.nav_container {
 			flex-direction: row;
@@ -130,9 +130,22 @@ nav {
 			.navlist {
 				display: flex;
 
+				li a {
+					transition: 0.3s;
+				}
+
 				li,
 				.mainlink_title {
 					font-size: 24px;
+					transition: 0.3s;
+
+					&:hover {
+						color: rgb(124, 121, 124);
+					}
+
+					a:hover {
+						color: rgb(124, 121, 124);
+					}
 				}
 			}
 

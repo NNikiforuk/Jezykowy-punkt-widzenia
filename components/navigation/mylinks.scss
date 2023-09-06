@@ -35,7 +35,7 @@
 
 				.item {
 					font-size: 20px;
-					padding-top: 20px;
+					padding-top: 10px;
 				}
 			}
 		}
@@ -78,9 +78,21 @@
 	}
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
 	.navlinks_desktop {
 		display: block;
+
+		.list_container {
+			.list_container-sec {
+				.mainlink_list {
+					.item {
+						&:hover {
+							color: rgb(124, 121, 124);
+						}
+					}
+				}
+			}
+		}
 	}
 
 	.navlinks_mobile {

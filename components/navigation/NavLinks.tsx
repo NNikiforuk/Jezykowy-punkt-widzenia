@@ -39,9 +39,7 @@ export const MyLinks = ({ link, close }: Props) => {
 							<ul className="mainlink_list">
 								{link.sublinks.sublink.map((el: Sublink) => (
 									<li key={el.name} className="item">
-										<Link href={el.link}>
-											{el.name}
-										</Link>
+										<Link href={el.link}>{el.name}</Link>
 									</li>
 								))}
 							</ul>
