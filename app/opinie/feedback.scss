@@ -4,6 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	padding: 20px;
 
 	.container {
 		display: flex;
@@ -24,6 +25,16 @@
 				margin: 0 auto;
 				padding: 5px;
 			}
+		}
+	}
+}
+
+@media only screen and (min-width: 414px) {
+	.feedback {
+		padding: 30px;
+		
+		.container {
+			margin-top: 30px;
 		}
 	}
 }

@@ -14,7 +14,7 @@ const Prices = () => {
 				<div className="boxes_group">
 					<h2>A1 / A2</h2>
 					{prices_A1A2.map((el) => (
-						<div className="box groupA" key={el.id}>
+						<div className="box groupA group" key={el.id}>
 							<div className="box_titles">
 								<div className="box_title">{el.title}</div>
 								<div className="box_time">{el.time}</div>
@@ -34,7 +34,7 @@ const Prices = () => {
 				<div className="boxes_group">
 					<h2>B1 / B2</h2>
 					{prices_B1B2.map((el) => (
-						<div className="box groupB" key={el.id}>
+						<div className="box groupB group" key={el.id}>
 							<div className="box_titles">
 								<div className="box_title">{el.title}</div>
 								<div className="box_time">{el.time}</div>
@@ -54,7 +54,7 @@ const Prices = () => {
 				<div className="boxes_group">
 					<h2>C1 / C2</h2>
 					{prices_C1C2.map((el) => (
-						<div className="box groupC" key={el.id}>
+						<div className="box groupC group" key={el.id}>
 							<div className="box_titles">
 								<div className="box_title">{el.title}</div>
 								<div className="box_time">{el.time}</div>
@@ -74,7 +74,7 @@ const Prices = () => {
 				<div className="boxes_group">
 					<h2>A1 / C2</h2>
 					{prices_extended.map((el) => (
-						<div className="box groupAC" key={el.id}>
+						<div className="box groupAC group" key={el.id}>
 							<div className="box_titles">
 								<div className="box_title">{el.title}</div>
 								<div className="box_time">{el.time}</div>
@@ -94,7 +94,7 @@ const Prices = () => {
 				<div className="boxes_group">
 					<h2>Gramatyka</h2>
 					{prices_gram.map((el) => (
-						<div className="box groupGram" key={el.id}>
+						<div className="box groupGram group" key={el.id}>
 							<div className="box_titles">
 								<div className="box_title">{el.title}</div>
 								<div className="box_time">{el.time}</div>
@@ -113,7 +113,7 @@ const Prices = () => {
 				</div>
 				<div className="boxes_group">
 					<h2>Dla najmłodszych</h2>
-					<div className="box groupYoungest">
+					<div className="box groupYoungest group">
 						<div className="box_titles">Dla najmłodszych</div>
 						<div className="box_desc text">
 							Cena do indywidualnego ustalenia w zależności od klasy i poziomu
