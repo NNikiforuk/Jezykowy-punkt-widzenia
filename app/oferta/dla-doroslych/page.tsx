@@ -1,5 +1,3 @@
-import { text } from "../../../data/oferta_adults";
-import { text2 } from "../../../data/oferta_adults";
 import Packages from "@/components/Packages";
 
 const Adults = () => {

@@ -1,7 +1,3 @@
-
-import { text } from "../../../data/oferta_exam";
-import { text2 } from "../../../data/oferta_exam";
-
 const Exam = () => {
 	return (
 		<div className="exam">
@@ -15,8 +11,8 @@ const Exam = () => {
 					Chętnie przygotujemy Cię do tego egzaminu.
 				</p>
 				<br />
-				<p className="bold margin_left center">Z nami:</p>
-				<ul className="center">
+				<p className="bold">Z nami:</p>
+				<ul className="exam_list">
 					<li>Utrwalisz słownictwo</li>
 					<li>Powtórzysz gramatykę</li>
 					<li>Poćwiczysz rozumienie tekstów pisanych</li>

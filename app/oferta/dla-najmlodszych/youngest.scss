@@ -15,6 +15,7 @@ $primary-color: rgb(190, 209, 209);
 
 	.youngest_desc {
 		text-align: center;
+		margin-bottom: 20px;
 	}
 
 	.desc_element {
@@ -33,6 +34,20 @@ $primary-color: rgb(190, 209, 209);
 	.youngest {
 		font-size: 24px;
 		padding: 25px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.youngest {
+		padding: 40px;
+		.youngest_desc {
+			margin: 40px 0 60px 0;
+
+		}
+
+		.normal_text {
+			text-align: center;
+		}
 	}
 }
 

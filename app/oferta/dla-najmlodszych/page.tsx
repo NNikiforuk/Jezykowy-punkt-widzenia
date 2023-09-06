@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { text } from "../../../data/oferta_youngest";
 import Packages from "@/components/Packages";
 
 const Youngest = () => {
