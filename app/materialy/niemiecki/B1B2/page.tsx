@@ -165,7 +165,7 @@ const GermanB1B2 = () => {
 								zur Schule zu schicken. Oder aber waren sie an Schulen, die erst
 								<span className="blue_text"> monatelang⁸</span> im
 								Corona-Lockdown <span className="green_text">waren⁹</span> und
-								später sogar ganz geschlossen wurden.{" "}
+								später sogar ganz geschlossen wurden.
 								<span className="blue_text">
 									Corona hat die Kinder aus der Bahn geworfen¹⁰
 								</span>
@@ -191,7 +191,7 @@ const GermanB1B2 = () => {
 								<span className="blue_text"> an¹⁴ </span>
 								etwas zu lernen.
 								<span className="green_text">
-									{" "}
+									
 									Sonst hätte ich alles vergessen¹⁵
 								</span>
 								".

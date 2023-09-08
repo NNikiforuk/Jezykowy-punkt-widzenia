@@ -9,13 +9,13 @@ const GermanA1A2 = () => {
 						<div className="text">
 							<p className="paragraph">
 								Morgen <span className="blue_text">fahre¹</span> ich ans Meer.
-								Ich liebe die Sonne und{" "}
+								Ich liebe die Sonne und
 								<span className="green_text">die warmen Tage²</span>. Ich warte
 								schon lange auf diesen Tag. Ich habe seit gestern Urlaub und
 								packe jetzt meine
 								<span className="blue_text"> Sachen³</span>
-								<span className="green_text"> ein⁴</span>. Das wird ein schöner{" "}
-								<span className="blue_text">Trip⁵</span>. Ich fahre zusammen{" "}
+								<span className="green_text"> ein⁴</span>. Das wird ein schöner
+								<span className="blue_text">Trip⁵</span>. Ich fahre zusammen
 								<span className="green_text">mit⁶ </span>
 								meinem Freund. In meinem Koffer habe ich: einen Badeanzug,
 								T-Shirts, Shorts, Kosmetiker usw. Mein Freund nimmt auch eine
@@ -120,10 +120,10 @@ const GermanA1A2 = () => {
 								<span className="blue_text">Mein Name¹</span> ist Andreas. Ich
 								komme aus Deutschland und lebe auch hier. Ich
 								<span className="green_text"> bin²</span> 27 Jahre alt und habe
-								zwei Geschwister: eine Schwester und{" "}
+								zwei Geschwister: eine Schwester und
 								<span className="green_text">einen³</span> Bruder. Meine
 								Schwester heißt Mia und ist 22 Jahre alt, mein Bruder Michael
-								ist 25 Jahre alt. Wir <span className="blue_text">wohnen⁴</span>{" "}
+								ist 25 Jahre alt. Wir <span className="blue_text">wohnen⁴</span>
 								alle in der Nähe. Meine Familie ist nicht so groß. Meine Ehefrau
 								<span className="blue_text"> arbeitet⁵</span> als
 								Krankenschwester. Wir haben der Kinder: zwei Mädchen und einen
@@ -133,10 +133,10 @@ const GermanA1A2 = () => {
 							<p className="paragraph">
 								Ich lese und fahre gern mit dem Fahrrad. Wir haben auch
 								Haustiere: einen Hund, zwei Katzen welche in unserem großen
-								Garten viel Auslauf haben. Ich{" "}
-								<span className="green_text">arbeite⁶</span> in der Bank. Ich{" "}
+								Garten viel Auslauf haben. Ich
+								<span className="green_text">arbeite⁶</span> in der Bank. Ich
 								<span className="green_text">mag⁷</span> meine Arbeit aber
-								manchmal bin ich sehr müde. Morgens stehe ich um kurz vor 7 Uhr{" "}
+								manchmal bin ich sehr müde. Morgens stehe ich um kurz vor 7 Uhr
 								<span className="green_text">auf⁸</span>. Ein Wecker klingelt
 								mich aus dem Schlaf. Ich stehe auf und muss als erstes die Zähne
 								putzen. Ich habe Hunger am Morgen. Deshalb esse ich immer
