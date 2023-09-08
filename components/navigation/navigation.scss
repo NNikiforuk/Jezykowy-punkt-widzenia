@@ -13,7 +13,6 @@ nav {
 		height: 90px;
 
 		.logo_container {
-			z-index: 50;
 			padding: 5px;
 			width: 100%;
 			display: flex;
@@ -25,6 +24,8 @@ nav {
 			}
 
 			.burger_btn {
+				z-index: 50;
+
 				svg {
 					font-size: 42px;
 					color: $text;
@@ -57,12 +58,13 @@ nav {
 
 		.navlist_mobile {
 			background-color: $primary-color;
-			position: absolute;
-			top: 90px;
-			left: 0;
+			position: fixed;
 			width: 100%;
+			top: 0;
+			overflow-y: auto;
+			bottom: 0;
+			padding: 6rem 0 6rem 1rem;
 			transition: 0.5s;
-			padding-bottom: 50px;
 
 			li,
 			.mainlink_title {

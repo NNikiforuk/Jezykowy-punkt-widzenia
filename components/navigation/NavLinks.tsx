@@ -1,16 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Sublink, OfferSection, SectionMat } from "./MyLinks";
 import Link from "next/link";
 
 interface Props {
 	link: OfferSection | SectionMat;
 	close: () => void;
+	open: boolean;
 }
 
-export const MyLinks = ({ link, close }: Props) => {
+export const MyLinks = ({ link, close, open }: Props) => {
 	const [showingDropdown, setShowingDropdown] = useState<boolean>(false);
 	const [showingDropdownMobile, setShowingDropdownMobile] =
 		useState<boolean>(false);
+
+	useEffect(() => {
+		if (!open) {
+			setShowingDropdownMobile(false);
+		}
+	}, [open]);
 
 	return (
 		<div>

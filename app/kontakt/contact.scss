@@ -5,7 +5,6 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	margin-top: 20px;
 	color: gray;
 	padding: 20px;
 
@@ -67,6 +66,7 @@
 @media only screen and (min-width: 1200px) {
 	.contact {
 		font-size: 22px;
+		padding: 40px;
 
 		.tel {
 			margin-top: 50px;

@@ -32,7 +32,7 @@
 @media only screen and (min-width: 414px) {
 	.feedback {
 		padding: 30px;
-		
+
 		.container {
 			margin-top: 30px;
 		}
@@ -57,6 +57,7 @@
 
 @media only screen and (min-width: 1200px) {
 	.feedback {
+		padding: 40px;
 		.container {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);

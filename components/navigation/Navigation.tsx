@@ -34,7 +34,7 @@ const Navigation = () => {
 					<div className="site_name">Językowy punkt widzenia</div>
 				</div>
 				<ul className="navlist">
-					<MyLinks link={links_offer} close={close} />
+					<MyLinks link={links_offer} close={close} open={false} />
 					<li>
 						<Link onClick={close} href="/cennik">
 							Cennik
@@ -50,7 +50,7 @@ const Navigation = () => {
 							Lektorzy
 						</Link>
 					</li>
-					<MyLinks link={links_materials} close={close} />
+					<MyLinks link={links_materials} close={close} open={false} />
 					<li>
 						<Link onClick={close} href="/opinie">
 							Opinie
@@ -65,7 +65,7 @@ const Navigation = () => {
 
 				{/* Mobile */}
 				<ul className={`navlist_mobile ${open ? "left0" : "left100"}`}>
-					<MyLinks link={links_offer} close={close} />
+					<MyLinks link={links_offer} close={close} open={open} />
 					<li>
 						<Link onClick={close} href="/cennik">
 							Cennik
@@ -81,7 +81,7 @@ const Navigation = () => {
 							Lektorzy
 						</Link>
 					</li>
-					<MyLinks link={links_materials} close={close} />
+					<MyLinks link={links_materials} close={close} open={open} />
 					<li>
 						<Link onClick={close} href="/opinie">
 							Opinie
