@@ -83,6 +83,16 @@
 						.paragraph {
 							font-size: 22px;
 						}
+
+						.photos {
+							.photo {
+								padding: 15px;
+								.desc {
+									font-size: 22px;
+									margin-bottom: 15px;
+								}
+							}
+						}
 					}
 
 					.legend {
@@ -115,6 +125,17 @@
 						flex: 3;
 						.paragraph {
 							font-size: 16px;
+						}
+
+						.photos {
+							display: flex;
+
+							.photo {
+								
+								.desc {
+									font-size: 16px;
+								}
+							}
 						}
 					}
 

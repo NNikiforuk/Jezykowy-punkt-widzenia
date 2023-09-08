@@ -1,8 +1,8 @@
 const GermanA1A2 = () => {
 	return (
-		<div className="germanA1A2">
+		<div className="german">
 			<h1>Materiały z j. niemieckiego A1/A2</h1>
-			<div className="germanA1A2_container">
+			<div className="german_container">
 				<div className="text_container">
 					<div className="title">Sommerferien</div>
 					<div className="wrapper">
