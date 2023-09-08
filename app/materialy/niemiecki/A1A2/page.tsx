@@ -49,8 +49,8 @@ const GermanA1A2 = () => {
 							</p>
 							<p className="paragraph">
 								Mein Freund <span className="green_text">hält¹⁶</span> bei
-								Mc'Donalds an. Wir nehmen das Essen mit und fahren weiter. Ich
-								esse gerne im Auto. Ich habe Pommes Frites und Hamburger
+								Mc&apos;Donalds an. Wir nehmen das Essen mit und fahren weiter.
+								Ich esse gerne im Auto. Ich habe Pommes Frites und Hamburger
 								bestellt. Es schmeckt lecker! Wir haben noch 2 Stunden und dann
 								<span className="green_text"> sind¹⁷</span> wir endlich.
 							</p>

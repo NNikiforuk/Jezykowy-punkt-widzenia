@@ -191,13 +191,11 @@ const GermanB1B2 = () => {
 								<span className="blue_text"> an¹⁴ </span>
 								etwas zu lernen.
 								<span className="green_text">
-									
-									Sonst hätte ich alles vergessen¹⁵
+									Sonst hätte ich alles vergessen¹⁵".
 								</span>
-								".
 							</p>
 							<p className="paragraph">
-								Julie Familie ist sehr arm. In der Corona – Krise hat ihr Vater
+								Julie Familie ist sehr arm. In der Corona - Krise hat ihr Vater
 								seine Arbeit <span className="green_text">verloren¹⁶</span>. Das
 								hat alles noch schlimmer gemacht. Die Mutter arbeitet als
 								Putzfrau. Das Geld <span className="blue_text">reicht¹⁷</span>
