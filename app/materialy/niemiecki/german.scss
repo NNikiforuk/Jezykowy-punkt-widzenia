@@ -20,9 +20,11 @@
 			}
 
 			.wrapper {
+
 				.text {
 					.paragraph {
 						text-align: start;
+						padding: 5px;
 					}
 
 					.bold {
@@ -82,6 +84,7 @@
 					.text {
 						.paragraph {
 							font-size: 22px;
+							padding: 10px;
 						}
 
 						.photos {
@@ -121,6 +124,7 @@
 				.wrapper {
 					display: flex;
 
+
 					.text {
 						flex: 3;
 						.paragraph {
@@ -131,7 +135,7 @@
 							display: flex;
 
 							.photo {
-								
+
 								.desc {
 									font-size: 16px;
 								}
@@ -141,6 +145,7 @@
 
 					.legend {
 						flex: 1;
+						margin-left: 15px;
 
 						ul {
 							font-size: 12px;

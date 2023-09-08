@@ -190,8 +190,8 @@ const GermanB1B2 = () => {
 								manchmal gar nichts mehr. Jetzt hier im Bus fang ich wieder
 								<span className="blue_text"> an¹⁴ </span>
 								etwas zu lernen.
-								<span className="green_text">
-									Sonst hätte ich alles vergessen¹⁵".
+								 <span className="green_text">
+									 Sonst hätte ich alles vergessen¹⁵".
 								</span>
 							</p>
 							<p className="paragraph">
