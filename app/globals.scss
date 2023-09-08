@@ -1,9 +1,4 @@
-$primary-color: rgb(15, 63, 63);
-$primary-color-dark: rgb(11, 45, 45);
-$secondary-color: rgb(192, 168, 31);
-$primary-color-dark: rgb(8, 31, 31);
-$gray-color: gray;
-$gray-color-dark: rgb(101, 99, 99);
+$headline-color: rgb(192, 168, 31);
 
 @use "./oferta/dla-najmlodszych/youngest.scss";
 @use "./oferta/dla-doroslych/adults.scss";
@@ -36,14 +31,14 @@ body {
 
 h1 {
 	font-size: 22px;
-	color: $secondary-color;
+	color: $headline-color;
 	text-align: center;
 	font-weight: bold;
 }
 
 h2 {
 	font-size: 18px;
-	color: $secondary-color;
+	color: $headline-color;
 	text-align: center;
 	font-weight: bold;
 }
