@@ -1,9 +1,9 @@
 interface OfferProps {
 	name: string;
 	box?: {
-		title: string,
-			texts: ["(tylko gramatyka)", "A1 - C2", "(wyłącznie gramatyka)", "45h"]
-	}
+		title: string;
+		texts: string[];
+	}[];
 	imgs?: {
 		title: string;
 		src: string;
@@ -12,6 +12,9 @@ interface OfferProps {
 	desc: {
 		text1: string;
 		text2?: string;
+		text3?: string;
+		text4?: string;
+		text5?: string;
 	};
 }
 
@@ -44,20 +47,42 @@ export const offer: OfferProps[] = [
 	},
 	{
 		name: "Oferta dla dorosłych",
-		box: {
-			title: "Kurs gramatyczny",
-			texts: ["(tylko gramatyka)", "A1 - C2", "(wyłącznie gramatyka)", "45h"]
-		}
+		box: [
+			{
+				title: "Gramatyka",
+				texts: ["A1 - C2", "45h"],
+			},
+			{
+				title: "Gramatyka + konwersacja",
+				texts: ["A1 - A2", "45h"],
+			},
+			{
+				title: "Gramatyka + konwersacja",
+				texts: ["B1 - B2", "40h"],
+			},
+			{
+				title: "Gramatyka + konwersacja",
+				texts: ["C1 - C2", "38h"],
+			},
+			{
+				title: "Konwersacja",
+				texts: ["25h"],
+			},
+		],
 		desc: {
 			text1:
-				"Proponujemy zajęcia indywidualne oraz grupowe do 4 osób, tak aby każdy uczestnik miał czynny udział w zajęciach",
+				"Prowadzimy kursy językowe na trzech poziomach, od A1 do C2. Atutem naszej szkoły jest to, że kursy na poziomie B1/B2 oraz C1/C2 są prowadzone przez dwie osoby. Część mówiona z Nativspeakers, dzięki czemu jesteś w stanie mieć żywy kontakt z językiem, część gramatyczna z certyfikowaną osobą z doświadczeniem w nauczaniu.",
 			text2:
-				"Dostępne są również pakiety godzinowe z native speaker. Zarówno indywidualne jak i grupowe",
+				"Proponujemy zajęcia indywidualne oraz grupowe do 4 osób, aby każdy uczestnik miał czynny udział w zajęciach.",
+			text3:
+				"Dostępne są również pakiety godzinowe z Nativspeaker zarówno indywidualne jak i grupowe.",
+			text4:
+				"Wybór części gramatycznej zostanie dobrany po rozmowie z kursantem.",
+			text5:
+				"Napisz do nas, a wyślemy Ci nasz test językowy. Po jego wypełnieniu przedstawimy Ci naszą ofertę i dobierzemy odpowiedni pakiet.",
 		},
 	},
 ];
-
-
 
 // 			{
 // 				text1:

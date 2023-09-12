@@ -5,47 +5,24 @@ const Adults = () => {
 	return (
 		<div className="adults">
 			<h1>{offer[1].name}</h1>
+			<div className="adults_headtext">{offer[1].desc.text1}</div>
+			<div className="bold">{offer[1].desc.text2}</div>
 			<div className="desc">
-				<div className="box">
-					<p className="title">Kurs gramatyczny</p>
-					<p>(tylko gramatyka)</p>
-					<p>A1 - C2</p>
-					<p>(wyłącznie gramatyka)</p>
-					<p>45h</p>
-				</div>
-				<div className="box">
-					<p className="title">Kurs mieszany</p>
-					<p>(gramatyka + konwersacja)</p>
-					<p>A1 - A2</p>
-					<p>45h</p>
-				</div>
-				<div className="box">
-					<p className="title">Kurs mieszany</p>
-					<p>(gramatyka + konwersacja)</p>
-					<p>B1 - B2</p>
-					<p>40h</p>
-				</div>
-				<div className="box">
-					<p className="title">Kurs mieszany</p>
-					<p>(gramatyka + konwersacja)</p>
-					<p>C1 - C2</p>
-					<p>38h</p>
-				</div>
-				<div className="box">
-					<p className="title">Kurs konwersacja</p>
-					<p>25h</p>
-				</div>
+				{offer[1].box?.map((b, id) => (
+					<div className="box" key={id}>
+						<div className="title">{b.title}</div>
+						{b.texts.map((text) => (
+							<p key={text}>{text}</p>
+						))}
+					</div>
+				))}
 			</div>
+			<div className="bold mbottom">{offer[1].desc.text3}</div>
 
 			<Packages />
 
-			<p className="normal_text">
-				Wybór części gramatycznej zostanie dobrany po rozmowie z kursantem.
-			</p>
-			<p className="bold normal_text">
-				Napisz do nas, a wyślemy Ci nasz test językowy. Po jego wypełnieniu
-				przedstawimy Ci naszą ofertę i dobierzemy pakiet dla Twojego dziecka.
-			</p>
+			<p className="normal_text">{offer[1].desc.text4}</p>
+			<p className="bold normal_text">{offer[1].desc.text5}</p>
 		</div>
 	);
 };
