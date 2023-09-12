@@ -1,25 +1,21 @@
+import { offer } from "@/data/offer/offer";
+
 const Exam = () => {
 	return (
 		<div className="exam">
-			<h1>Przygotowanie do matury i innych egzaminów</h1>
+			<h1>{offer[2].name}</h1>
 			<div className="exam_offer">
-				<p>
-					Czeka Cię matura z języka niemieckiego i czujesz się nie do końca
-					przygotowany/na? Czy na myśl o egzaminie ogarnia Cię stres? Matura to
-					pierwszy poważny egzamin w życiu dzięki któremu możemy wybrać się na
-					wymarzone studia. Jeśli więc potrzebujesz pomocy, zgłoś się do nas!
-					Chętnie przygotujemy Cię do tego egzaminu.
-				</p>
+				<p>{offer[2].desc.text1}</p>
 				<br />
-				<p className="bold">Z nami:</p>
+				<p className="bold">{offer[2].list?.title}</p>
 				<ul className="exam_list">
-					<li>Utrwalisz słownictwo</li>
-					<li>Powtórzysz gramatykę</li>
-					<li>Poćwiczysz rozumienie tekstów pisanych</li>
-					<li>Poćwiczysz rozumienie ze słuchu</li>
+					{offer[2].list?.desc.map((d) => (
+						<li key={d}>{d}</li>
+					))}
 				</ul>
+				<p>{offer[2].desc.text2}</p>
+				<p className="bold">{offer[2].desc.text3}</p>
 			</div>
-
 		</div>
 	);
 };

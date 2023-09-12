@@ -9,6 +9,14 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+
+		p {
+			margin: 10px 0;
+		}
+
+		.exam_list {
+			margin-left: 10px;
+		}
 	}
 
 	.bold {
@@ -20,6 +28,10 @@
 	.exam {
 		font-size: 24px;
 		padding: 40px;
+
+		&_list {
+			margin: 20px 0;
+		}
 	}
 }
 
@@ -28,8 +40,8 @@
 		font-size: 26px;
 		padding: 50px;
 
-		.exam_offer {
-			margin-top: 60px;
+		&_list {
+			margin: 30px;
 		}
 	}
 }
@@ -40,7 +52,7 @@
 		padding: 40px;
 		margin: 0 150px 0 150px;
 
-		.exam_offer {
+		&_list {
 			margin-bottom: 150px;
 		}
 	}

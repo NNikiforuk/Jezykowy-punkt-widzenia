@@ -16,6 +16,10 @@ interface OfferProps {
 		text4?: string;
 		text5?: string;
 	};
+	list?: {
+		title: string;
+		desc: string[];
+	};
 }
 
 export const offer: OfferProps[] = [
@@ -82,18 +86,26 @@ export const offer: OfferProps[] = [
 				"Napisz do nas, a wyślemy Ci nasz test językowy. Po jego wypełnieniu przedstawimy Ci naszą ofertę i dobierzemy odpowiedni pakiet.",
 		},
 	},
+	{
+		name: "Przygotowanie do matury i egzaminów",
+		list: {
+			title: "Z nami:",
+			desc: [
+				"Utrwalisz słownictwo",
+				"Powtórzysz gramatykę",
+				"Poćwiczysz rozumienie tekstów pisanych oraz słuchania ze słuchu",
+			],
+		},
+		desc: {
+			text1:
+				"Czeka Cię matura z języka niemieckiego i czujesz się nie do końca przygotowany/na? Czy na myśl o egzaminie ogarnia Cię stres? Matura to pierwszy poważny egzamin w życiu dzięki któremu możemy wybrać się na wymarzone studia. Jeśli więc potrzebujesz pomocy, zgłoś się do nas! Chętnie przygotujemy Cię do tego egzaminu.",
+			text2:
+				"Oferujemy zarówno indywidualną ofertę dla każdego maturzysty jak i zajęcia w małych grupach do 4 osób.",
+			text3:
+				"Skontaktuj się z nami, wypełnij test językowy, a my zaproponujemy liczbę godzin oraz kurs.",
+		},
+	},
 ];
-
-// 			{
-// 				text1:
-// 					"Oferujemy zarówno indywidualną ofertę dla każdego maturzysty jak i zajęcia w małych grupach do 4 osób",
-// 				text2:
-// 					"Skontaktuj się z nami, wypełnij test językowy, a my zaproponujemy liczbę godzin oraz kurs",
-// 			},
-// 			{
-// 				text1:
-// 					"Napisz do nas, a wyślemy Ci nasz test językowy. Po jego wypełnieniu przedstawimy Ci naszą ofertę i razem dobierzemy pakiety godzinowe",
-// 			},
 
 interface PackagesProps {
 	title: string;
