@@ -1,4 +1,10 @@
-export const feedback = [
+interface Props {
+	id: number;
+	name: string;
+	desc: string;
+}
+
+export const feedback: Props[] = [
 	{
 		id: 1,
 		name: "Jola",

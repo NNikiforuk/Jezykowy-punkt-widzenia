@@ -1,4 +1,4 @@
-import { feedback } from "../../data/feedback";
+import { feedback } from "../../data/feedback/feedback";
 
 const Feedback = () => {
 	return (

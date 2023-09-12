@@ -1,6 +1,6 @@
 interface Props {
 	id: string;
-	title?: string;
+	title: string;
 	time?: string;
 	text: string[];
 }
