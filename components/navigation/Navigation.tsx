@@ -21,7 +21,7 @@ const Navigation = () => {
 				<div className="logo_container">
 					<Link href="/">
 						<Image
-							src="/assets/images/logo.png"
+							src="/assets/images/navbar/logo.png"
 							alt="logo"
 							width={70}
 							height={70}

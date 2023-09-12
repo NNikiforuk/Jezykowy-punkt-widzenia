@@ -126,10 +126,10 @@ export const prices: PricesProps[] = [
 		],
 	},
 	{
-		name: "A1 / A2",
+		name: "Inne",
 		desc: [
 			{
-				id: "A1/A2",
+				id: "A1/A2id",
 				title: "A1/A2",
 				time: "45 zajęć x 60 min",
 				text: [
@@ -140,7 +140,7 @@ export const prices: PricesProps[] = [
 				],
 			},
 			{
-				id: "B1/B2",
+				id: "B1/B2id",
 				title: "B1/B2",
 				time: "40 zajęć x 60 min",
 				text: [
@@ -151,7 +151,7 @@ export const prices: PricesProps[] = [
 				],
 			},
 			{
-				id: "C1/C2",
+				id: "C1/C2id",
 				title: "C1/C2",
 				time: "38 zajęć x 60 min",
 				text: [
@@ -191,15 +191,14 @@ export const prices: PricesProps[] = [
 			},
 		],
 	},
-	{
-		name: "Info",
-		desc: [
-			{
-				id: "info",
-				text: [
-					"Kursy odbywają się od poniedziałku do soboty. Możliwa płatność ratalna",
-				],
-			},
-		],
-	},
 ];
+
+interface InfoProps {
+	name: string;
+	text: string;
+}
+
+export const info: InfoProps = {
+	name: "Info",
+	text: "Kursy odbywają się od poniedziałku do soboty. Możliwa płatność ratalna",
+};
