@@ -7,7 +7,7 @@ const Teachers = () => {
 			<div className="teacher">
 				<div className="teacher_img">
 					<Image
-						src="/assets/images/teacher.jpg"
+						src="/assets/images/teachers/teacher.jpg"
 						alt="photo of the teacher"
 						width={120}
 						height={90}
@@ -22,7 +22,7 @@ const Teachers = () => {
 			<div className="teacher teacher2">
 				<div className="teacher_img">
 					<Image
-						src="/assets/images/teacher.jpg"
+						src="/assets/images/teachers/teacher.jpg"
 						alt="photo of the teacher"
 						width={120}
 						height={90}

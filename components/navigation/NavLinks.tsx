@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { Sublink, OfferSection, SectionMat } from "./MyLinks";
 import Link from "next/link";
+import { NavbarLinksProps } from "@/data/navbar/navbar_links";
 
 interface Props {
-	link: OfferSection | SectionMat;
+	link: NavbarLinksProps;
 	close: () => void;
 	open: boolean;
 }
@@ -44,9 +44,9 @@ export const MyLinks = ({ link, close, open }: Props) => {
 								<div className="mainlink_subtitle">{link.sublinks.Head}</div>
 							)}
 							<ul className="mainlink_list">
-								{link.sublinks.sublink.map((el: Sublink) => (
-									<li key={el.name} className="item">
-										<Link href={el.link}>{el.name}</Link>
+								{link.sublinks?.sublink?.map((el) => (
+									<li key={el.title} className="item">
+										<Link href={el.href}>{el.title}</Link>
 									</li>
 								))}
 							</ul>
@@ -68,10 +68,10 @@ export const MyLinks = ({ link, close, open }: Props) => {
 							<div className="mainlink_subtitle">{link.sublinks.Head}</div>
 						)}
 						<ul className="mainlink_list-mobile">
-							{link.sublinks.sublink.map((el: Sublink) => (
-								<li key={el.name} className="item">
-									<Link href={el.link} onClick={close}>
-										{el.name}
+							{link.sublinks?.sublink?.map((el) => (
+								<li key={el.title} className="item">
+									<Link href={el.href} onClick={close}>
+										{el.title}
 									</Link>
 								</li>
 							))}

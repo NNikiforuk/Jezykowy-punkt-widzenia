@@ -46,13 +46,16 @@ nav {
 			li,
 			.mainlink_title {
 				font-weight: bold;
-				cursor: pointer;
 				list-style-type: none;
 
 				a {
 					text-decoration: none;
 					color: $text;
 				}
+			}
+
+			li {
+				cursor: pointer;
 			}
 		}
 
@@ -73,6 +76,7 @@ nav {
 				list-style-type: none;
 				color: $text;
 				text-decoration: none;
+				padding-top: 5px;
 
 				a {
 					color: $text;

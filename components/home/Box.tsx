@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { offer, materials } from "@/data/navbar_links";
+import { navbar_links } from "@/data/navbar/navbar_links";
 import pricesIMG from "../../public/assets/images/landing_page/pricelist.jpg";
 import translationsIMG from "../../public/assets/images/landing_page/translations.jpg";
 import feedbackIMG from "../../public/assets/images/landing_page/feedback.jpg";
@@ -11,10 +11,14 @@ const Box = () => {
 		<div className="wrapper">
 			<div className="box_container">
 				<div className="box_img">
-					<Image src={offer.src} alt={offer.alt} width={583} />
+					<Image
+						src={navbar_links[0].src}
+						alt={navbar_links[0].alt}
+						width={583}
+					/>
 				</div>
 				<div className="desc">
-					{offer.desc.map((el) => (
+					{navbar_links[0].sublinks?.sublink?.map((el) => (
 						<Link key={el.title} href={el.href} className="link">
 							{el.title}
 						</Link>
@@ -53,13 +57,17 @@ const Box = () => {
 			</div>
 			<div className="box_container">
 				<div className="box_img">
-					<Image src={materials.src} alt={materials.alt} width={583} />
+					<Image
+						src={navbar_links[1].src}
+						alt={navbar_links[1].alt}
+						width={583}
+					/>
 				</div>
 				<div className="desc">
-					<div className="title">{materials.sublinks.Head}:</div>
-					{materials.sublinks.sublink.map((el) => (
-						<Link key={el.name} href={el.link} className="link">
-							{el.name}
+					<div className="title">{navbar_links[1].sublinks?.Head}:</div>
+					{navbar_links[1].sublinks?.sublink?.map((el) => (
+						<Link key={el.title} href={el.href} className="link">
+							{el.title}
 						</Link>
 					))}
 				</div>
