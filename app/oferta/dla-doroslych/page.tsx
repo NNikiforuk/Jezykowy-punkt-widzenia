@@ -1,10 +1,10 @@
 import Packages from "@/components/offer/Packages";
+import { offer } from "@/data/offer/offer";
 
 const Adults = () => {
 	return (
 		<div className="adults">
-			<h1>Oferta dla dorosłych</h1>
-
+			<h1>{offer[1].name}</h1>
 			<div className="desc">
 				<div className="box">
 					<p className="title">Kurs gramatyczny</p>

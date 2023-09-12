@@ -23,13 +23,8 @@ const Youngest = () => {
 			</div>
 			<Packages />
 
-			<p className="normal_text">
-				Wybór części gramatycznej zostanie dobrany po rozmowie z kursantem.
-			</p>
-			<p className="bold normal_text">
-				Napisz do nas, a wyślemy Ci nasz test językowy. Po jego wypełnieniu
-				przedstawimy Ci naszą ofertę i dobierzemy pakiet dla Twojego dziecka.
-			</p>
+			<p className="normal_text">{offer[0].desc.text1}</p>
+			<p className="bold normal_text">{offer[0].desc.text2}</p>
 		</div>
 	);
 };

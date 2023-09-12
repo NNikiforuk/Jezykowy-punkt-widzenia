@@ -1,6 +1,10 @@
 interface OfferProps {
 	name: string;
-	imgs: {
+	box?: {
+		title: string,
+			texts: ["(tylko gramatyka)", "A1 - C2", "(wyłącznie gramatyka)", "45h"]
+	}
+	imgs?: {
 		title: string;
 		src: string;
 		alt: string;
@@ -8,7 +12,7 @@ interface OfferProps {
 	desc: {
 		text1: string;
 		text2?: string;
-	}[];
+	};
 }
 
 export const offer: OfferProps[] = [
@@ -31,32 +35,40 @@ export const offer: OfferProps[] = [
 				alt: "children playing",
 			},
 		],
-		desc: [
-			{
-				text1:
-					"Wybór części gramatycznej zostanie dobrany po rozmowie z kursantem",
-				text2:
-					"Napisz do nas, a wyślemy Ci nasz test językowy. Po jego wypełnieniu przedstawimy Ci naszą ofertę i dobierzemy pakiet dla Twojego dziecka",
-			},
-			{
-				text1:
-					"Proponujemy zajęcia indywidualne oraz grupowe do 4 osób, tak aby każdy uczestnik miał czynny udział w zajęciach",
-				text2:
-					"Dostępne są również pakiety godzinowe z native speaker. Zarówno indywidualne jak i grupowe",
-			},
-			{
-				text1:
-					"Oferujemy zarówno indywidualną ofertę dla każdego maturzysty jak i zajęcia w małych grupach do 4 osób",
-				text2:
-					"Skontaktuj się z nami, wypełnij test językowy, a my zaproponujemy liczbę godzin oraz kurs",
-			},
-			{
-				text1:
-					"Napisz do nas, a wyślemy Ci nasz test językowy. Po jego wypełnieniu przedstawimy Ci naszą ofertę i razem dobierzemy pakiety godzinowe",
-			},
-		],
+		desc: {
+			text1:
+				"Wybór części gramatycznej zostanie dobrany po rozmowie z kursantem",
+			text2:
+				"Napisz do nas, a wyślemy Ci nasz test językowy. Po jego wypełnieniu przedstawimy Ci naszą ofertę i dobierzemy pakiet dla Twojego dziecka",
+		},
+	},
+	{
+		name: "Oferta dla dorosłych",
+		box: {
+			title: "Kurs gramatyczny",
+			texts: ["(tylko gramatyka)", "A1 - C2", "(wyłącznie gramatyka)", "45h"]
+		}
+		desc: {
+			text1:
+				"Proponujemy zajęcia indywidualne oraz grupowe do 4 osób, tak aby każdy uczestnik miał czynny udział w zajęciach",
+			text2:
+				"Dostępne są również pakiety godzinowe z native speaker. Zarówno indywidualne jak i grupowe",
+		},
 	},
 ];
+
+
+
+// 			{
+// 				text1:
+// 					"Oferujemy zarówno indywidualną ofertę dla każdego maturzysty jak i zajęcia w małych grupach do 4 osób",
+// 				text2:
+// 					"Skontaktuj się z nami, wypełnij test językowy, a my zaproponujemy liczbę godzin oraz kurs",
+// 			},
+// 			{
+// 				text1:
+// 					"Napisz do nas, a wyślemy Ci nasz test językowy. Po jego wypełnieniu przedstawimy Ci naszą ofertę i razem dobierzemy pakiety godzinowe",
+// 			},
 
 interface PackagesProps {
 	title: string;
