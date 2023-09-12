@@ -107,7 +107,45 @@
 
 		.home_boxes {
 			margin-top: 15px;
+
+			.wrapper {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				padding: 20px 20px 40px 20px;
+
+				.box_container {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+
+					.desc {
+						margin-top: 15px;
+						display: flex;
+						align-items: center;
+
+						.title {
+							color: rgb(92, 90, 92);
+						}
+
+						.link {
+							cursor: pointer;
+							border: none;
+							background-color: pink;
+							text-decoration: none;
+							margin: 15px;
+							padding: 8px;
+							border-radius: 5px;
+							color: rgb(92, 90, 92);
+							transition: 0.3s;
+
+							&:hover {
+								background-color: rgb(204, 152, 161);
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
-
