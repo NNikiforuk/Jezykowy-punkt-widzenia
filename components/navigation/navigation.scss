@@ -1,9 +1,7 @@
-$primary-color: rgb(242, 172, 198);
 $text: rgb(147, 143, 147);
 
-
 nav {
-	background-color: $primary-color;
+	background-color: rgb(223, 209, 134);
 
 	.nav_container {
 		display: flex;
@@ -59,7 +57,7 @@ nav {
 		}
 
 		.navlist_mobile {
-			background-color: $primary-color;
+			background-color: rgb(223, 209, 134);
 			position: fixed;
 			width: 100%;
 			top: 0;
@@ -74,9 +72,11 @@ nav {
 				font-weight: bold;
 				list-style-type: none;
 				color: $text;
+				text-decoration: none;
 
 				a {
 					color: $text;
+					text-decoration: none;
 				}
 			}
 		}

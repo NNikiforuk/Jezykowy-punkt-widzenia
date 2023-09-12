@@ -2,6 +2,8 @@ import { CgArrowLongRightR } from "react-icons/cg";
 import { RiArrowLeftSFill, RiArrowRightSFill } from "react-icons/ri";
 import Image from "next/image";
 import img from "../public/assets/images/home.jpg";
+import Box from "@/components/home/Box";
+import { home_boxes_links } from "@/data/home_boxes";
 
 const Home = () => {
 	return (
@@ -24,7 +26,15 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="home_desktop">
-				<Image src={img} alt="background image" width={1200} priority={true} />
+				<Image
+					src={img}
+					objectFit="cover"
+					quality={100}
+					alt="background image"
+				/>
+				<div className="home_boxes">
+					<Box data={home_boxes_links} />
+				</div>
 			</div>
 		</>
 	);
