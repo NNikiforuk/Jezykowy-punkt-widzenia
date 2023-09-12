@@ -1,4 +1,4 @@
-import Packages from "@/components/Packages";
+import Packages from "@/components/offer/Packages";
 
 const Adults = () => {
 	return (

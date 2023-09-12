@@ -1,4 +1,4 @@
-import { prices, info } from "../../data/offer/prices";
+import { prices, info } from "../../data/prices/prices";
 
 const Prices = () => {
 	return (

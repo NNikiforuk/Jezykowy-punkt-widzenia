@@ -4,7 +4,7 @@ $headline-color: rgb(192, 168, 31);
 @use "./oferta/dla-doroslych/adults.scss";
 @use "./oferta/certyfikat/certificate.scss";
 @use "./oferta/egzamin/exam.scss";
-@use "./../components/packages.scss";
+@use "./../components/offer/packages.scss";
 @use "./opinie/feedback.scss";
 @use "../components/footer/footer.scss";
 @use "../app/cennik/prices.scss";
