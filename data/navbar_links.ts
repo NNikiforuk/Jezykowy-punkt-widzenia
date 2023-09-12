@@ -1,6 +1,5 @@
-import offerIMG from "../public/assets/images/offer.jpg";
-
-import materialsIMG from "../public/assets/images/materials.jpg";
+import offerIMG from "../public/assets/images/landing_page/offer.jpg";
+import materialsIMG from "../public/assets/images/landing_page/materials.jpg";
 import { StaticImageData } from "next/image";
 
 export interface OfferProps {

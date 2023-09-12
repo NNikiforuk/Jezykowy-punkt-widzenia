@@ -1,7 +1,7 @@
 import { CgArrowLongRightR } from "react-icons/cg";
 import { RiArrowLeftSFill, RiArrowRightSFill } from "react-icons/ri";
 import Image from "next/image";
-import img from "../public/assets/images/home.jpg";
+import img from "../public/assets/images/landing_page/home.jpg";
 import Box from "@/components/home/Box";
 
 const Home = () => {

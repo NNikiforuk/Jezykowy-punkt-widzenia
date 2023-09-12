@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { offer, materials } from "@/data/navbar_links";
-import pricesIMG from "../../public/assets/images/pricelist.jpg";
-import translationsIMG from "../../public/assets/images/translations.jpg";
-import feedbackIMG from "../../public/assets/images/feedback.jpg";
-import contactIMG from "../../public/assets/images/contact.jpg";
+import pricesIMG from "../../public/assets/images/landing_page/pricelist.jpg";
+import translationsIMG from "../../public/assets/images/landing_page/translations.jpg";
+import feedbackIMG from "../../public/assets/images/landing_page/feedback.jpg";
+import contactIMG from "../../public/assets/images/landing_page/contact.jpg";
 
 const Box = () => {
 	return (
