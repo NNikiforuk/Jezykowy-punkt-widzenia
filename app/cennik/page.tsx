@@ -1,18 +1,38 @@
-import {
-	prices_A1A2,
-	prices_B1B2,
-	prices_C1C2,
-	prices_gram,
-	prices_extended,
-} from "../../data/cennik.js";
+import { prices } from "../../data/offer/prices";
 
 const Prices = () => {
 	return (
 		<div className="boxes">
 			<h1>Cennik</h1>
 			<div className="boxes_groups">
-				<div className="boxes_group">
-					<h2>A1 / A2</h2>
+				{prices.map((el) => (
+					<div className="boxes_group" key={el.name}>
+						<h2>{el.name}</h2>
+						<div className="box group"></div>
+							{el.desc.map((x) => (
+								<>
+									<div className="box_titles" key={x.id}>
+										<div className="box_title">{x.title}</div>
+										<div className="box_time">{x.time}</div>
+									</div>
+									<div className="box_desc">
+										<ul>
+											{x.text.map((y) => (
+												<li className="bullet" key={y}>
+													{y}
+												</li>
+											))}
+										</ul>
+									</div>
+								</>
+							))}
+						</div>
+					</div>
+				))}
+
+				{/* <div className="boxes_group">
+
+					<h2></h2>
 					{prices_A1A2.map((el) => (
 						<div className="box groupA group" key={el.id}>
 							<div className="box_titles">
@@ -31,6 +51,8 @@ const Prices = () => {
 						</div>
 					))}
 				</div>
+
+
 				<div className="boxes_group">
 					<h2>B1 / B2</h2>
 					{prices_B1B2.map((el) => (
@@ -126,7 +148,7 @@ const Prices = () => {
 						Kursy odbywają się od poniedziałku do soboty. Możliwa płatność
 						ratalna
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
