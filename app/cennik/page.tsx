@@ -9,8 +9,8 @@ const Prices = () => {
 					<div className="boxes_group" key={el.name}>
 						<h2>{el.name}</h2>
 						{el.desc.map((x) => (
-							<div className="box">
-								<div className="box_titles" key={x.id}>
+							<div key={x.id} className="box">
+								<div className="box_titles">
 									<div className="box_title">{x.title}</div>
 									<div className="box_time">{x.time}</div>
 								</div>

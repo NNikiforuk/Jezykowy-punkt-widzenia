@@ -7,8 +7,8 @@ const Youngest = () => {
 		<div className="youngest">
 			<h1>{offer[0].name}</h1>
 			<div className="youngest_desc">
-				{offer[0].imgs.map((img) => (
-					<div className="desc_element">
+				{offer[0].imgs?.map((img) => (
+					<div className="desc_element" key={img.alt}>
 						<Image
 							src={img.src}
 							alt={img.alt}
