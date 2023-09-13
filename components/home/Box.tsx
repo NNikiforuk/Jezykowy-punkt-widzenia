@@ -74,7 +74,7 @@ const Box = () => {
 			</div>
 			<div className="box_container">
 				<div className="box_img">
-					<Image src={feedbackIMG} alt="cofee" width={583} />
+					<Image src={feedbackIMG} alt="coffee" width={583} />
 				</div>
 				<div className="desc">
 					<Link href="/opinie" className="link">

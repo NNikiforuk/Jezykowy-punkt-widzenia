@@ -31,7 +31,9 @@ const Navigation = () => {
 					<div className="burger_btn" onClick={() => setOpen(!open)}>
 						{open ? <RxCross1 /> : <RiMenu3Line />}
 					</div>
-					<div className="site_name">Językowy punkt widzenia</div>
+					<div className="site_name">
+						Językowy punkt widzenia
+					</div>
 				</div>
 				<ul className="navlist">
 					<MyLinks link={navbar_links[0]} close={close} open={false} />

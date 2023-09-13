@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 $text: rgb(147, 143, 147);
 
 nav {
@@ -26,13 +28,14 @@ nav {
 				z-index: 50;
 
 				svg {
-					font-size: 42px;
+					font-size: 46px;
 					color: $text;
 				}
 			}
 
 			.site_name {
 				display: none;
+				font-family: 'Courgette', cursive;
 			}
 		}
 

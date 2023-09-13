@@ -36,7 +36,7 @@
 		margin-top: 35px;
 		text-align: center;
 
-		&_grammar {
+		.packages_list_grammar {
 			margin-top: 10px;
 			display: inline-block;
 
@@ -58,7 +58,7 @@
 		}
 
 		.packages_list {
-			&_grammar {
+			.packages_list_grammar {
 				.grammar_item {
 					width: 200px;
 				}
@@ -93,7 +93,7 @@
 		}
 
 		.packages_list {
-			&_grammar {
+			.packages_list_grammar {
 				.grammar_item {
 					width: 350px;
 				}
@@ -111,7 +111,7 @@
 		}
 
 		.packages_list {
-			&_grammar {
+			.packages_list_grammar {
 				.grammar_item {
 					width: 350px;
 					margin-left: 200px;
