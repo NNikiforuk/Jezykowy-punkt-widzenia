@@ -16,7 +16,7 @@
 				font-weight: bold;
 				color: rgb(147, 143, 147);
 				font-size: 20px;
-				margin: 10px 0 20px 0;
+				margin: 20px 0 20px 0;
 			}
 
 			.wrapper {
@@ -41,11 +41,13 @@
 
 							.desc {
 								font-size: 14px;
+								padding: 10px;
 							}
 
 							.image {
 								img {
 									border-radius: 15px;
+									z-index: -5;
 								}
 							}
 						}

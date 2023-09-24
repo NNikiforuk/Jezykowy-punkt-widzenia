@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const GermanB1B2 = () => {
 	return (
@@ -25,7 +25,7 @@ const GermanB1B2 = () => {
 									</div>
 									<div className="image">
 										<Image
-											src="/assets/images/coral.png"
+											src="/assets/images/materials/coral.png"
 											alt="rafa koralowa"
 											width={200}
 											height={130}
@@ -40,7 +40,7 @@ const GermanB1B2 = () => {
 									</div>
 									<div className="image">
 										<Image
-											src="/assets/images/water.png"
+											src="/assets/images/materials/water.png"
 											alt="woda"
 											width={200}
 											height={130}

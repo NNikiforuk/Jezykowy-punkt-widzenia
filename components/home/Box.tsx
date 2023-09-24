@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { navbar_links } from "@/data/navbar/navbar_links";
 import pricesIMG from "../../public/assets/images/landing_page/pricelist.jpg";

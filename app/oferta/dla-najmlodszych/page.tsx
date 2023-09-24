@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Packages from "@/components/offer/Packages";
 import { offer } from "@/data/offer/offer";
 
@@ -12,8 +12,8 @@ const Youngest = () => {
 						<Image
 							src={img.src}
 							alt={img.alt}
-							width={img.alt === "group of children" ? "120" : "80"}
-							height={90}
+							width={img.alt === "grupa dzieci" ? "130" : "80"}
+							height={img.alt === "grupa dzieci" ? "80" : "100"}
 							className="img"
 							priority={false}
 						/>

@@ -20,6 +20,10 @@ $primary-color: rgb(190, 209, 209);
 
 	.desc_element {
 		margin: 25px;
+
+		img {
+			z-index: -5;
+		}
 	}
 
 	.normal_text {
