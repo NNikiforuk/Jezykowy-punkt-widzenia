@@ -30,6 +30,7 @@ const Home = () => {
 					objectFit="cover"
 					quality={100}
 					alt="opis szkoły językowej"
+					priority
 				/>
 				<div className="home_boxes">
 					<Box />
