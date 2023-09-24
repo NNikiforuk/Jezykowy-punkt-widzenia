@@ -109,8 +109,8 @@
 			margin-top: 15px;
 
 			.wrapper {
-				display: flex;
-				flex-wrap: wrap;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
 				padding: 20px 20px 40px 20px;
 
 				.box_container {
