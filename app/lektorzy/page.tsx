@@ -8,7 +8,7 @@ const Teachers = () => {
 				<div className="teacher_img">
 					<Image
 						src="/assets/images/teachers/teacher.jpg"
-						alt="photo of the teacher"
+						alt="Anna Kowalska"
 						width={120}
 						height={90}
 						priority={false}
@@ -23,7 +23,7 @@ const Teachers = () => {
 				<div className="teacher_img">
 					<Image
 						src="/assets/images/teachers/teacher.jpg"
-						alt="photo of the teacher"
+						alt="Anna Kowalska"
 						width={120}
 						height={90}
 						priority={false}

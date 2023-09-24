@@ -47,11 +47,11 @@ const Navigation = () => {
 							Tłumaczenia
 						</Link>
 					</li>
-					<li>
+					{/* <li>
 						<Link onClick={close} href="/lektorzy">
 							Lektorzy
 						</Link>
-					</li>
+					</li> */}
 					<MyLinks link={navbar_links[1]} close={close} open={false} />
 					<li>
 						<Link onClick={close} href="/opinie">
@@ -78,11 +78,11 @@ const Navigation = () => {
 							Tłumaczenia
 						</Link>
 					</li>
-					<li>
+					{/* <li>
 						<Link onClick={close} href="/lektorzy">
 							Lektorzy
 						</Link>
-					</li>
+					</li> */}
 					<MyLinks link={navbar_links[1]} close={close} open={open} />
 					<li>
 						<Link onClick={close} href="/opinie">

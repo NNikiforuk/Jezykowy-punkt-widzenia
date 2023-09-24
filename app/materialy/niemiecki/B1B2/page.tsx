@@ -26,7 +26,7 @@ const GermanB1B2 = () => {
 									<div className="image">
 										<Image
 											src="/assets/images/coral.png"
-											alt="coral image"
+											alt="rafa koralowa"
 											width={200}
 											height={130}
 										/>
@@ -41,7 +41,7 @@ const GermanB1B2 = () => {
 									<div className="image">
 										<Image
 											src="/assets/images/water.png"
-											alt="water image"
+											alt="woda"
 											width={200}
 											height={130}
 										/>

@@ -27,7 +27,7 @@ const Box = () => {
 			</div>
 			<div className="box_container">
 				<div className="box_img">
-					<Image src={pricesIMG} alt="calculator" width={583} />
+					<Image src={pricesIMG} alt="kalkulator" width={583} />
 				</div>
 				<div className="desc">
 					<Link href="/cennik" className="link">
@@ -37,7 +37,7 @@ const Box = () => {
 			</div>
 			<div className="box_container">
 				<div className="box_img">
-					<Image src={translationsIMG} alt="books" width={583} />
+					<Image src={translationsIMG} alt="książki" width={583} />
 				</div>
 				<div className="desc">
 					<Link href="/tlumaczenia" className="link">
@@ -45,16 +45,16 @@ const Box = () => {
 					</Link>
 				</div>
 			</div>
-			<div className="box_container">
+			{/* <div className="box_container">
 				<div className="box_img">
-					<Image src={translationsIMG} alt="teachers" width={583} />
+					<Image src={translationsIMG} alt="lektorzy" width={583} />
 				</div>
 				<div className="desc">
 					<Link href="/lektorzy" className="link">
 						Zobacz
 					</Link>
 				</div>
-			</div>
+			</div> */}
 			<div className="box_container">
 				<div className="box_img">
 					<Image
@@ -74,7 +74,7 @@ const Box = () => {
 			</div>
 			<div className="box_container">
 				<div className="box_img">
-					<Image src={feedbackIMG} alt="coffee" width={583} />
+					<Image src={feedbackIMG} alt="kawa" width={583} />
 				</div>
 				<div className="desc">
 					<Link href="/opinie" className="link">
@@ -84,7 +84,7 @@ const Box = () => {
 			</div>
 			<div className="box_container">
 				<div className="box_img">
-					<Image src={contactIMG} alt="book" width={583} />
+					<Image src={contactIMG} alt="książka" width={583} />
 				</div>
 				<div className="desc">
 					<Link href="/kontakt" className="link">

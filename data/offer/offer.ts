@@ -29,17 +29,17 @@ export const offer: OfferProps[] = [
 			{
 				title: "Zajęcia indywidualne lub grupowe do 4 osób",
 				src: "/assets/images/offer/offer-kids.png",
-				alt: "group of children",
+				alt: "grupa dzieci",
 			},
 			{
 				title: "Różne grupy wiekowe",
 				src: "/assets/images/offer/offer-child.png",
-				alt: "child",
+				alt: "dziecko",
 			},
 			{
 				title: "Nauka poprzez zabawę",
 				src: "/assets/images/offer/offer-play.png",
-				alt: "children playing",
+				alt: "bawiące się dzieci",
 			},
 		],
 		desc: {

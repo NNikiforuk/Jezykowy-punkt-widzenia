@@ -29,7 +29,7 @@ const Home = () => {
 					src={img}
 					objectFit="cover"
 					quality={100}
-					alt="background image"
+					alt="opis szkoły językowej"
 				/>
 				<div className="home_boxes">
 					<Box />
