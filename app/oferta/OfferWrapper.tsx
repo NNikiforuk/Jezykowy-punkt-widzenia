@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { OfferProps } from "@/data/offer/offer";
-import { advantages } from "@/data/offer/offer";
 
 const OfferWrapper = ({ name, descTitle, src, alt, text1 }: OfferProps) => {
 	return (

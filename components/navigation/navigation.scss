@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@800&display=swap");
 
 $text: rgb(147, 143, 147);
 
@@ -36,7 +36,7 @@ nav {
 
 			.site_name {
 				display: none;
-				font-family: 'Playpen Sans', cursive;
+				font-family: "Playpen Sans", cursive;
 				color: rgb(46, 45, 45);
 			}
 		}
@@ -111,46 +111,25 @@ nav {
 @media only screen and (min-width: 768px) {
 	nav {
 		.nav_container {
-			height: auto;
-			padding: 15px;
-
-			.logo_container {
-				.burger_btn {
-					svg {
-						font-size: 62px;
-					}
-				}
-			}
-
-			.navlist_mobile {
-				padding: 50px 0 0 50px;
-
-				li,
-				.mainlink_title {
-					font-size: 36px;
-				}
-			}
-		}
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	nav {
-		.nav_container {
 			flex-direction: row;
 
 			.logo_container {
 				justify-content: flex-start;
 
-				.burger_btn {
-					display: none;
-				}
-
 				.site_name {
 					display: block;
 					margin-left: 10px;
 				}
+
+				.burger_btn {
+					display: none;
+				}
 			}
+
+			.navlist_mobile {
+				display: none;
+			}
+
 			.navlist {
 				display: flex;
 				z-index: 50;
@@ -161,7 +140,7 @@ nav {
 
 				li,
 				.mainlink_title {
-					font-size: 24px;
+					font-size: 18px;
 					transition: 0.3s;
 
 					&:hover {
@@ -173,9 +152,27 @@ nav {
 					}
 				}
 			}
+		}
+	}
+}
 
-			.navlist_mobile {
-				display: none;
+@media only screen and (min-width: 1024px) {
+	nav {
+		.nav_container {
+			.navlist {
+				margin-right: 15px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	nav {
+		.nav_container {
+			.navlist {
+				li a {
+					font-size: 22px;
+				}
 			}
 		}
 	}

@@ -1,7 +1,6 @@
 import { links } from "@/data/links";
 import { offer } from "@/data/offer/offer";
 import { advantages } from "@/data/offer/offer";
-import Img from "@/components/home/Img";
 import OfferWrapper from "./OfferWrapper";
 import Image from "next/image";
 
