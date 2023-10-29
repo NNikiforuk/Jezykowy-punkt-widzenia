@@ -18,43 +18,21 @@ const Box = () => {
 						height={167}
 					/>
 				</div>
-				<div className="desc">
-					{navbar_links[0].sublinks?.sublink?.map((el) => (
-						<Link key={el.title} href={el.href} className="link">
-							{el.title}
-						</Link>
-					))}
-				</div>
 			</div>
 			<div className="box_container">
 				<div className="box_img">
 					<Image src={pricesIMG} alt="kalkulator" width={583} height={167} />
-				</div>
-				<div className="desc">
-					<Link href="/cennik" className="link">
-						Zobacz
-					</Link>
 				</div>
 			</div>
 			<div className="box_container">
 				<div className="box_img">
 					<Image src={translationsIMG} alt="książki" width={583} height={167} />
 				</div>
-				<div className="desc">
-					<Link href="/tlumaczenia" className="link">
-						Zobacz
-					</Link>
-				</div>
 			</div>
 			{/* <div className="box_container">
 				<div className="box_img">
 					<Image src={translationsIMG} alt="lektorzy" width={583}
 						height={167} />
-				</div>
-				<div className="desc">
-					<Link href="/lektorzy" className="link">
-						Zobacz
-					</Link>
 				</div>
 			</div> */}
 			<div className="box_container">
@@ -66,33 +44,15 @@ const Box = () => {
 						height={167}
 					/>
 				</div>
-				<div className="desc">
-					<div className="title">{navbar_links[1].sublinks?.Head}:</div>
-					{navbar_links[1].sublinks?.sublink?.map((el) => (
-						<Link key={el.title} href={el.href} className="link">
-							{el.title}
-						</Link>
-					))}
-				</div>
 			</div>
 			<div className="box_container">
 				<div className="box_img">
 					<Image src={feedbackIMG} alt="kawa" width={583} height={167} />
 				</div>
-				<div className="desc">
-					<Link href="/opinie" className="link">
-						Zobacz
-					</Link>
-				</div>
 			</div>
 			<div className="box_container">
 				<div className="box_img">
 					<Image src={contactIMG} alt="książka" width={583} height={167} />
-				</div>
-				<div className="desc">
-					<Link href="/kontakt" className="link">
-						Zobacz
-					</Link>
 				</div>
 			</div>
 		</div>

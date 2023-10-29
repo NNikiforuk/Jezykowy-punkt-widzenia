@@ -119,33 +119,7 @@
 					justify-content: center;
 					flex-direction: column;
 					flex: 1;
-
-					.desc {
-						margin-top: 15px;
-						display: flex;
-						align-items: center;
-
-						.title {
-							color: rgb(92, 90, 92);
-						}
-
-						.link {
-							cursor: pointer;
-							border: none;
-							border: 1px solid pink;
-							text-decoration: none;
-							margin: 15px;
-							padding: 8px;
-							border-radius: 5px;
-							color: rgb(92, 90, 92);
-							transition: 0.3s;
-							text-align: center;
-
-							&:hover {
-								background-color: rgb(204, 152, 161);
-							}
-						}
-					}
+					margin: 20px;
 				}
 			}
 		}
