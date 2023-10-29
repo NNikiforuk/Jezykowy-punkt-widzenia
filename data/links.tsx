@@ -18,6 +18,7 @@ export interface linksProps {
 			href: string;
 		}[];
 	};
+	priority?: true | false
 }
 
 export const links: linksProps[] = [

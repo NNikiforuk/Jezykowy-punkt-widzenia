@@ -15,7 +15,7 @@ const Contact = () => {
 				<div className="email_icon">
 					<AiOutlineMail />
 				</div>
-				<div className="email_address">kontakt@jpw-kursy.pl</div>
+				<div className="email_address">kddobrzanska@gmail.com</div>
 			</div>
 		</div>
 	);

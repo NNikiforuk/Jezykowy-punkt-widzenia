@@ -1,0 +1,157 @@
+$text: rgb(147, 143, 147);
+
+.bold {
+	font-weight: bold;
+}
+
+.left {
+	text-align: left;
+}
+
+.offer {
+	color: $text;
+
+	.offer_wrapper {
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+
+		h2 {
+			color: $text;
+			margin-top: 10px;
+		}
+
+		p {
+			margin-top: 10px;
+		}
+
+		ul {
+			padding: 20px;
+		}
+
+		.marginTop {
+			margin-top: 35px;
+		}
+
+		.offer_description {
+			margin-top: 10px;
+			font-size: 14px;
+
+			.img {
+				border-radius: 8px;
+			}
+
+			.desc {
+				margin-top: 10px;
+			}
+
+            .boxes {
+                margin-top: 15px;
+            }
+		}
+	}
+}
+
+@media only screen and (min-width: 360px) {
+	.translations {
+		.translations_container {
+			margin-top: 20px;
+
+			.ps {
+				margin-top: 50px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 390px) {
+	.translations {
+		.translations_container {
+			margin-top: 50px;
+
+			.ps {
+				margin-top: 90px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.translations {
+		font-size: 24px;
+		padding: 40px;
+
+		.translations_container {
+			display: flex;
+			align-items: center;
+
+			.translations_desc {
+				margin-bottom: 20px;
+
+				.translations_icon {
+					font-size: 24px;
+					margin-right: 10px;
+				}
+			}
+
+			.translations_list {
+				margin-top: 40px;
+
+				li {
+					.translations_item_icon {
+						font-size: 16px;
+					}
+				}
+			}
+
+			.ps {
+				margin-top: 40px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.translations {
+		font-size: 32px;
+
+		.translations_container {
+			.translations_desc {
+				.translations_icon {
+					font-size: 28px;
+					margin-right: 15px;
+					margin-top: 5px;
+				}
+			}
+
+			.translations_list {
+				svg {
+					font-size: 20px;
+				}
+			}
+
+			.ps {
+				margin-top: 80px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.translations {
+		font-size: 22px;
+		text-align: start;
+
+		.translations_container {
+			.translations_desc {
+				.translations_icon {
+					font-size: 24px;
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+}
