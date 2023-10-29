@@ -5,8 +5,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { RiMenu3Line } from "react-icons/ri";
 import { RxCross1 } from "react-icons/rx";
-import { navbar_links } from "@/data/navbar/navbar_links";
-import { MyLinks } from "./NavLinks";
 
 const Navigation = () => {
 	const [open, setOpen] = useState<boolean>(false);
@@ -31,12 +29,14 @@ const Navigation = () => {
 					<div className="burger_btn" onClick={() => setOpen(!open)}>
 						{open ? <RxCross1 /> : <RiMenu3Line />}
 					</div>
-					<div className="site_name">
-						Językowy punkt widzenia
-					</div>
+					<div className="site_name">Językowy punkt widzenia</div>
 				</div>
 				<ul className="navlist">
-					<MyLinks link={navbar_links[0]} close={close} open={false} />
+					<li>
+						<Link onClick={close} href="/oferta">
+							Oferta
+						</Link>
+					</li>
 					<li>
 						<Link onClick={close} href="/cennik">
 							Cennik
@@ -47,12 +47,11 @@ const Navigation = () => {
 							Tłumaczenia
 						</Link>
 					</li>
-					{/* <li>
-						<Link onClick={close} href="/lektorzy">
-							Lektorzy
+					<li>
+						<Link onClick={close} href="/materialy">
+							Materiały
 						</Link>
-					</li> */}
-					<MyLinks link={navbar_links[1]} close={close} open={false} />
+					</li>
 					<li>
 						<Link onClick={close} href="/opinie">
 							Opinie
@@ -67,7 +66,11 @@ const Navigation = () => {
 
 				{/* Mobile */}
 				<ul className={`navlist_mobile ${open ? "left0" : "left100"}`}>
-					<MyLinks link={navbar_links[0]} close={close} open={open} />
+					<li>
+						<Link onClick={close} href="/oferta">
+							Oferta
+						</Link>
+					</li>
 					<li>
 						<Link onClick={close} href="/cennik">
 							Cennik
@@ -78,12 +81,11 @@ const Navigation = () => {
 							Tłumaczenia
 						</Link>
 					</li>
-					{/* <li>
-						<Link onClick={close} href="/lektorzy">
-							Lektorzy
+					<li>
+						<Link onClick={close} href="/materialy">
+							Materiały
 						</Link>
-					</li> */}
-					<MyLinks link={navbar_links[1]} close={close} open={open} />
+					</li>
 					<li>
 						<Link onClick={close} href="/opinie">
 							Opinie
