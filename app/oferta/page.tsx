@@ -3,17 +3,20 @@ import { offer } from "@/data/offer/offer";
 import { advantages } from "@/data/offer/offer";
 import Img from "@/components/home/Img";
 import OfferWrapper from "./OfferWrapper";
+import Image from "next/image";
 
 const Offer = () => {
 	return (
 		<div className="offer">
 			<div className="offer_img">
-				<Img
-					href={links[0].href}
-					img={links[0].img}
+				<Image
+					src={links[0].img}
 					alt={links[0].alt}
-					name={""}
-					priority={false}
+					priority={true}
+					width={0}
+					height={0}
+					sizes="100vw"
+					style={{ width: "100%", height: "auto" }}
 				/>
 			</div>
 			<div className="offer_wrapper">
@@ -26,15 +29,16 @@ const Offer = () => {
 					list={offer[0].list}
 					list2={offer[0].list2}
 				/>
-
-				<p className="left bold marginTop">{advantages.text1}</p>
-				<ul className="ul left">
-					{advantages.list.map((el) => (
-						<li key={el}>{el}</li>
-					))}
-				</ul>
-				<p className="bold">{advantages.text2} </p>
-				<div className="boxes">
+				<div className="advantages">
+					<p className="bold left">{advantages.text1}</p>
+					<ul className="desc_list ul">
+						{advantages.list.map((el) => (
+							<li key={el}>{el}</li>
+						))}
+					</ul>
+				</div>
+				<p className="bold underline extraRoom">{advantages.text2}</p>
+				<div className="offers">
 					{offer[0].list?.map((el) => (
 						<div className="box" key={el.title}>
 							<p className="bold left">{el.title}</p>
