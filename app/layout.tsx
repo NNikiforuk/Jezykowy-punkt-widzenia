@@ -1,11 +1,11 @@
 import "./globals.scss";
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import Footer from "@/components/footer/Footer";
 import Nav from "../components/navigation/Navigation";
 
-const inter = Inter({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"], weight: "400"});
 
 export const metadata: Metadata = {
 	title: "Językowy punkt widzenia",
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="pl">
-			<body className={inter.className}>
+			<body className={openSans.className}>
 				<Nav />
 				{children}
 				<Footer />
