@@ -24,6 +24,9 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
+			<div className="home_boxes_mobile">
+				<Box />
+			</div>
 			<div className="home_desktop">
 				<Image
 					src={img}

@@ -52,6 +52,14 @@
 	}
 }
 
+.home_boxes_mobile {
+	margin: 20px;
+
+	.box_container {
+		margin-top: 20px;
+	}
+}
+
 .home_desktop {
 	display: none;
 }
@@ -79,6 +87,12 @@
 			font-size: 24px;
 		}
 	}
+
+	.home_boxes_mobile {
+		display: flex;
+		justify-content: center;
+		margin: 0 0 50px 0;
+	}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -96,6 +110,10 @@
 
 @media only screen and (min-width: 1200px) {
 	.home_mobile {
+		display: none;
+	}
+
+	.home_boxes_mobile {
 		display: none;
 	}
 

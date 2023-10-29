@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { RiMenu3Line } from "react-icons/ri";
 import { RxCross1 } from "react-icons/rx";
+import { links } from "@/data/links";
 
 const Navigation = () => {
 	const [open, setOpen] = useState<boolean>(false);
@@ -32,70 +33,24 @@ const Navigation = () => {
 					<div className="site_name">Językowy punkt widzenia</div>
 				</div>
 				<ul className="navlist">
-					<li>
-						<Link onClick={close} href="/oferta">
-							Oferta
-						</Link>
-					</li>
-					<li>
-						<Link onClick={close} href="/cennik">
-							Cennik
-						</Link>
-					</li>
-					<li>
-						<Link onClick={close} href="/tlumaczenia">
-							Tłumaczenia
-						</Link>
-					</li>
-					<li>
-						<Link onClick={close} href="/materialy">
-							Materiały
-						</Link>
-					</li>
-					<li>
-						<Link onClick={close} href="/opinie">
-							Opinie
-						</Link>
-					</li>
-					<li>
-						<Link onClick={close} href="/kontakt">
-							Kontakt
-						</Link>
-					</li>
+					{links.map((link) => (
+						<li key={link.name}>
+							<Link onClick={close} href={link.href}>
+								{link.name}
+							</Link>
+						</li>
+					))}
 				</ul>
 
 				{/* Mobile */}
 				<ul className={`navlist_mobile ${open ? "left0" : "left100"}`}>
-					<li>
-						<Link onClick={close} href="/oferta">
-							Oferta
-						</Link>
-					</li>
-					<li>
-						<Link onClick={close} href="/cennik">
-							Cennik
-						</Link>
-					</li>
-					<li>
-						<Link onClick={close} href="/tlumaczenia">
-							Tłumaczenia
-						</Link>
-					</li>
-					<li>
-						<Link onClick={close} href="/materialy">
-							Materiały
-						</Link>
-					</li>
-					<li>
-						<Link onClick={close} href="/opinie">
-							Opinie
-						</Link>
-					</li>
-					<li>
-						<Link onClick={close} href="/kontakt">
-							Kontakt
-						</Link>
-					</li>
+					{links.map((link) => (
+						<li key={link.name}>
+							<Link onClick={close} href={link.href}>
+								{link.name}
+							</Link>
+						</li>
+					))}
 				</ul>
 			</div>
 		</nav>
