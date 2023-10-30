@@ -1,10 +1,22 @@
 import { FaMedal, FaCheck } from "react-icons/fa";
 import { translations } from "@/data/translations/translations";
+import Image from "next/image";
+import { links } from "@/data/links";
 
 const Translations = () => {
 	return (
 		<div className="translations">
-			<h1>{translations.title}</h1>
+			<div className="translations_img">
+				<Image
+					src={links[2].img}
+					alt={links[2].alt}
+					priority={true}
+					width={0}
+					height={0}
+					sizes="100vw"
+					style={{ width: "100%", height: "auto" }}
+				/>
+			</div>
 			<div className="translations_container">
 				{translations.list1.map((l) => (
 					<div className="translations_desc" key={l}>

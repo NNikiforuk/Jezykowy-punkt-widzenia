@@ -4,9 +4,9 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding: 20px;
 
 	.container {
+		padding: 20px;
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 50px;
@@ -31,9 +31,9 @@
 
 @media only screen and (min-width: 414px) {
 	.feedback {
-		padding: 30px;
 
 		.container {
+			padding: 30px;
 			margin-top: 30px;
 		}
 	}
@@ -57,8 +57,8 @@
 
 @media only screen and (min-width: 1200px) {
 	.feedback {
-		padding: 40px;
 		.container {
+			padding: 40px;
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			.feed {

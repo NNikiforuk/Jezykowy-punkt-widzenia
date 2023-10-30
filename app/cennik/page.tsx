@@ -1,9 +1,21 @@
 import { prices, info } from "../../data/prices/prices";
+import { links } from "@/data/links";
+import Image from "next/image";
 
 const Prices = () => {
 	return (
 		<div className="boxes">
-			<h1>Cennik</h1>
+			<div className="boxes_img">
+				<Image
+					src={links[1].img}
+					alt={links[1].alt}
+					priority={true}
+					width={0}
+					height={0}
+					sizes="100vw"
+					style={{ width: "100%", height: "auto" }}
+				/>
+			</div>
 			<div className="boxes_groups">
 				{prices.map((el) => (
 					<div className="boxes_group" key={el.name}>

@@ -1,9 +1,9 @@
 .german {
-	padding: 40px;
 	display: flex;
 	flex-direction: column;
 
 	.german_container {
+		padding: 40px;
 		margin-top: 30px;
 
 		.text_container {
@@ -113,9 +113,9 @@
 
 @media only screen and (min-width: 1200px) {
 	.german {
-		margin: 0 400px 0 400px;
 
 		.german_container {
+			margin: 0 400px 0 400px;
 			margin-top: 50px;
 
 			.text_container {

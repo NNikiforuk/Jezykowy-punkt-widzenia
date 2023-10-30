@@ -1,7 +1,20 @@
+import { links } from "@/data/links";
+import Image from "next/image";
+
 const Materials = () => {
 	return (
 		<div className="german">
-			<h1>Materiały z j. niemieckiego A1/A2</h1>
+			<div className="translations_img">
+				<Image
+					src={links[3].img}
+					alt={links[3].alt}
+					priority={true}
+					width={0}
+					height={0}
+					sizes="100vw"
+					style={{ width: "100%", height: "auto" }}
+				/>
+			</div>
 			<div className="german_container">
 				<div className="text_container">
 					<div className="title">Sommerferien</div>
