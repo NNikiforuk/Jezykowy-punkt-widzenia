@@ -3,6 +3,7 @@ import { offer } from "@/data/offer/offer";
 import { advantages } from "@/data/offer/offer";
 import OfferWrapper from "./OfferWrapper";
 import Image from "next/image";
+import Link from "next/link";
 
 const Offer = () => {
 	return (
@@ -18,7 +19,17 @@ const Offer = () => {
 					style={{ width: "100%", height: "auto" }}
 				/>
 			</div>
-
+			<div className="nav">
+				<ul>
+					{links[0].sublinks?.sublink?.map((link) => (
+						<li key={link.title}>
+							<Link className="nav_item" href={link.href}>
+								{link.title}
+							</Link>
+						</li>
+					))}
+				</ul>
+			</div>
 			<div className="offer_wrapper">
 				<OfferWrapper
 					name={offer[0].name}
@@ -50,6 +61,7 @@ const Offer = () => {
 						</div>
 					))}
 				</div>
+				div
 			</div>
 		</div>
 	);

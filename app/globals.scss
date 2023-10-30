@@ -1,5 +1,6 @@
 $headline-color: rgb(192, 168, 31);
 
+@use "../components/home/home.scss";
 @use "./../components/offer/packages.scss";
 @use "./opinie/feedback.scss";
 @use "../components/footer/footer.scss";
@@ -7,7 +8,6 @@ $headline-color: rgb(192, 168, 31);
 @use "../app/kontakt/contact.scss";
 @use "../app/tlumaczenia/translations.scss";
 @use "../app/lektorzy/teachers.scss";
-@use "../components/home/home.scss";
 @use "../components/navigation/navigation.scss";
 @use "../app/materialy/niemiecki/german.scss";
 @use "../app/oferta/offer.scss";

@@ -11,6 +11,20 @@ $text: rgb(147, 143, 147);
 .offer {
 	color: $text;
 
+	.nav {
+		padding: 0 5px 0 5px;
+
+		li a {
+			text-decoration: none;
+			color: rgb(112, 111, 111);
+			font-weight: bold;
+		}
+
+		li {
+			list-style-type: none;
+		}
+	}
+
 	.offer_wrapper {
 		padding: 20px;
 		display: flex;
@@ -124,20 +138,46 @@ $text: rgb(147, 143, 147);
 				margin-top: 60px;
 			}
 		}
+
+		.nav {
+			ul {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
 	}
 }
 
 @media only screen and (min-width: 1200px) {
-	.offer_wrapper {
-		margin: 0 350px 0 350px;
-		.offer_description {
-			.main_description {
-				.main_img {
-					.img {
-						width: 250px;
-						height: 280px;
+	.offer {
+		.offer_wrapper {
+			margin: 0 350px 0 350px;
+			.offer_description {
+				.main_description {
+					.main_img {
+						.img {
+							width: 250px;
+							height: 280px;
+						}
 					}
 				}
+			}
+		}
+		.nav {
+			ul {
+				justify-content: flex-start;
+
+				li {
+					padding: 15px;
+					border-right: 2px solid rgb(217, 215, 215);
+
+					a:hover {
+
+						color: rgb(221, 135, 135);
+					}
+				}
+
+
 
 			}
 		}

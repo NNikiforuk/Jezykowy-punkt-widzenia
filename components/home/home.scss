@@ -7,6 +7,7 @@
 	align-items: center;
 	justify-content: center;
 	background-color: rgb(195, 195, 159);
+	background-color: green;
 
 	.home_headline,
 	.home_headline-secondary,
@@ -55,8 +56,11 @@
 .home_boxes_mobile {
 	margin: 20px;
 
-	.box_container {
-		margin-top: 20px;
+	.wrapper {
+		.box_container {
+			margin-top: 20px;
+			z-index: 50;
+		}
 	}
 }
 
