@@ -31,20 +31,24 @@ export const links: linksProps[] = [
 			Head: "",
 			sublink: [
 				{
-					title: "Dla najmłodszych",
-					href: "/oferta/dla-najmlodszych",
+					title: "Z native speaker",
+					href: "/oferta/native",
 				},
 				{
-					title: "Dla dorosłych",
-					href: "/oferta/dla-doroslych",
+					title: "Z lektorem",
+					href: "/oferta/lektor",
 				},
 				{
-					title: "Przygotowanie do ezagminu",
-					href: "/oferta/egzamin",
+					title: "Kursy branżowe",
+					href: "/oferta/branżowe",
+				},
+				{
+					title: "Dzieci i młodzież",
+					href: "/oferta/dzieci-mlodziez",
 				},
 				{
 					title: "Przygotowanie do certyfikatu",
-					href: "/oferta/certyfikat",
+					href: "/oferta/certyfikaty",
 				},
 			],
 		},

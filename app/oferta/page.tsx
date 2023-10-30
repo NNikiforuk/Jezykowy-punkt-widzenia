@@ -18,6 +18,7 @@ const Offer = () => {
 					style={{ width: "100%", height: "auto" }}
 				/>
 			</div>
+
 			<div className="offer_wrapper">
 				<OfferWrapper
 					name={offer[0].name}
