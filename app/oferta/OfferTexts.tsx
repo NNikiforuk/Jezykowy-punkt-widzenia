@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { OfferProps } from "@/data/offer/offer";
 
-const OfferWrapper = ({ name, descTitle, src, alt, text1 }: OfferProps) => {
+const OfferTexts = ({ name, descTitle, src, alt, text1 }: OfferProps) => {
 	return (
 		<>
 			<h2>{name}</h2>
@@ -26,4 +26,4 @@ const OfferWrapper = ({ name, descTitle, src, alt, text1 }: OfferProps) => {
 	);
 };
 
-export default OfferWrapper;
+export default OfferTexts;

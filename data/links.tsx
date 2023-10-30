@@ -32,7 +32,7 @@ export const links: linksProps[] = [
 			sublink: [
 				{
 					title: "Z native speaker",
-					href: "/oferta/native",
+					href: "/oferta",
 				},
 				{
 					title: "Z lektorem",
@@ -40,7 +40,7 @@ export const links: linksProps[] = [
 				},
 				{
 					title: "Kursy branżowe",
-					href: "/oferta/branżowe",
+					href: "/oferta/branzowe",
 				},
 				{
 					title: "Dzieci i młodzież",

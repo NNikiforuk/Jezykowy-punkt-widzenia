@@ -68,7 +68,7 @@ export const offer: OfferProps[] = [
 		src: img3,
 		alt: "mężczyzna przy biurku",
 		text1:
-			"Kursy specjalistyczne pozwalają na rozwój swoich umiejętności w konkretnej dziedzinie lub branży.  Oto przykłady kategorii kursów w języku obcym, które  oferujemy:",
+			"Kursy specjalistyczne pozwalają na rozwój swoich umiejętności w konkretnej dziedzinie lub branży. Oto przykłady kategorii kursów w języku obcym, które  oferujemy: kurs dla managerów, kurs dla księgowych, kurs dla logistyki i transportu, kurs dla pielęgniarek i opiekunów osób starszych, kurs dla branży turystyczno-hotelarskiej, kurs dla branży budowlanej",
 		list2: [
 			"kurs dla managerów",
 			"kurs dla księgowych",
@@ -98,7 +98,7 @@ export interface AdvantagesProps {
 	text1: string;
 	text2: string;
 	list: string[];
-	list2: {
+	list3: {
 		title: string;
 		list: string[];
 	}[];
@@ -115,7 +115,7 @@ export const advantages: AdvantagesProps = {
 	],
 	text2:
 		"Pamiętaj, że małymi krokami osiąga się wielkie cele. Zapraszamy na lekcję próbną!",
-	list2: [
+	list3: [
 		{
 			title: "Online - kurs intensywny grupowy",
 			list: [
