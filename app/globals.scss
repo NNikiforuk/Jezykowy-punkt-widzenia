@@ -1,4 +1,4 @@
-$headline-color: rgb(192, 168, 31);
+$text: rgb(70, 68, 68);
 
 @use "../components/home/home.scss";
 @use "./opinie/feedback.scss";
@@ -22,18 +22,17 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	$text: rgb(70, 68, 68);
 }
 
 h1 {
 	font-size: 22px;
-	color: $headline-color;
 	text-align: center;
 	font-weight: bold;
 }
 
 h2 {
 	font-size: 18px;
-	color: $headline-color;
 	text-align: center;
 	font-weight: bold;
 }

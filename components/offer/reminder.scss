@@ -1,0 +1,16 @@
+
+$text: rgb(70, 68, 68);
+
+.reminder {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 10px;
+    color: $text;
+}
+
+@media only screen and (min-width: 414px) {
+	.reminder {
+		padding: 30px;
+	}
+}

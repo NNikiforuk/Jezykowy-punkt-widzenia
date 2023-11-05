@@ -10,8 +10,8 @@ const Offer_options = ({ list }: Props) => {
 		<div className="offers">
 			{list?.map((el) => (
 				<div className="box" key={el.title}>
-					<p className="bold left">{el.title}</p>
-					<ul className="left ul">
+					<p className="title">{el.title}</p>
+					<ul>
 						{el.list.map((l) => (
 							<li key={l}>{l}</li>
 						))}

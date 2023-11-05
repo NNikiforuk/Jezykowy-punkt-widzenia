@@ -1,0 +1,26 @@
+$text: rgb(70, 68, 68);
+
+.offers {
+	padding: 20px;
+	color: $text;
+	
+	.box {
+		padding: 20px;
+
+		.title {
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		ul li {
+			padding: 5px;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.offers {
+		display: flex;
+		justify-content: center;
+	}
+}

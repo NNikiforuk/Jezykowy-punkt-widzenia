@@ -1,0 +1,68 @@
+$text: rgb(70, 68, 68);
+$text-hover: rgb(221, 135, 135);
+$border: rgb(217, 215, 215);
+$yellow: rgb(244, 237, 198);
+
+.nav {
+	ul {
+		li {
+			list-style-type: none;
+			text-align: center;
+			background-color: $yellow;
+			padding: 10px;
+
+			a {
+				text-decoration: none;
+				color: $text;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.nav {
+		ul li {
+			font-size: 24px;
+		}
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.nav {
+		display: flex;
+		justify-content: center;
+
+		ul {
+			display: flex;
+			justify-content: space-between;
+
+			li {
+				background: none;
+				font-weight: bold;
+				font-size: 22px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.nav {
+		ul {
+			justify-content: flex-start;
+
+			li {
+				padding: 15px;
+				border-right: 2px solid $border;
+				font-weight: bold;
+
+				a:hover {
+					color: $text-hover;
+				}
+
+				&:last-child {
+					border-right: none;
+				}
+			}
+		}
+	}
+}

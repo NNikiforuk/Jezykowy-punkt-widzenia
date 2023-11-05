@@ -23,7 +23,7 @@ const Subpage_banner = ({
 	style,
 }: Props) => {
 	return (
-		<div className="offer_img">
+		<div>
 			<Image
 				src={src}
 				alt={alt}

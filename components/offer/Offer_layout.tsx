@@ -1,11 +1,7 @@
-import Offer_texts from "./Offer_img_desc";
+import Advantages from "./Advantages";
+import Main_desc from "./Main_desc";
+import Offer_img from "./Offer_img";
 import { StaticImageData } from "next/image";
-import { links } from "@/data/links";
-import Subpage_banner from "@/components/Subpage_banner";
-import Offer_navbar from "@/components/offer/Offer_navbar";
-import Advantages from "@/components/offer/Advantages";
-import Reminder from "@/components/offer/Reminder";
-import Offer_options from "@/components/offer/Offer_options";
 
 interface OfferLayoutProps {
 	alt: string;
@@ -13,16 +9,13 @@ interface OfferLayoutProps {
 	titleDesc?: string;
 	src: StaticImageData;
 	text1: string;
-	list?: {
-		title: string;
-		list: string[];
-	}[];
-	list2?: string[];
 	list3: {
 		title: string;
 		list: string[];
 	}[];
 	widerIMG?: boolean;
+	addText: boolean;
+	company: boolean;
 }
 
 const Offer_layout = ({
@@ -31,38 +24,30 @@ const Offer_layout = ({
 	src,
 	alt,
 	text1,
-	list,
-	list2,
+	widerIMG,
+	addText,
+	company,
 }: OfferLayoutProps) => {
 	return (
 		<div className="offer">
-			<Subpage_banner
-				src={links[0].img}
-				alt={links[0].alt}
-				priority={true}
-				width={0}
-				height={0}
-				sizes="100vw"
-				style={{ width: "100%", height: "auto" }}
-			/>
-
-			<Offer_navbar links={links[0].sublinks?.sublink} />
-
 			<div className="offer_wrapper">
-				<Offer_texts
-					title={title}
-					titleDesc={titleDesc}
-					src={src}
-					alt={alt}
-					text1={text1}
-					list={list}
-					list2={list2}
-					widerIMG={true}
-					company={true}
-				/>
-				<Advantages />
-				<Reminder />
-				<Offer_options list={list} />
+				<h2>{title}</h2>
+				{titleDesc && <p>{titleDesc}</p>}
+
+				<div className="offer_description">
+					<div className="main_description">
+						<Offer_img
+							priority={false}
+							src={src}
+							alt={alt}
+							width={200}
+							className={`img ${widerIMG && "companyIMG"}`}
+						/>
+
+						<Main_desc mainDesc={text1} company={company} />
+						{addText && <Advantages />}
+					</div>
+				</div>
 			</div>
 		</div>
 	);
