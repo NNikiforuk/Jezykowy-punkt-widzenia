@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@800&display=swap");
 
-$text: rgb(147, 143, 147);
+$text: rgb(70, 68, 68);
 
 nav {
-	// background-color: rgb(223, 209, 134);
 	border-bottom: 2px solid rgb(156, 153, 153);
 
 	.nav_container {
@@ -82,7 +81,7 @@ nav {
 				list-style-type: none;
 				color: $text;
 				text-decoration: none;
-				padding-top: 5px;
+				padding-top: 20px;
 
 				a {
 					color: $text;

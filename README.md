@@ -1,7 +1,7 @@
 <h1 align="center">
   <br>
   <a href="https://jezykowy-punkt-widzenia.vercel.app" target="_blank"><p>Językowy punkt widzenia</p></a>
-  
+
   <br>
 </h1>
 

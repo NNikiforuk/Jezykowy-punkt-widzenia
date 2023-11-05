@@ -41,7 +41,6 @@ const OfferLayout = ({
 					height={0}
 					sizes="100vw"
 					style={{ width: "100%", height: "auto" }}
-
 				/>
 			</div>
 			<div className="nav">
