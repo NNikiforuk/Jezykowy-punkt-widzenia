@@ -73,7 +73,6 @@
 
 @media only screen and (min-width: 414px) {
 	.home_mobile {
-		margin: 80px 40px 0 40px;
 		padding: 40px;
 	}
 }
@@ -145,6 +144,10 @@
 					flex-direction: column;
 					flex: 1;
 					margin: 20px;
+
+					.box_img {
+						border-radius: 15px;
+					}
 				}
 			}
 		}
