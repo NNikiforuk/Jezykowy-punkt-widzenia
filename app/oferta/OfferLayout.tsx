@@ -72,7 +72,7 @@ const OfferLayout = ({
 						))}
 					</ul>
 				</div>
-				<p className="bold underline extraRoom">{advantages.text2}</p>
+				<p className="bold underline extraRoom boldedP">{advantages.text2}</p>
 				<div className="offers">
 					{list?.map((el) => (
 						<div className="box" key={el.title}>

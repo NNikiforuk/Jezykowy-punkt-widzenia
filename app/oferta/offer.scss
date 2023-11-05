@@ -1,4 +1,4 @@
-$text: rgb(147, 143, 147);
+$text: rgb(70, 68, 68);
 
 .bold {
 	font-weight: bold;
@@ -12,16 +12,18 @@ $text: rgb(147, 143, 147);
 	color: $text;
 
 	.nav {
-		padding: 0 5px 0 5px;
+		ul {
+			li a {
+				text-decoration: none;
+				color: $text;
+			}
 
-		li a {
-			text-decoration: none;
-			color: rgb(112, 111, 111);
-			font-weight: bold;
-		}
-
-		li {
-			list-style-type: none;
+			li {
+				list-style-type: none;
+				text-align: center;
+				background-color: rgb(223, 209, 134);
+				padding: 10px;
+			}
 		}
 	}
 
@@ -31,6 +33,7 @@ $text: rgb(147, 143, 147);
 		justify-content: center;
 		flex-direction: column;
 		text-align: center;
+		line-height: 25px;
 
 		h2 {
 			color: $text;
@@ -42,7 +45,7 @@ $text: rgb(147, 143, 147);
 		}
 
 		ul {
-			padding: 20px;
+			padding: 20px 20px 0 20px;
 
 			li {
 				text-align: left;
@@ -64,6 +67,18 @@ $text: rgb(147, 143, 147);
 			.desc {
 				margin-top: 10px;
 				font-size: 16px;
+
+				.advantages_desktop {
+					display: none;
+				}
+			}
+		}
+
+		.advantages {
+			.desc_list {
+				li {
+					padding: 10px;
+				}
 			}
 		}
 	}
@@ -74,6 +89,16 @@ $text: rgb(147, 143, 147);
 
 	.left {
 		text-align: left;
+	}
+
+	.offers {
+		.box {
+			padding: 15px;
+		}
+	}
+
+	.boldedP_desktop {
+		display: none;
 	}
 }
 
@@ -97,6 +122,7 @@ $text: rgb(147, 143, 147);
 
 		.offer_wrapper {
 			padding: 40px;
+			line-height: 35px;
 
 			.offer_description {
 				margin: 25px 0 25px 0;
@@ -113,6 +139,14 @@ $text: rgb(147, 143, 147);
 					text-align: justify;
 					margin: 0;
 					font-size: 22px;
+				}
+			}
+
+			.advantages {
+				.desc_list {
+					li {
+						padding: 15px;
+					}
 				}
 			}
 		}
@@ -140,9 +174,16 @@ $text: rgb(147, 143, 147);
 		}
 
 		.nav {
+			display: flex;
+			justify-content: center;
+
 			ul {
 				display: flex;
 				justify-content: space-between;
+
+				li {
+					background: none;
+				}
 			}
 		}
 	}
@@ -151,16 +192,43 @@ $text: rgb(147, 143, 147);
 @media only screen and (min-width: 1200px) {
 	.offer {
 		.offer_wrapper {
-			margin: 0 350px 0 350px;
+
 			.offer_description {
 				.main_description {
 					.main_img {
 						.img {
-							width: 250px;
-							height: 280px;
+							width: 400px;
+							height: auto;
 						}
 					}
+
+					.advantages_desktop {
+						display: inline-block;
+						margin: 20px 0 20px 10px;
+
+						li {
+							padding: 10px;
+						}
+					}
+
+					.boldedP_desktop {
+						display: block;
+						text-align: center;
+					}
 				}
+			}
+
+			.advantages {
+				display: none;
+			}
+
+			.boldedP {
+				display: none;
+			}
+
+			.offers {
+				display: flex;
+				justify-content: center;
 			}
 		}
 		.nav {
@@ -170,15 +238,16 @@ $text: rgb(147, 143, 147);
 				li {
 					padding: 15px;
 					border-right: 2px solid rgb(217, 215, 215);
+					font-weight: bold;
 
 					a:hover {
-
 						color: rgb(221, 135, 135);
 					}
+
+					&:last-child {
+						border-right: none;
+					}
 				}
-
-
-
 			}
 		}
 	}

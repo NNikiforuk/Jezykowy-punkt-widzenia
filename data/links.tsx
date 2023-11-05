@@ -31,11 +31,11 @@ export const links: linksProps[] = [
 			Head: "",
 			sublink: [
 				{
-					title: "Z native speaker",
+					title: "Native speaker",
 					href: "/oferta",
 				},
 				{
-					title: "Z lektorem",
+					title: "Lektor",
 					href: "/oferta/lektor",
 				},
 				{
