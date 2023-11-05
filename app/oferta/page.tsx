@@ -1,11 +1,11 @@
-import OfferLayout from "./OfferLayout";
+import Offer_layout from "@/components/offer/Offer_layout";
 import { offer } from "@/data/offer/offer";
 
 const Offer = () => {
 	return (
-		<OfferLayout
-			name={offer[0].name}
-			descTitle={offer[0].descTitle}
+		<Offer_layout
+			title={offer[0].title}
+			titleDesc={offer[0].titleDesc}
 			src={offer[0].src}
 			alt={offer[0].alt}
 			text1={offer[0].text1}

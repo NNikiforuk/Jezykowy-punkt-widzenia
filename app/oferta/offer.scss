@@ -71,13 +71,19 @@ $text: rgb(70, 68, 68);
 				.advantages_desktop {
 					display: none;
 				}
+
+				.company {
+					ul li {
+						padding: 5px;
+					}
+				}
 			}
 		}
 
 		.advantages {
 			.desc_list {
 				li {
-					padding: 10px;
+					padding: 5px;
 				}
 			}
 		}
@@ -141,14 +147,6 @@ $text: rgb(70, 68, 68);
 					font-size: 22px;
 				}
 			}
-
-			.advantages {
-				.desc_list {
-					li {
-						padding: 15px;
-					}
-				}
-			}
 		}
 	}
 
@@ -159,17 +157,32 @@ $text: rgb(70, 68, 68);
 
 @media only screen and (min-width: 1024px) {
 	.offer {
-		.offer_img {
-			img {
-				width: 1024px;
-				height: 250px;
-			}
-		}
-
 		.offer_wrapper {
 			.offer_description {
 				margin: 20px;
 				margin-top: 60px;
+
+				.main_description {
+					display: flex;
+					flex-direction: column;
+
+					.companyIMG {
+						width: 500px;
+						height: auto;
+					}
+
+					.company {
+						margin-top: 15px;
+						display: inline-block;
+
+						ul {
+							display: flex;
+							justify-content: center;
+							flex-direction: column;
+						}
+					}
+				}
+
 			}
 		}
 
@@ -192,12 +205,18 @@ $text: rgb(70, 68, 68);
 @media only screen and (min-width: 1200px) {
 	.offer {
 		.offer_wrapper {
-
 			.offer_description {
 				.main_description {
+					flex-direction: row;
+
 					.main_img {
 						.img {
 							width: 400px;
+							height: auto;
+						}
+
+						.companyIMG {
+							width: 700px;
 							height: auto;
 						}
 					}

@@ -1,4 +1,4 @@
-import OfferLayout from "../OfferLayout";
+import OfferLayout from "../../../components/offer/Offer_layout";
 import { offer } from "@/data/offer/offer";
 import { advantages } from "@/data/offer/offer";
 

@@ -6,8 +6,8 @@ import img4 from "../../public/assets/images/offer/4.jpg";
 import img5 from "../../public/assets/images/offer/5.jpg";
 
 export interface OfferProps {
-	name: string;
-	descTitle?: string;
+	title: string;
+	titleDesc?: string;
 	src: StaticImageData;
 	alt: string;
 	text1: string;
@@ -16,12 +16,14 @@ export interface OfferProps {
 		list: string[];
 	}[];
 	list2?: string[];
+	widerIMG?: boolean;
+	company?: boolean;
 }
 
 export const offer: OfferProps[] = [
 	{
-		name: "Online classroom z native speaker",
-		descTitle: "Kursy online w grupie lub indywidualnie z native speaker",
+		title: "Online classroom z native speaker",
+		titleDesc: "Kursy online w grupie lub indywidualnie z native speaker",
 		src: img1,
 		alt: "laptop na łóżku",
 		text1:
@@ -56,19 +58,19 @@ export const offer: OfferProps[] = [
 		],
 	},
 	{
-		name: "Online classroom",
-		descTitle: "Kursy online w grupie lub indywidualnie",
+		title: "Online classroom",
+		titleDesc: "Kursy online w grupie lub indywidualnie",
 		src: img2,
 		alt: "praca przy biurku",
 		text1:
 			"Zajęcia dedykowane są dla osób, którym zależy na samorozwoju, rozwinięciu umiejętności interpersonalnych, rozszerzeniu horyzontów oraz zwiększeniu zawodowych możliwości. Posiadanie umiejętności językowych na globalnym rynku pracy jest coraz bardziej istotne.  Wiele międzynarodowych korporacji działa na skalę globalną i posiada oddziały lub partnerów biznesowych na całym świecie. Więc jeśli planujesz pracować w takiej organizacji, zgłoś się do nas, pomożemy Ci osiągnąć Twoje cele.",
 	},
 	{
-		name: "Kursy branżowe online w grupie lub indywidualne",
+		title: "Kursy branżowe online w grupie lub indywidualne",
 		src: img3,
 		alt: "mężczyzna przy biurku",
 		text1:
-			"Kursy specjalistyczne pozwalają na rozwój swoich umiejętności w konkretnej dziedzinie lub branży. Oto przykłady kategorii kursów w języku obcym, które  oferujemy: kurs dla managerów, kurs dla księgowych, kurs dla logistyki i transportu, kurs dla pielęgniarek i opiekunów osób starszych, kurs dla branży turystyczno-hotelarskiej, kurs dla branży budowlanej",
+			"Kursy specjalistyczne pozwalają na rozwój swoich umiejętności w konkretnej dziedzinie lub branży. Oto przykłady kategorii kursów w języku obcym, które  oferujemy:",
 		list2: [
 			"kurs dla managerów",
 			"kurs dla księgowych",
@@ -77,16 +79,21 @@ export const offer: OfferProps[] = [
 			"kurs dla branży turystyczno-hotelarskiej",
 			"kurs dla branży budowlanej",
 		],
+		widerIMG: true,
+		company: true,
 	},
 	{
-		name: "Kursy językowe online dla dzieci i młodzieży w grupie lub indywidualne",
+		title:
+			"Kursy językowe online dla dzieci i młodzieży w grupie lub indywidualne",
 		src: img4,
 		alt: "rodzina przy laptopie",
 		text1:
 			"Nauka języków obcych jest dostępna i dostosowana do potrzeb dzieci i młodzieży. Oferujemy waszym pociechom zajęcia językowe dostosowane do różnych grup wiekowych. W naszej szkole online uczymy się  nie tylko przez zabawę oraz interaktywne ćwiczenia rozwijające wyobraźnię Twojego dziecka, ale także wykorzystujemy różnego rodzaju techniki zapamiętywania.",
+		widerIMG: true,
 	},
 	{
-		name: "Kursy językowe przygotowujące do certyfikatów w grupie lub indywidualne",
+		title:
+			"Kursy językowe przygotowujące do certyfikatów w grupie lub indywidualne",
 		src: img5,
 		alt: "certyfikat",
 		text1:
@@ -143,48 +150,4 @@ export const advantages: AdvantagesProps = {
 			list: ["24h", "8 tygodni", "Poziomy: A1, A2, B1, B2, C1, C2 "],
 		},
 	],
-};
-
-interface PackagesProps {
-	title: string;
-	package: {
-		title: string;
-		texts: string[];
-	}[];
-	grammar: {
-		title: string;
-		elements: string[];
-	};
-}
-
-export const packages: PackagesProps = {
-	title: "Pakiety godzinowe",
-	package: [
-		{
-			title: "6h",
-			texts: ["gramatyka 3h", "+", "konwersacja 3h"],
-		},
-		{
-			title: "12h",
-			texts: ["gramatyka 6h", "+", "konwersacja 6h"],
-		},
-		{
-			title: "18h",
-			texts: ["gramatyka 9h", "+", "konwersacja 9h"],
-		},
-	],
-	grammar: {
-		title: "Na część gramatyczną składają się poniższe części mowy:",
-		elements: [
-			"przymiotnik",
-			"rzeczownik",
-			"czasownik",
-			"zaimek",
-			"przyimek",
-			"przysłówek",
-			"liczebnik",
-			"partykuły",
-			"szyk zdań/nauka o zdaniu",
-		],
-	},
 };
