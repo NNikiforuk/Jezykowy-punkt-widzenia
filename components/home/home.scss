@@ -53,7 +53,7 @@
 }
 
 .home_boxes_mobile {
-	margin: 20px;
+	margin: 20px 20px 40px 20px;
 
 	.wrapper {
 		.box_container {
@@ -61,6 +61,7 @@
 
 			.box_img {
 				z-index: -10;
+				border-radius: 8px;
 			}
 		}
 	}
