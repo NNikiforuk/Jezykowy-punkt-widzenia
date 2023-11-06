@@ -1,7 +1,6 @@
 import Subpage_banner from "@/components/Subpage_banner";
 import Offer_layout from "@/components/offer/Offer_layout";
 import Offer_navbar from "@/components/offer/Offer_navbar";
-import Reminder from "@/components/offer/Reminder";
 import { links } from "@/data/links";
 import { offer } from "@/data/offer/offer";
 

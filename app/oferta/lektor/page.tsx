@@ -4,7 +4,6 @@ import { links } from "@/data/links";
 import OfferLayout from "../../../components/offer/Offer_layout";
 import { offer } from "@/data/offer/offer";
 import { advantages } from "@/data/offer/offer";
-import Reminder from "@/components/offer/Reminder";
 import Offer_options from "@/components/offer/Offer_options";
 
 const Lector = () => {
@@ -27,8 +26,7 @@ const Lector = () => {
 				alt={offer[1].alt}
 				text1={offer[1].text1}
 				list3={[]}
-				addText={false} company={false}			/>
-			<Reminder />
+				addText={true} company={false}			/>
 			<Offer_options list={advantages.list3} />
 		</>
 	);
