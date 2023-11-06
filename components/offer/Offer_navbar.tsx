@@ -8,7 +8,7 @@ interface Props {
 }
 
 const Offer_navbar = ({links}: Props) => {
-  return (
+return (
 		<div className="nav">
 			<ul>
 				{links?.map((link) => (

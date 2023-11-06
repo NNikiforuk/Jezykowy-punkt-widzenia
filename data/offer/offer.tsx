@@ -15,7 +15,7 @@ export interface OfferProps {
 		title: string;
 		list: string[];
 	}[];
-	list2?: string[];
+	list2?: string;
 	widerIMG?: boolean;
 	company?: boolean;
 }
@@ -70,15 +70,7 @@ export const offer: OfferProps[] = [
 		src: img3,
 		alt: "mężczyzna przy biurku",
 		text1:
-			"Kursy specjalistyczne pozwalają na rozwój swoich umiejętności w konkretnej dziedzinie lub branży. Oto przykłady kategorii kursów w języku obcym, które  oferujemy:",
-		list2: [
-			"kurs dla managerów",
-			"kurs dla księgowych",
-			"kurs dla logistyki i transportu",
-			"kurs dla pielęgniarek i opiekunów osób starszych",
-			"kurs dla branży turystyczno-hotelarskiej",
-			"kurs dla branży budowlanej",
-		],
+			"Kursy specjalistyczne pozwalają na rozwój swoich umiejętności w konkretnej dziedzinie lub branży. Oto przykłady kategorii kursów w języku obcym, które  oferujemy: dla managerów, księgowych, logistyki i transportu, pielęgniarek i opiekunów osób starszych, dla branży turystyczno-hotelarskiej, branży budowlanej",
 		widerIMG: true,
 		company: true,
 	},

@@ -57,19 +57,6 @@ $text: rgb(70, 68, 68);
 		.offer_wrapper {
 			.offer_description {
 				margin-top: 60px;
-
-				.main_description {
-					.company {
-						margin-top: 15px;
-						display: inline-block;
-
-						ul {
-							display: flex;
-							justify-content: center;
-							flex-direction: column;
-						}
-					}
-				}
 			}
 		}
 	}
@@ -82,21 +69,8 @@ $text: rgb(70, 68, 68);
 
 		.offer_wrapper {
 			.offer_description {
-
 				.main_description {
 					flex-direction: row;
-
-					.main_img {
-						.img {
-							width: 350px;
-							height: auto;
-						}
-
-						.companyIMG {
-							width: 700px;
-							height: auto;
-						}
-					}
 				}
 			}
 		}

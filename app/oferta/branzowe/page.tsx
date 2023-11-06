@@ -4,6 +4,8 @@ import { links } from "@/data/links";
 import OfferLayout from "../../../components/offer/Offer_layout";
 import { offer } from "@/data/offer/offer";
 import { advantages } from "@/data/offer/offer";
+import Offer_options from "@/components/offer/Offer_options";
+import Advantages from "@/components/offer/Advantages";
 
 const Company = () => {
 	return (
@@ -28,6 +30,8 @@ const Company = () => {
 				addText={false}
 				company={true}
 			/>
+
+			<Offer_options list={advantages.list3} />
 		</>
 	);
 };

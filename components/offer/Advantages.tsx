@@ -1,8 +1,8 @@
 import { advantages } from "@/data/offer/offer";
 
-const Advantages = () => {
+const Advantages = ({company}: {company: boolean}) => {
   return (
-		<div className="advantages">
+		<div className={`advantages ${company && "company_adv"}`}>
 			<p className="bold title">{advantages.text1}</p>
 			<ul>
 				{advantages.list.map((el) => (

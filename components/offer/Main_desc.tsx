@@ -1,4 +1,3 @@
-import Company from "@/app/oferta/branzowe/page";
 import Advantages from "./Advantages";
 import Reminder from "./Reminder";
 
@@ -12,9 +11,10 @@ const Main_desc = ({ mainDesc, company, addText }: Props) => {
 	return (
 		<div className="desc">
 			<div>{mainDesc}</div>
-			{addText && <Advantages />}
-			{addText && <Reminder />}
-			{company && <Company />}
+			{company && <Reminder company={company} />}
+			{addText && <Advantages company={false} />}
+			{addText && <Reminder company={false} />}
+			{company && <Advantages company={company} />}
 		</div>
 	);
 };

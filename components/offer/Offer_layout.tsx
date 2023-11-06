@@ -45,7 +45,7 @@ const Offer_layout = ({
 						/>
 
 						<Main_desc mainDesc={text1} company={company} addText={addText} />
-						
+
 					</div>
 				</div>
 			</div>

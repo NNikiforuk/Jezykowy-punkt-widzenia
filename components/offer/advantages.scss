@@ -33,17 +33,28 @@
 	.advantages {
 		margin-top: 6.5rem;
 	}
+	.company_adv {
+		margin-top: 4rem;
+	}
 }
 
 @media only screen and (min-width: 920px) {
 	.advantages {
 		margin-top: 9rem;
 	}
+
+	.company_adv {
+		margin-top: 6rem;
+	}
 }
 
 @media only screen and (min-width: 1024px) {
 	.advantages {
 		margin-top: 12rem;
+	}
+
+	.company_adv {
+		margin-top: 7rem;
 	}
 }
 
@@ -66,6 +77,10 @@
 			}
 		}
 	}
+
+	.company_adv {
+		margin-top: 7rem;
+	}
 }
 
 @media only screen and (min-width: 1300px) {
@@ -73,5 +88,9 @@
 		.title {
 			margin-top: 1rem;
 		}
+	}
+
+	.company_adv {
+		margin-top: 8rem;
 	}
 }

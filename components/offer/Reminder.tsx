@@ -1,7 +1,11 @@
 import { advantages } from "@/data/offer/offer";
 
-const Reminder = () => {
-	return <p className="reminder">{advantages.text2}</p>;
+const Reminder = ({ company }: { company: boolean }) => {
+	return (
+		<p className={`reminder ${company && "company_reminder"}`}>
+			{advantages.text2}
+		</p>
+	);
 };
 
 export default Reminder;
