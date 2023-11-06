@@ -39,7 +39,7 @@ $text: rgb(70, 68, 68);
 		}
 
 		.offer_wrapper {
-			padding: 40px;
+			padding: 40px 40px 10px 40px;
 			line-height: 35px;
 
 			.offer_description {
@@ -56,7 +56,6 @@ $text: rgb(70, 68, 68);
 	.offer {
 		.offer_wrapper {
 			.offer_description {
-				margin: 20px;
 				margin-top: 60px;
 
 				.main_description {
@@ -78,14 +77,18 @@ $text: rgb(70, 68, 68);
 
 @media only screen and (min-width: 1200px) {
 	.offer {
+		padding: 50px;
+		font-size: 22px;
+
 		.offer_wrapper {
 			.offer_description {
+
 				.main_description {
 					flex-direction: row;
 
 					.main_img {
 						.img {
-							width: 400px;
+							width: 350px;
 							height: auto;
 						}
 

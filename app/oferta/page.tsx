@@ -26,7 +26,7 @@ const Offer = () => {
 				text1={offer[0].text1}
 				list3={[]}
 				addText={true} company={false}			/>
-			<Reminder />
+
 			<div className="offers">
 				{offer[0].list?.map((el) => (
 					<div className="box" key={el.title}>

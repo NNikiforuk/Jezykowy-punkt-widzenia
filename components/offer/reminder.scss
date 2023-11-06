@@ -14,3 +14,30 @@ $text: rgb(70, 68, 68);
 		padding: 30px;
 	}
 }
+
+@media only screen and (min-width: 768px) {
+	.reminder {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.reminder {
+		font-size: 18px;
+		margin-top: 6rem;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+	.reminder {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	.reminder {
+		margin-top: 2rem;
+		text-align: left;
+	}
+}

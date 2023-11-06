@@ -22,13 +22,44 @@
 	}
 }
 
+@media only screen and (min-width: 768px) {
+	.advantages {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.advantages {
+		font-size: 24px;
+		margin-top: 120px;
+	}
+}
+
 @media only screen and (min-width: 1200px) {
 	.advantages {
-		display: inline-block;
-		margin: 20px 0 20px 10px;
+		font-size: 18px;
+		margin-top: 0px;
 
-		li {
-			padding: 10px;
+		.title {
+			margin-top: 0;
+		}
+
+		ul {
+			padding: 0 0 0 20px;
+			display: flex;
+			flex-direction: column;
+
+			li {
+				padding: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+	.advantages {
+		.title {
+			margin-top: 1rem;
 		}
 	}
 }

@@ -44,8 +44,8 @@ const Offer_layout = ({
 							className={`img ${widerIMG && "companyIMG"}`}
 						/>
 
-						<Main_desc mainDesc={text1} company={company} />
-						{addText && <Advantages />}
+						<Main_desc mainDesc={text1} company={company} addText={addText} />
+						
 					</div>
 				</div>
 			</div>
