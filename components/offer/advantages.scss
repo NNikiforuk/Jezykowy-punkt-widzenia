@@ -9,10 +9,28 @@
 	&_list {
 		display: inline-block;
 		text-align: left;
-        padding: 10px 20px 20px 20px;
+		padding: 10px 20px 20px 20px;
 
-        li {
-            padding-top: 10px;
-        }
+		li {
+			padding-top: 10px;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.advantages {
+		padding: 50px 0 50px 0;
+
+		&_title {
+			text-align: left;
+		}
+
+		&_list {
+			padding-left: 40px;
+
+			li {
+				padding-top: 20px;
+			}
+		}
 	}
 }

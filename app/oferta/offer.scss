@@ -14,15 +14,27 @@ $text: rgb(70, 68, 68);
 		text-align: center;
 
         .title_desc {
-            margin: 10px 0 20px 0;
+            margin: 10px 0 50px 0;
         }
 
         .no_desc {
-            margin-bottom: 20px;
+            margin-bottom: 50px;
         }
 	}
 
-    .offer_desc {
+    &_desc {
         text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .offer {
+        padding: 40px;
+        font-size: 22px;
+
+        &_desc {
+            text-align: left;
+
+        }
     }
 }
