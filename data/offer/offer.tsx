@@ -1,9 +1,9 @@
 import { StaticImageData } from "next/dist/client/legacy/image";
-import img1 from "../../public/assets/images/offer/1.jpg";
-import img2 from "../../public/assets/images/offer/2.jpg";
-import img3 from "../../public/assets/images/offer/3.jpg";
-import img4 from "../../public/assets/images/offer/4.jpg";
-import img5 from "../../public/assets/images/offer/5.jpg";
+import img1 from "../../public/assets/images/offer/native.jpg";
+import img2 from "../../public/assets/images/offer/teacher.jpg";
+import img3 from "../../public/assets/images/offer/company.jpg";
+import img4 from "../../public/assets/images/offer/classroom.jpg";
+import img5 from "../../public/assets/images/offer/certificate.jpg";
 
 export interface OfferProps {
 	title: string;
@@ -16,7 +16,6 @@ export interface OfferProps {
 		list: string[];
 	}[];
 	list2?: string;
-	widerIMG?: boolean;
 	company?: boolean;
 }
 
@@ -71,7 +70,6 @@ export const offer: OfferProps[] = [
 		alt: "mężczyzna przy biurku",
 		text1:
 			"Kursy specjalistyczne pozwalają na rozwój swoich umiejętności w konkretnej dziedzinie lub branży. Oto przykłady kategorii kursów w języku obcym, które  oferujemy: dla managerów, księgowych, logistyki i transportu, pielęgniarek i opiekunów osób starszych, dla branży turystyczno-hotelarskiej, branży budowlanej",
-		widerIMG: true,
 		company: true,
 	},
 	{
@@ -81,7 +79,6 @@ export const offer: OfferProps[] = [
 		alt: "rodzina przy laptopie",
 		text1:
 			"Nauka języków obcych jest dostępna i dostosowana do potrzeb dzieci i młodzieży. Oferujemy waszym pociechom zajęcia językowe dostosowane do różnych grup wiekowych. W naszej szkole online uczymy się  nie tylko przez zabawę oraz interaktywne ćwiczenia rozwijające wyobraźnię Twojego dziecka, ale także wykorzystujemy różnego rodzaju techniki zapamiętywania.",
-		widerIMG: true,
 	},
 	{
 		title:

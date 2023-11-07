@@ -1,7 +1,28 @@
 @use "../../components/offer/offer_navbar.scss";
 @use "../../components/offer/offer_img.scss";
-@use "../../components/offer/offer_maindesc.scss";
-@use "../../components/offer/offer_layout.scss";
 @use "../../components/offer/advantages.scss";
 @use "../../components/offer/offers.scss";
 @use "../../components/offer/reminder.scss";
+
+$text: rgb(70, 68, 68);
+
+.offer {
+	padding: 20px;
+	color: $text;
+
+	.title_wrapper {
+		text-align: center;
+
+        .title_desc {
+            margin: 10px 0 20px 0;
+        }
+
+        .no_desc {
+            margin-bottom: 20px;
+        }
+	}
+
+    .offer_desc {
+        text-align: center;
+    }
+}

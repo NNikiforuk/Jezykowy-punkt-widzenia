@@ -1,47 +1,5 @@
-
-$text: rgb(70, 68, 68);
-
 .reminder {
-    text-align: center;
-    font-weight: bold;
-    text-decoration: underline;
-    padding: 10px;
-    color: $text;
-}
-
-@media only screen and (min-width: 414px) {
-	.reminder {
-		padding: 30px;
-	}
-}
-
-@media only screen and (min-width: 768px) {
-	.reminder {
-		font-size: 24px;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	.reminder {
-		font-size: 18px;
-		margin-top: 6rem;
-		text-align: center;
-	}
-
-	.company_reminder {
-		text-align: left;
-	}
-}
-
-@media only screen and (min-width: 1300px) {
-	.reminder {
-		margin-top: 0;
-	}
-}
-
-@media only screen and (min-width: 1500px) {
-	.reminder {
-		margin-top: 2rem;
-		text-align: left;
-	}
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
 }

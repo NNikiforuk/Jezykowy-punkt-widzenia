@@ -1,17 +1,13 @@
-interface Props {
-	list?: {
-		title: string;
-		list: string[];
-	}[];
-}
+import { advantages } from "@/data/offer/offer";
 
-const Offer_options = ({ list }: Props) => {
+
+const Offer_options = () => {
 	return (
 		<div className="offers">
-			{list?.map((el) => (
+			{advantages.list3.map((el) => (
 				<div className="box" key={el.title}>
-					<p className="title">{el.title}</p>
-					<ul>
+					<div className="title">{el.title}</div>
+					<ul className="offers_list">
 						{el.list.map((l) => (
 							<li key={l}>{l}</li>
 						))}

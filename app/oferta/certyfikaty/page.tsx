@@ -1,14 +1,15 @@
 import Subpage_banner from "@/components/Subpage_banner";
-import OfferLayout from "../../../components/offer/Offer_layout";
 import { offer } from "@/data/offer/offer";
-import { advantages } from "@/data/offer/offer";
 import { links } from "@/data/links";
 import Offer_navbar from "@/components/offer/Offer_navbar";
 import Offer_options from "@/components/offer/Offer_options";
+import Advantages from "@/components/offer/Advantages";
+import Offer_img from "@/components/offer/Offer_img";
+import Reminder from "@/components/offer/Reminder";
 
 const Children = () => {
 	return (
-		<>
+		<main>
 			<Subpage_banner
 				src={links[0].img}
 				alt={links[0].alt}
@@ -19,17 +20,29 @@ const Children = () => {
 				style={{ width: "100%", height: "auto" }}
 			/>
 			<Offer_navbar links={links[0].sublinks?.sublink} />
-			<OfferLayout
-				title={offer[4].title}
-				src={offer[4].src}
-				alt={offer[4].alt}
-				text1={offer[4].text1}
-				list3={advantages.list3}
-				addText={true}
-				company={false}
-			/>
-			<Offer_options list={advantages.list3} />
-		</>
+
+
+			<div className="offer">
+				<div className="title_wrapper">
+					<h2 className="no_desc">{offer[4].title}</h2>
+				</div>
+				<Offer_img
+					priority={false}
+					src={offer[4].src}
+					alt={offer[4].alt}
+					width={200}
+				/>
+
+				<div className="offer_desc">{offer[4].text1}</div>
+
+				<Advantages />
+				<Reminder />
+
+				<Offer_options />
+			</div>
+
+
+		</main>
 	);
 };
 
