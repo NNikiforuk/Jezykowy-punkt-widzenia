@@ -5,6 +5,7 @@ import Offer_navbar from "@/components/offer/Offer_navbar";
 import Reminder from "@/components/offer/Reminder";
 import { links } from "@/data/links";
 import { offer } from "@/data/offer/offer";
+import img2 from "../../public/assets/images/offer/native2.jpg";
 
 const Offer = () => {
 	return (
@@ -26,17 +27,23 @@ const Offer = () => {
 					<div className="title_desc">{offer[0].titleDesc}</div>
 				</div>
 
-				<Offer_img
-					priority={false}
-					src={offer[0].src}
-					alt={offer[0].alt}
-					width={200}
-				/>
+				<div className="wrapper">
+					<Offer_img
+						priority={false}
+						src={offer[0].src}
+						alt={offer[0].alt}
+						width={200}
+					/>
 
-				<div className="offer_desc">{offer[0].text1}</div>
+					<div className="container">
+						<div className="offer_desc">{offer[0].text1}</div>
+						<Reminder hide={false} />
+					</div>
+				</div>
 
 				<Advantages />
-				<Reminder  />
+
+				<Reminder hide={true} />
 
 				<div className="offers">
 					{offer[0].list?.map((el) => (

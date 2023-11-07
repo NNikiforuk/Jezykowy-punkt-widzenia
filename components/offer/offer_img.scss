@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: center;
 	margin-bottom: 10px;
-	
+
 	.img {
 		border-radius: 8px;
 	}
@@ -15,6 +15,17 @@
 
 		.img {
 			width: 300px;
+			height: auto;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.main_img {
+		float: none;
+
+		.img {
+			width: 426px;
 			height: auto;
 		}
 	}

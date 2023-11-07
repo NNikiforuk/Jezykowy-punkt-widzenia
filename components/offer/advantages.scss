@@ -17,17 +17,11 @@
 	}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
 	.advantages {
-		padding: 50px 0 50px 0;
-
-		&_title {
-			text-align: left;
-		}
+		padding-top: 0;
 
 		&_list {
-			padding-left: 40px;
-
 			li {
 				padding-top: 20px;
 			}

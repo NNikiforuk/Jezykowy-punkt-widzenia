@@ -1,11 +1,26 @@
-.reminder {
+.reminder_primary {
 	font-weight: bold;
 	text-align: center;
 	text-decoration: underline;
 }
 
+.reminder_secondary {
+	display: none;
+}
+
 @media only screen and (min-width: 768px) {
-	.reminder {
+	.reminder_primary {
 		padding: 40px 0;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.reminder_primary {
+		display: none;
+	}
+
+	.reminder_secondary {
+		display: flex;
+		justify-content: flex-start;
 	}
 }

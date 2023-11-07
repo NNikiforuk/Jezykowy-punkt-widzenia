@@ -17,6 +17,23 @@
 	}
 }
 
-@media only screen and (min-width: 768px) {
-	
+@media only screen and (min-width: 1024px) {
+	.offers {
+		.box {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.offers {
+		display: flex;
+		justify-content: space-between;
+
+		.box {
+			.offers_list li {
+				padding-top: 20px;
+			}
+		}
+	}
 }

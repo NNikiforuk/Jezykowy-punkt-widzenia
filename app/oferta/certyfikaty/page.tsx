@@ -21,27 +21,29 @@ const Children = () => {
 			/>
 			<Offer_navbar links={links[0].sublinks?.sublink} />
 
-
 			<div className="offer">
 				<div className="title_wrapper">
 					<h2 className="no_desc">{offer[4].title}</h2>
 				</div>
-				<Offer_img
-					priority={false}
-					src={offer[4].src}
-					alt={offer[4].alt}
-					width={200}
-				/>
 
-				<div className="offer_desc">{offer[4].text1}</div>
+				<div className="wrapper">
+					<Offer_img
+						priority={false}
+						src={offer[4].src}
+						alt={offer[4].alt}
+						width={200}
+					/>
+					<div className="container">
+						<div className="offer_desc">{offer[4].text1}</div>
+						<Reminder hide={false} />
+					</div>
+				</div>
 
 				<Advantages />
-				<Reminder />
+				<Reminder hide={true} />
 
 				<Offer_options />
 			</div>
-
-
 		</main>
 	);
 };

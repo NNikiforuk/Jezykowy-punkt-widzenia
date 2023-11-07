@@ -26,17 +26,22 @@ const Lector = () => {
 					<h2>{offer[1].title}</h2>
 					<div className="title_desc">{offer[1].titleDesc}</div>
 				</div>
-				<Offer_img
-					priority={false}
-					src={offer[1].src}
-					alt={offer[1].alt}
-					width={200}
-				/>
 
-				<div className="offer_desc">{offer[1].text1}</div>
+				<div className="wrapper">
+					<Offer_img
+						priority={false}
+						src={offer[1].src}
+						alt={offer[1].alt}
+						width={200}
+					/>
+					<div className="container">
+						<div className="offer_desc">{offer[1].text1}</div>
+						<Reminder hide={false} />
+					</div>
+				</div>
 
 				<Advantages />
-				<Reminder />
+				<Reminder hide={true} />
 
 				<Offer_options />
 			</div>

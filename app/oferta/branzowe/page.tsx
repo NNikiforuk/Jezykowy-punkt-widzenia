@@ -26,17 +26,21 @@ const Company = () => {
 					<h2 className="no_desc">{offer[2].title}</h2>
 				</div>
 
-				<Offer_img
-					priority={false}
-					src={offer[2].src}
-					alt={offer[2].alt}
-					width={200}
-				/>
-
-				<div className="offer_desc">{offer[2].text1}</div>
+				<div className="wrapper">
+					<Offer_img
+						priority={false}
+						src={offer[2].src}
+						alt={offer[2].alt}
+						width={200}
+					/>
+					<div className="container">
+						<div className="offer_desc">{offer[2].text1}</div>
+						<Reminder hide={false} />
+					</div>
+				</div>
 
 				<Advantages />
-				<Reminder />
+				<Reminder hide={true} />
 
 				<Offer_options />
 			</div>
