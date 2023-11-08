@@ -27,8 +27,24 @@ $grey: rgba(217, 215, 215, 0.5);
 		float: none;
 
 		.img {
-			width: 426px;
-			height: auto;
+			width: 500px;
+			height: 350px;
+		}
+
+		.img_up {
+			border-bottom-right-radius: 50%;
+		}
+
+		.img_down {
+			border-top-left-radius: 50%;
+		}
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.main_img {
+		.img {
+			width: 500px;
 		}
 	}
 }

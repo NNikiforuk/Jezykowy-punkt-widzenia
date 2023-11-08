@@ -6,6 +6,7 @@ import Offer_options from "@/components/offer/Offer_options";
 import Offer_img from "@/components/offer/Offer_img";
 import Advantages from "@/components/offer/Advantages";
 import Reminder from "@/components/offer/Reminder";
+import img2 from "../../../public/assets/images/offer/teacher2.jpg";
 
 const Lector = () => {
 	return (
@@ -28,19 +29,22 @@ const Lector = () => {
 				</div>
 
 				<div className="wrapper">
-					<Offer_img
-						priority={false}
-						src={offer[1].src}
-						alt={offer[1].alt}
-						width={200}
-					/>
+					<Offer_img src={offer[1].src} alt={offer[1].alt} upImg={true} />
 					<div className="container">
 						<div className="offer_desc">{offer[1].text1}</div>
 						<Reminder mobile={false} />
 					</div>
 				</div>
 
-				<Advantages />
+				<div className="desktop_image">
+					<div className="desktop_image_wrapper">
+						<Advantages mobile={false} />
+					</div>
+
+					<Offer_img src={img2} alt="nauka dzieci" upImg={false} />
+				</div>
+
+				<Advantages mobile={true} />
 				<Reminder mobile={true} />
 
 				<Offer_options />

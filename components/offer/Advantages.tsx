@@ -1,8 +1,12 @@
 import { advantages } from "@/data/offer/offer";
 
-const Advantages = () => {
-  return (
-		<div className="advantages">
+const Advantages = ({ mobile }: { mobile: boolean }) => {
+	return (
+		<div
+			className={`advantages ${
+				mobile ? "advantages_mobile" : "advantages_desktop"
+			}`}
+		>
 			<div className="advantages_title">{advantages.text1}</div>
 			<ul className="advantages_list">
 				{advantages.list.map((el) => (
@@ -11,6 +15,6 @@ const Advantages = () => {
 			</ul>
 		</div>
 	);
-}
+};
 
-export default Advantages
+export default Advantages;

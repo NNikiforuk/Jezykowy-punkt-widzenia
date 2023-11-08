@@ -5,6 +5,7 @@ import Offer_navbar from "@/components/offer/Offer_navbar";
 import Reminder from "@/components/offer/Reminder";
 import { links } from "@/data/links";
 import { offer } from "@/data/offer/offer";
+import img2 from "../../public/assets/images/offer/native2.jpg";
 
 const Offer = () => {
 	return (
@@ -27,7 +28,7 @@ const Offer = () => {
 				</div>
 
 				<div className="wrapper">
-					<Offer_img src={offer[0].src} alt={offer[0].alt} />
+					<Offer_img src={offer[0].src} alt={offer[0].alt} upImg={true} />
 
 					<div className="container">
 						<div className="offer_desc">{offer[0].text1}</div>
@@ -35,7 +36,15 @@ const Offer = () => {
 					</div>
 				</div>
 
-				<Advantages />
+				<div className="desktop_image">
+					<div className="desktop_image_wrapper">
+						<Advantages mobile={false} />
+					</div>
+
+					<Offer_img src={img2} alt="kobieta przy laptopie" upImg={false} />
+				</div>
+
+				<Advantages mobile={true} />
 
 				<Reminder mobile={true} />
 

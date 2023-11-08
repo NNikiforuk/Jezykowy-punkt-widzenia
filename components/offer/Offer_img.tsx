@@ -3,9 +3,10 @@ import Image, { StaticImageData } from "next/image";
 interface Props {
 	src: StaticImageData;
 	alt: string;
+	upImg: boolean;
 }
 
-const Offer_img = ({ src, alt }: Props) => {
+const Offer_img = ({ src, alt, upImg }: Props) => {
 	return (
 		<div className="main_img">
 			<Image
@@ -13,7 +14,7 @@ const Offer_img = ({ src, alt }: Props) => {
 				src={src}
 				alt={alt}
 				width={200}
-				className="img"
+				className={`img ${upImg ? "img_up" : "img_down"}`}
 				unoptimized
 			/>
 		</div>

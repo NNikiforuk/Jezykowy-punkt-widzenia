@@ -1,11 +1,11 @@
 $coral: rgb(221, 135, 135);
+$text: rgb(70, 68, 68);
 
 .reminder {
 	font-weight: bold;
 	text-align: center;
 	text-decoration: underline;
 	color: $coral;
-
 
 	&_desktop {
 		display: none;
@@ -19,11 +19,15 @@ $coral: rgb(221, 135, 135);
 }
 
 @media only screen and (min-width: 1200px) {
-	.reminder_mobile {
-		display: none;
-	}
+	.reminder {
+		color: $text;
 
-	.reminder_desktop {
-		display: flex;
+		&_mobile {
+			display: none;
+		}
+
+		&_desktop {
+			display: flex;
+		}
 	}
 }

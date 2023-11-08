@@ -25,6 +25,10 @@ $text: rgb(70, 68, 68);
 	&_desc {
 		text-align: center;
 	}
+
+	.desktop_image {
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -47,12 +51,24 @@ $text: rgb(70, 68, 68);
 
 @media only screen and (min-width: 1200px) {
 	.offer {
-		padding: 80px;
+		padding: 80px 150px 0 150px;
 		font-size: 20px;
 		line-height: 30px;
 
 		.wrapper {
 			display: flex;
+		}
+
+		.desktop_image {
+			display: flex;
+			justify-content: space-between;
+			margin: 40px 0;
+
+			&_wrapper {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+			}
 		}
 	}
 }

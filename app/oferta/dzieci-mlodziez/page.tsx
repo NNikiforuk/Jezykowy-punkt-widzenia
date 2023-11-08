@@ -6,6 +6,7 @@ import Offer_options from "@/components/offer/Offer_options";
 import Advantages from "@/components/offer/Advantages";
 import Offer_img from "@/components/offer/Offer_img";
 import Reminder from "@/components/offer/Reminder";
+import img2 from "../../../public/assets/images/offer/classroom2.jpg";
 
 const Children = () => {
 	return (
@@ -27,12 +28,7 @@ const Children = () => {
 				</div>
 
 				<div className="wrapper">
-					<Offer_img
-						priority={false}
-						src={offer[3].src}
-						alt={offer[3].alt}
-						width={200}
-					/>
+					<Offer_img src={offer[3].src} alt={offer[3].alt} upImg={true} />
 
 					<div className="container">
 						<div className="offer_desc">{offer[3].text1}</div>
@@ -40,7 +36,15 @@ const Children = () => {
 					</div>
 				</div>
 
-				<Advantages />
+				<div className="desktop_image">
+					<div className="desktop_image_wrapper">
+						<Advantages mobile={false} />
+					</div>
+
+					<Offer_img src={img2} alt="młodzież na lekcji" upImg={false} />
+				</div>
+
+				<Advantages mobile={true} />
 				<Reminder mobile={true} />
 
 				<Offer_options />

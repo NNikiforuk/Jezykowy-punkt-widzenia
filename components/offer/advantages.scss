@@ -17,14 +17,32 @@
 	}
 }
 
+.advantages_desktop {
+	display: none;
+}
+
 @media only screen and (min-width: 1200px) {
 	.advantages {
 		padding-top: 0;
+
+		&_title {
+			text-align: center;
+		}
 
 		&_list {
 			li {
 				padding-top: 20px;
 			}
 		}
+	}
+
+	.advantages_mobile {
+		display: none;
+	}
+
+	.advantages_desktop {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
 	}
 }
