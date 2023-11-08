@@ -1,8 +1,10 @@
 import { advantages } from "@/data/offer/offer";
 
-const Reminder = ({ hide }: { hide: boolean }) => {
-	return hide ? null : (
-		<div className="reminder_primary reminder_secondary">
+const Reminder = ({ mobile }: { mobile: boolean }) => {
+	return (
+		<div
+			className={`reminder ${mobile ? "reminder_mobile" : "reminder_desktop"}`}
+		>
 			{advantages.text2}
 		</div>
 	);

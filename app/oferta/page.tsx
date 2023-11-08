@@ -37,13 +37,13 @@ const Offer = () => {
 
 					<div className="container">
 						<div className="offer_desc">{offer[0].text1}</div>
-						<Reminder hide={false} />
+						<Reminder mobile={false} />
 					</div>
 				</div>
 
 				<Advantages />
 
-				<Reminder hide={true} />
+				<Reminder mobile={true} />
 
 				<div className="offers">
 					{offer[0].list?.map((el) => (

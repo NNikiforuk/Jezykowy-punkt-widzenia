@@ -35,12 +35,12 @@ const Children = () => {
 					/>
 					<div className="container">
 						<div className="offer_desc">{offer[4].text1}</div>
-						<Reminder hide={false} />
+						<Reminder mobile={false} />
 					</div>
 				</div>
 
 				<Advantages />
-				<Reminder hide={true} />
+				<Reminder mobile={true} />
 
 				<Offer_options />
 			</div>
