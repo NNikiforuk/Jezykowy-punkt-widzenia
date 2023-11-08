@@ -5,7 +5,6 @@ import Offer_navbar from "@/components/offer/Offer_navbar";
 import Reminder from "@/components/offer/Reminder";
 import { links } from "@/data/links";
 import { offer } from "@/data/offer/offer";
-import img2 from "../../public/assets/images/offer/native2.jpg";
 
 const Offer = () => {
 	return (
@@ -28,12 +27,7 @@ const Offer = () => {
 				</div>
 
 				<div className="wrapper">
-					<Offer_img
-						priority={false}
-						src={offer[0].src}
-						alt={offer[0].alt}
-						width={200}
-					/>
+					<Offer_img src={offer[0].src} alt={offer[0].alt} />
 
 					<div className="container">
 						<div className="offer_desc">{offer[0].text1}</div>

@@ -1,21 +1,20 @@
 import Image, { StaticImageData } from "next/image";
 
 interface Props {
-	priority: boolean;
 	src: StaticImageData;
 	alt: string;
-	width: number;
 }
 
-const Offer_img = ({ priority, src, alt, width }: Props) => {
+const Offer_img = ({ src, alt }: Props) => {
 	return (
 		<div className="main_img">
 			<Image
-				priority={priority}
+				priority={false}
 				src={src}
 				alt={alt}
-				width={width}
+				width={200}
 				className="img"
+				unoptimized
 			/>
 		</div>
 	);
