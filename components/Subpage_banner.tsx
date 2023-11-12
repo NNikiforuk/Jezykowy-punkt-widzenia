@@ -3,35 +3,19 @@ import Image, { StaticImageData } from "next/image";
 interface Props {
 	src: StaticImageData;
 	alt: string;
-	priority: boolean;
-	width: number;
-	height: number;
-	sizes: string;
-	style: {
-		width: string;
-		height: string;
-	};
 }
 
-const Subpage_banner = ({
-	src,
-	alt,
-	priority,
-	width,
-	height,
-	sizes,
-	style,
-}: Props) => {
+const Subpage_banner = ({ src, alt }: Props) => {
 	return (
 		<div>
 			<Image
 				src={src}
 				alt={alt}
-				priority={priority}
-				width={width}
-				height={height}
-				sizes={sizes}
-				style={style}
+				priority={true}
+				width="0"
+				height="0"
+				sizes="100vw"
+				style={{ width: "100%", height: "auto" }}
 			/>
 		</div>
 	);

@@ -1,49 +1,26 @@
-import { prices, info } from "../../data/prices/prices";
+import Subpage_banner from "@/components/Subpage_banner";
 import { links } from "@/data/links";
-import Image from "next/image";
+import Option from "@/components/prices/Option";
+import womanIMG from "../../public/assets/images/prices/woman.png";
 
 const Prices = () => {
 	return (
-		<div className="boxes">
-			<div className="boxes_img">
-				<Image
-					src={links[1].img}
-					alt={links[1].alt}
-					priority={true}
-					width={0}
-					height={0}
-					sizes="100vw"
-					style={{ width: "100%", height: "auto" }}
+		<main>
+			<Subpage_banner src={links[1].img} alt={links[1].alt} />
+			<div className="prices">
+				<Option
+					title="Standardowy"
+					src={womanIMG}
+					alt="woman"
+					length="4 miesiące"
+					lessons="24 (36h) spotkania x 1,5 h / 2x w tygodniu"
+					max={4}
+					standardPrices={true}
 				/>
+
+				
 			</div>
-			<div className="boxes_groups">
-				{prices.map((el) => (
-					<div className="boxes_group" key={el.name}>
-						<h2>{el.name}</h2>
-						{el.desc.map((x) => (
-							<div key={x.id} className="box">
-								<div className="box_titles">
-									<div className="box_title">{x.title}</div>
-									<div className="box_time">{x.time}</div>
-								</div>
-								<div className="box_desc">
-									<ul>
-										{x.text.map((y) => (
-											<li className="bullet" key={y}>
-												{y}
-											</li>
-										))}
-									</ul>
-								</div>
-							</div>
-						))}
-					</div>
-				))}
-				<div className="boxes_group">
-					<div className="text info">{info.text}</div>
-				</div>
-			</div>
-		</div>
+		</main>
 	);
 };
 
