@@ -10,6 +10,7 @@ interface Props {
 	lessons: string;
 	max: number;
 	standardPrices: boolean;
+	hours92130: boolean;
 }
 
 const Hours92130 = () => {
@@ -42,9 +43,10 @@ const Option = ({
 	lessons,
 	max,
 	standardPrices,
+	hours92130,
 }: Props) => {
 	return (
-		<div>
+		<div className="container">
 			<h2>{title}</h2>
 			<div className="option_img">
 				<Image src={src} alt={alt} width={128} className="img" />
@@ -73,7 +75,7 @@ const Option = ({
 					</div>
 					<div className="row">
 						<p className="title">GODZINY ZAJĘĆ</p>
-						<Hours92130 />
+						{hours92130 ? <Hours92130 /> : null}
 					</div>
 					<div className="row">
 						<p className="title">TRYB ZAJĘĆ</p>
