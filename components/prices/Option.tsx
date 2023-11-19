@@ -2,7 +2,7 @@ import React from "react";
 import { FcCheckmark } from "react-icons/fc";
 import Image, { StaticImageData } from "next/image";
 
-interface Props {
+export interface Props {
 	title: string;
 	src: StaticImageData;
 	alt: string;
@@ -78,78 +78,78 @@ const Option = ({
 	};
 
 	return (
-		<div className={`container ${highlight && "highlight"}`}>
+		<div className={`container_mobile ${highlight && "highlight"}`}>
 			<h2>{title}</h2>
 			<div className="option_img">
 				<Image src={src} alt={alt} width={128} className="img" />
 			</div>
 			<div className="options">
-				<div className="option">
-					<div className="row">
-						<p className="title">DŁUGOŚĆ KURSU</p>
-						<p className="desc">{length}</p>
-					</div>
-					<div className="row">
-						<p className="title">POZIOM</p>
+				<div className="row">
+					<p className="title">DŁUGOŚĆ KURSU</p>
+					<p className="desc">{length}</p>
+				</div>
+				<div className="row">
+					<p className="title">POZIOM</p>
 
-						{company ? (
-							<p className="desc">B2 - C2</p>
-						) : (
-							<p className="desc">A1 - C2</p>
-						)}
+					{company ? (
+						<p className="desc">B2 - C2</p>
+					) : (
+						<p className="desc">A1 - C2</p>
+					)}
+				</div>
+				<div className="row">
+					<p className="title">NAUCZYCIEL</p>
+					{lectorOnly ? (
+						<p className="desc">Wykwalifikowany lektor</p>
+					) : (
+						<p className="desc">Native speaker lub wykwalifikowany lektor</p>
+					)}
+				</div>
+				<div className="row">
+					<p className="title">LICZBA LEKCJI W PAKIECIE</p>
+					<p className="desc">{lessons}</p>
+				</div>
+				<div className="row">
+					<p className="title">MAX. LICZBA OSÓB W GRUPIE</p>
+					<p className="desc">{max}</p>
+				</div>
+				<div className="row">
+					<p className="title">GODZINY ZAJĘĆ</p>
+					{hours92130 ? (
+						<Hours92130 />
+					) : (
+						<p className="desc">Ustalane indywidualnie</p>
+					)}
+				</div>
+				<div className="row">
+					<p className="title">TRYB ZAJĘĆ</p>
+					<p className="desc">Online</p>
+				</div>
+				<div className="row">
+					<p className="title">RATY</p>
+					<div>
+						<FcCheckmark />
 					</div>
-					<div className="row">
-						<p className="title">NAUCZYCIEL</p>
-						{lectorOnly ? (
-							<p className="desc">Wykwalifikowany lektor</p>
-						) : (
-							<p className="desc">Native speaker lub wykwalifikowany lektor</p>
-						)}
+				</div>
+				<div className="row">
+					<p className="title">RABAT</p>
+					<div>
+						<FcCheckmark />
 					</div>
-					<div className="row">
-						<p className="title">LICZBA LEKCJI W PAKIECIE</p>
-						<p className="desc">{lessons}</p>
-					</div>
-					<div className="row">
-						<p className="title">MAX. LICZBA OSÓB W GRUPIE</p>
-						<p className="desc">{max}</p>
-					</div>
-					<div className="row">
-						<p className="title">GODZINY ZAJĘĆ</p>
-						{hours92130 ? (
-							<Hours92130 />
-						) : (
-							<p className="desc">"Ustalane indywidualnie"</p>
-						)}
-					</div>
-					<div className="row">
-						<p className="title">TRYB ZAJĘĆ</p>
-						<p className="desc">Online</p>
-					</div>
-					<div className="row">
-						<p className="title">RATY</p>
-						<div>
-							<FcCheckmark />
-						</div>
-					</div>
-					<div className="row">
-						<p className="title">RABAT</p>
-						<div>
-							<FcCheckmark />
-						</div>
-					</div>
-					<div className="row total">
-						<p className="title">CENA ZA OSOBĘ W GRUPIE [ZŁ]</p>
-						{standardPrices ? (
-							<Standard_prices />
-						) : company ? (
-							<Average_prices />
-						) : children ? (
-							<Children_prices />
-						) : (
-							<div className="desc">130 zł / 60 min</div>
-						)}
-					</div>
+				</div>
+				<div className="row total">
+					<p className="title">CENA ZA OSOBĘ W GRUPIE [ZŁ]</p>
+					{standardPrices ? (
+						<Standard_prices />
+					) : company ? (
+						<Average_prices />
+					) : children ? (
+						<Children_prices />
+					) : individual ? (
+						<Average_prices />
+					) : (
+						<div className="desc">130 zł / 60 min</div>
+					)}
 				</div>
 			</div>
 		</div>

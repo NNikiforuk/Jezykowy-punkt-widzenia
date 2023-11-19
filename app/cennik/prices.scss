@@ -11,3 +11,25 @@ $text: rgb(70, 68, 68);
 	justify-content: center;
 }
 
+@media only screen and (min-width: 768px) {
+	.prices {
+		padding: 40px;
+		font-size: 22px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.prices {
+		padding: 50px;
+		font-size: 24px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.prices {
+		padding: 80px 150px 0 150px;
+		font-size: 20px;
+		line-height: 30px;
+		flex-direction: row;
+	}
+}
