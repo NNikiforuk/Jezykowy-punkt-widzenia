@@ -1,0 +1,50 @@
+$border: rgb(217, 215, 215);
+
+.offers {
+	padding: 30px 0 30px 0;
+
+	.box {
+		.title {
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		.offers_list {
+			padding: 10px 20px 20px 20px;
+
+			li {
+				padding-top: 10px;
+			}
+		}
+		border-bottom: 2px solid $border;
+		margin-bottom: 10px;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.offers {
+		.box {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.offers {
+		display: flex;
+		justify-content: space-between;
+
+		.box {
+			.offers_list li {
+				padding-top: 20px;
+			}
+
+			border: none;
+			margin-bottom: 0;
+		}
+	}
+}

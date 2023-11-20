@@ -1,0 +1,151 @@
+$text: rgb(70, 68, 68);
+$text-hover: rgb(221, 135, 135);
+$border: rgb(217, 215, 215);
+$yellow: rgb(244, 237, 198);
+
+.german {
+	&_container {
+		padding: 20px;
+		color: $text;
+		font-size: 16px;
+
+		.text_container {
+			.title {
+				padding: 20px;
+				font-weight: bold;
+				text-align: center;
+				margin-top: 20px;
+			}
+
+			.wrapper {
+				margin-top: 10px;
+
+				.text {
+					.photos {
+						text-align: center;
+
+						.photo {
+							margin-bottom: 15px;
+
+							.desc {
+								font-size: 14px;
+								padding: 10px;
+							}
+
+							.image {
+								img {
+									border-radius: 15px;
+									z-index: -5;
+								}
+							}
+						}
+					}
+				}
+				.legend {
+					margin-top: 20px;
+
+					ul li {
+						list-style-type: none;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.german {
+		&_container {
+			padding: 40px;
+			font-size: 22px;
+
+			.text_container {
+				.title {
+					font-size: 24px;
+				}
+
+				.wrapper {
+					.text {
+						.paragraph {
+							font-size: 22px;
+							padding: 10px;
+						}
+
+						.photos {
+							.photo {
+								padding: 15px;
+								.desc {
+									font-size: 22px;
+									margin-bottom: 15px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.german {
+		&_container {
+			padding: 50px;
+			font-size: 24px;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.german {
+		margin-bottom: 40px;
+
+		.german_container {
+			padding: 80px 150px 0 150px;
+			font-size: 20px;
+			line-height: 30px;
+
+			.text_container {
+				.title {
+					font-size: 24px;
+				}
+
+				.wrapper {
+					display: flex;
+
+					.text {
+						flex: 3;
+
+						.paragraph {
+							font-size: 16px;
+						}
+
+						.photos {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+
+							.photo {
+								.desc {
+									font-size: 16px;
+								}
+							}
+						}
+					}
+
+					.legend {
+						flex: 1;
+						margin-left: 15px;
+						padding-top: 10px;
+						margin-top: 0;
+
+						ul {
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

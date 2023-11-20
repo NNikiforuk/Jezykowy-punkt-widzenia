@@ -17,17 +17,19 @@ const Contact = () => {
 					style={{ width: "100%", height: "auto" }}
 				/>
 			</div>
-			<div className="tel">
-				<div className="tel_icon">
-					<FaPhone />
+			<div className="container">
+				<div className="tel">
+					<div className="tel_icon">
+						<FaPhone />
+					</div>
+					<div className="tel_number">(+48) 603 156 142</div>
 				</div>
-				<div className="tel_number">(+48) 603 156 142</div>
-			</div>
-			<div className="email">
-				<div className="email_icon">
-					<AiOutlineMail />
+				<div className="email">
+					<div className="email_icon">
+						<AiOutlineMail />
+					</div>
+					<div className="email_address">kddobrzanska@gmail.com</div>
 				</div>
-				<div className="email_address">kddobrzanska@gmail.com</div>
 			</div>
 		</div>
 	);

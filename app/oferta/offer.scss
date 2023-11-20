@@ -1,184 +1,73 @@
-$text: rgb(147, 143, 147);
+@use "../../components/offer/offer_navbar.scss";
+@use "../../components/offer/offer_img.scss";
+@use "../../components/offer/advantages.scss";
+@use "../../components/offer/offers.scss";
+@use "../../components/offer/reminder.scss";
 
-.bold {
-	font-weight: bold;
-}
-
-.underline {
-	text-decoration-line: underline;
-}
+$text: rgb(70, 68, 68);
 
 .offer {
+	padding: 20px;
 	color: $text;
 
-	.nav {
-		padding: 0 5px 0 5px;
-
-		li a {
-			text-decoration: none;
-			color: rgb(112, 111, 111);
-			font-weight: bold;
-		}
-
-		li {
-			list-style-type: none;
-		}
-	}
-
-	.offer_wrapper {
-		padding: 20px;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
+	.title_wrapper {
 		text-align: center;
 
-		h2 {
-			color: $text;
-			margin-top: 10px;
+		.title_desc {
+			margin: 10px 0 50px 0;
 		}
 
-		p {
-			margin-top: 10px;
-		}
-
-		ul {
-			padding: 20px;
-
-			li {
-				text-align: left;
-			}
-		}
-
-		.marginTop {
-			margin-top: 30px;
-		}
-
-		.offer_description {
-			margin: 40px 0 20px 0;
-			font-size: 14px;
-
-			.img {
-				border-radius: 8px;
-			}
-
-			.desc {
-				margin-top: 10px;
-				font-size: 16px;
-			}
+		.no_desc {
+			margin-bottom: 50px;
 		}
 	}
 
-	.extraRoom {
-		padding: 30px;
+	&_desc {
+		text-align: center;
 	}
 
-	.left {
-		text-align: left;
-	}
-}
-
-@media only screen and (min-width: 360px) {
-	.desc {
-		font-size: 16px;
+	.desktop_image {
+		display: none;
 	}
 }
 
 @media only screen and (min-width: 768px) {
 	.offer {
+		padding: 40px;
 		font-size: 22px;
 
-		.offer_img-mobile {
-			display: none;
+		&_desc {
+			text-align: left;
 		}
-
-		.offer_img-desktop {
-			display: flex;
-		}
-
-		.offer_wrapper {
-			padding: 40px;
-
-			.offer_description {
-				margin: 25px 0 25px 0;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-
-				.main_img {
-					float: left;
-					padding-right: 20px;
-				}
-
-				.desc {
-					text-align: justify;
-					margin: 0;
-					font-size: 22px;
-				}
-			}
-		}
-	}
-
-	.extraRoom {
-		padding: 50px;
 	}
 }
 
 @media only screen and (min-width: 1024px) {
 	.offer {
-		.offer_img {
-			img {
-				width: 1024px;
-				height: 250px;
-			}
-		}
-
-		.offer_wrapper {
-			.offer_description {
-				margin: 20px;
-				margin-top: 60px;
-			}
-		}
-
-		.nav {
-			ul {
-				display: flex;
-				justify-content: space-between;
-			}
-		}
+		padding: 50px;
+		font-size: 24px;
 	}
 }
 
 @media only screen and (min-width: 1200px) {
 	.offer {
-		.offer_wrapper {
-			margin: 0 350px 0 350px;
-			.offer_description {
-				.main_description {
-					.main_img {
-						.img {
-							width: 250px;
-							height: 280px;
-						}
-					}
-				}
-			}
+		padding: 80px 150px 0 150px;
+		font-size: 20px;
+		line-height: 30px;
+
+		.wrapper {
+			display: flex;
 		}
-		.nav {
-			ul {
-				justify-content: flex-start;
 
-				li {
-					padding: 15px;
-					border-right: 2px solid rgb(217, 215, 215);
+		.desktop_image {
+			display: flex;
+			justify-content: space-between;
+			margin: 40px 0;
 
-					a:hover {
-
-						color: rgb(221, 135, 135);
-					}
-				}
-
-
-
+			&_wrapper {
+				width: 100%;
+				display: flex;
+				justify-content: center;
 			}
 		}
 	}

@@ -1,126 +1,37 @@
-.text {
-	color: gray;
+@use "../../components/prices/option.scss";
+
+$text: rgb(70, 68, 68);
+
+.prices {
+	padding: 20px;
+	color: $text;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	text-align: center;
 }
 
-.boxes {
-	.boxes_groups {
-		font-size: 14px;
-		margin-top: 30px;
-
-		.boxes_group {
-		padding: 20px;
-			.info {
-				margin: 40px 0 20px 0;
-			}
-			.box {
-				background-color: rgb(224, 228, 226);
-				margin: 20px 0 30px 0;
-				border-radius: 15px;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				padding: 15px;
-				text-align: center;
-
-				.box_titles {
-					text-align: center;
-					color: gray;
-					font-weight: bold;
-					margin-bottom: 10px;
-				}
-
-				.box_desc {
-					ul {
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-						justify-content: center;
-						padding: 0;
-
-						.bullet {
-							list-style: none;
-							padding: 3px;
-							color: gray;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-@media only screen and (min-width: 414px) {
-	.boxes {
-
-		.boxes_groups {
-			padding: 40px;
-			.boxes_group {
-				.box {
-					padding: 20px;
-					margin: 40px;
-				}
-			}
-		}
-	}
-}
-
 @media only screen and (min-width: 768px) {
-	.boxes {
-		.boxes_groups {
-			font-size: 22px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-
-			.boxes_group {
-				text-align: center;
-				margin-bottom: 40px;
-
-				.box {
-					padding: 20px;
-					margin: 10px 20px;
-					width: 300px;
-					display: inline-block;
-				}
-			}
-		}
+	.prices {
+		padding: 40px;
+		font-size: 22px;
 	}
 }
 
 @media only screen and (min-width: 1024px) {
-	.boxes {
-		.boxes_groups {
-			font-size: 24px;
-
-			.boxes_group {
-				.box {
-					padding: 25px;
-					width: 300px;
-					margin-top: 20px;
-				}
-			}
-		}
+	.prices {
+		padding: 50px;
+		font-size: 24px;
 	}
 }
 
 @media only screen and (min-width: 1200px) {
-	.boxes {
-		.boxes_groups {
-			font-size: 20px;
-
-			.boxes_group {
-				.box {
-					padding: 25px;
-					width: 300px;
-					transition: 0.3s;
-				}
-
-				.box:hover {
-					transform: scale(1.1);
-				}
-			}
-		}
+	.prices {
+		padding: 80px 150px 0 150px;
+		font-size: 20px;
+		line-height: 30px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
 	}
 }

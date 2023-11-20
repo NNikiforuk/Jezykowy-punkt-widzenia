@@ -1,0 +1,44 @@
+.advantages {
+	padding: 30px 0 30px 0;
+	text-align: center;
+
+	&_title {
+		font-weight: bold;
+	}
+
+	&_list {
+		display: inline-block;
+		text-align: left;
+		padding: 10px 20px 20px 20px;
+
+		li {
+			padding-top: 10px;
+		}
+	}
+}
+
+.advantages_desktop {
+	display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+	.advantages {
+		padding-top: 0;
+
+		&_list {
+			li {
+				padding-top: 20px;
+			}
+		}
+	}
+
+	.advantages_mobile {
+		display: none;
+	}
+
+	.advantages_desktop {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+}

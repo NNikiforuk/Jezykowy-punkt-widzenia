@@ -1,7 +1,6 @@
-$headline-color: rgb(192, 168, 31);
+$text: rgb(70, 68, 68);
 
 @use "../components/home/home.scss";
-@use "./../components/offer/packages.scss";
 @use "./opinie/feedback.scss";
 @use "../components/footer/footer.scss";
 @use "../app/cennik/prices.scss";
@@ -9,8 +8,9 @@ $headline-color: rgb(192, 168, 31);
 @use "../app/tlumaczenia/translations.scss";
 @use "../app/lektorzy/teachers.scss";
 @use "../components/navigation/navigation.scss";
-@use "../app/materialy/niemiecki/german.scss";
+@use "../app/artykuly/niemiecki/german.scss";
 @use "../app/oferta/offer.scss";
+@use "../app/artykuly/articles.scss";
 
 * {
 	box-sizing: border-box;
@@ -19,22 +19,21 @@ $headline-color: rgb(192, 168, 31);
 }
 
 body {
-	background-color: white;
+	background-color: rgb(245, 245, 245);
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	$text: rgb(70, 68, 68);
 }
 
 h1 {
 	font-size: 22px;
-	color: $headline-color;
 	text-align: center;
 	font-weight: bold;
 }
 
 h2 {
 	font-size: 18px;
-	color: $headline-color;
 	text-align: center;
 	font-weight: bold;
 }
