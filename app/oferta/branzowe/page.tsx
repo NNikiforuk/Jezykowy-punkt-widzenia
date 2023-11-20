@@ -11,15 +11,7 @@ import img2 from "../../../public/assets/images/offer/company2.jpg";
 const Company = () => {
 	return (
 		<main>
-			<Subpage_banner
-				src={links[0].img}
-				alt={links[0].alt}
-				priority={true}
-				width={0}
-				height={0}
-				sizes="100vw"
-				style={{ width: "100%", height: "auto" }}
-			/>
+			<Subpage_banner src={links[0].img} alt={links[0].alt} />
 			<Offer_navbar links={links[0].sublinks?.sublink} />
 
 			<div className="offer">
