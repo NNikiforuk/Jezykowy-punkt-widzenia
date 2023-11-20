@@ -66,15 +66,15 @@ export const links: linksProps[] = [
 		href: "/tlumaczenia",
 	},
 	{
-		name: "Materiały",
+		name: "Artykuły",
 		img: materialsIMG,
 		alt: "writing machine",
-		href: "/materialy",
+		href: "/artykuly",
 		sublinks: {
 			Head: "j. niemiecki",
 			sublink: [
-				{ title: "A1/A2", href: "/materialy/niemiecki/A1A2" },
-				{ title: "B1/B2", href: "/materialy/niemiecki/B1B2" },
+				{ title: "A1/A2", href: "/artykuly/" },
+				{ title: "B1/B2", href: "/artykuly/niemiecki/B1B2" },
 			],
 		},
 	},

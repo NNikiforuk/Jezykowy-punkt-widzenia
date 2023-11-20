@@ -1,23 +1,16 @@
+import Subpage_banner from "@/components/Subpage_banner";
+import Articles_navbar from "@/components/navigation/Articles_navbar";
 import { links } from "@/data/links";
-import Image from "next/image";
 
-const Materials = () => {
+const Articles = () => {
 	return (
-		<div className="german">
-			<div className="translations_img">
-				<Image
-					src={links[3].img}
-					alt={links[3].alt}
-					priority={true}
-					width={0}
-					height={0}
-					sizes="100vw"
-					style={{ width: "100%", height: "auto" }}
-				/>
-			</div>
-			<div className="german_container">
+		<main className="articles">
+			<Subpage_banner src={links[3].img} alt={links[3].alt} />
+			<Articles_navbar />
+
+			<div className="articles_container">
 				<div className="text_container">
-					<div className="title">Sommerferien</div>
+					<h2 className="title">Sommerferien</h2>
 					<div className="wrapper">
 						<div className="text">
 							<p className="paragraph">
@@ -203,8 +196,8 @@ const Materials = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 	);
 };
 
-export default Materials;
+export default Articles;

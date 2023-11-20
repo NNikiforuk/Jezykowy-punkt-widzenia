@@ -8,8 +8,9 @@ $text: rgb(70, 68, 68);
 @use "../app/tlumaczenia/translations.scss";
 @use "../app/lektorzy/teachers.scss";
 @use "../components/navigation/navigation.scss";
-@use "../app/materialy/niemiecki/german.scss";
+@use "../app/artykuly/niemiecki/german.scss";
 @use "../app/oferta/offer.scss";
+@use "../app/artykuly/articles.scss";
 
 * {
 	box-sizing: border-box;

@@ -1,9 +1,13 @@
+import Subpage_banner from "@/components/Subpage_banner";
+import Articles_navbar from "@/components/navigation/Articles_navbar";
+import { links } from "@/data/links";
 import Image from "next/legacy/image";
 
 const GermanB1B2 = () => {
 	return (
 		<div className="german">
-			<h1>Materiały z j. niemieckiego B1/B2</h1>
+			<Subpage_banner src={links[3].img} alt={links[3].alt} />
+			<Articles_navbar />
 			<div className="german_container">
 				<div className="text_container">
 					<div className="title">Korallen</div>
@@ -57,19 +61,14 @@ const GermanB1B2 = () => {
 								<span className="green_text"> als⁷</span> sie dieses neue,
 								gesunde Korallenriff
 								<span className="blue_text"> entdecken⁸</span> haben.
-							</p>
-
-							<p className="paragraph bold">
-								„Wunderschön ist es hier unten. Wie eine riesige Blumenwiese
+								Wunderschön ist es hier unten. Wie eine riesige Blumenwiese
 								erstreckt sich das Korallenriff über drei Kilometer lang. Die
-								großen Korallen hier nennt man auch „Rosenkorallen“
-							</p>
-
-							<p className="paragraph">
-								- <span className="green_text">weil⁹</span> sie ein bisschen wie
+								großen Korallen hier nennt man auch „Rosenkorallen“ -
+								<span className="green_text"> weil⁹</span> sie ein bisschen wie
 								sehr große Rosen aussehen. Manche von ihnen sind über zwei Meter
 								breit. Das neuentdeckte Riff ist eines der größten auf der Welt.
 							</p>
+
 							<p className="paragraph">
 								Es liegt in der Nähe von Tahiti. Die Insel Tahiti lieht zwischen
 								Australien und Südamerika, mitten im Pazifischen Ozean. Das
@@ -143,10 +142,8 @@ const GermanB1B2 = () => {
 							<p className="paragraph italic">
 								<span className="bold">Tipps:</span> Auf hellgrün habe ich die
 								Wörter markiert, die mit der Grammatik verbunden sind und auf
-								hellblau, die die andere Bedeutung haben könnten.
-							</p>
-							<p className="paragraph">
-								In Indien gibt <span className="green_text">es¹ </span>
+								hellblau, die die andere Bedeutung haben könnten. In Indien gibt{" "}
+								<span className="green_text">es¹ </span>
 								Schulbusse, <span className="green_text">die²</span> durch die
 								Stadt <span className="green_text">fahren³</span> wo die Kinder
 								an unterschiedlichen Orten
@@ -189,9 +186,8 @@ const GermanB1B2 = () => {
 								wenn einer es vorsagt hatte, dann ging es wieder. Ich wusste
 								manchmal gar nichts mehr. Jetzt hier im Bus fang ich wieder
 								<span className="blue_text"> an¹⁴ </span>
-								etwas zu lernen.
-								<span className="green_text">
-									Sonst hätte ich alles vergessen¹⁵„.
+								etwas zu lernen. <span className="green_text">
+									 Sonst hätte ich alles vergessen¹⁵".
 								</span>
 							</p>
 							<p className="paragraph">
