@@ -1,18 +1,13 @@
 import { FaPhone } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import Image from "next/image";
 import { links } from "@/data/links";
+import Subpage_banner from "@/components/Subpage_banner";
 
 const Contact = () => {
 	return (
 		<div className="contact">
-			<div className="contact_img">
-				<Image
-					src={links[5].img}
-					alt={links[5].alt}
-					
-				/>
-			</div>
+			<Subpage_banner src={links[5].img} alt={links[5].alt} />
+
 			<div className="container">
 				<div className="tel">
 					<div className="tel_icon">
