@@ -7,56 +7,67 @@
 	flex-direction: column;
 	color: gray;
 
-	.tel {
-		margin-top: 40px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	.container {
+		padding: 20px;
+		font-size: 16px;
 
-		.tel_icon,
-		.tel_number {
-			padding: 5px;
-		}
-	}
-
-	.email {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-top: 20px;
-
-		.email_icon,
-		.email_address {
-			padding: 5px;
-		}
-
-		.email_icon {
+		.tel {
+			margin-top: 40px;
 			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.tel_icon,
+			.tel_number {
+				padding: 5px;
+			}
+		}
+
+		.email {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 20px;
+
+			.email_icon,
+			.email_address {
+				padding: 5px;
+			}
+
+			.email_icon {
+				display: flex;
+			}
 		}
 	}
 }
 
 @media only screen and (min-width: 768px) {
 	.contact {
-		font-size: 24px;
+		.container {
+			padding: 40px;
+			font-size: 22px;
+		}
 	}
 }
 
 @media only screen and (min-width: 1024px) {
 	.contact {
-		font-size: 28px;
+		.container {
+			padding: 50px;
+			font-size: 24px;
 
-		.tel {
-			.tel_icon,
-			.tel_number {
-				padding: 10px;
+			.tel {
+				.tel_icon,
+				.tel_number {
+					padding: 10px;
+				}
 			}
-		}
 
-		.email {
-			.email_icon,
-			.email_address {
-				padding: 10px;
+			.email {
+				.email_icon,
+				.email_address {
+					padding: 10px;
+				}
 			}
 		}
 	}
@@ -64,10 +75,14 @@
 
 @media only screen and (min-width: 1200px) {
 	.contact {
-		font-size: 22px;
+		.container {
+			padding: 0 150px 0 150px;
+			font-size: 20px;
+			line-height: 30px;
 
-		.tel {
-			margin-top: 50px;
+			.tel {
+				margin-top: 50px;
+			}
 		}
 	}
 }
