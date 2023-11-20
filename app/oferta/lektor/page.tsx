@@ -14,11 +14,7 @@ const Lector = () => {
 			<Subpage_banner
 				src={links[0].img}
 				alt={links[0].alt}
-				priority={true}
-				width={0}
-				height={0}
-				sizes="100vw"
-				style={{ width: "100%", height: "auto" }}
+				
 			/>
 			<Offer_navbar links={links[0].sublinks?.sublink} />
 

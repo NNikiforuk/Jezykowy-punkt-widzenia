@@ -10,11 +10,7 @@ const Contact = () => {
 				<Image
 					src={links[5].img}
 					alt={links[5].alt}
-					priority={true}
-					width={0}
-					height={0}
-					sizes="100vw"
-					style={{ width: "100%", height: "auto" }}
+					
 				/>
 			</div>
 			<div className="container">
