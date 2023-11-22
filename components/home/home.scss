@@ -1,12 +1,13 @@
 .home_mobile {
-	margin: 20px;
-	border-radius: 8px;
+	position: relative;
+	margin: 20px 20px 0 20px;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: rgb(195, 195, 159);
+	background-color: rgb(199, 199, 175);
+	z-index: -5;
 
 	.home_headline,
 	.home_headline-secondary,
@@ -42,13 +43,31 @@
 
 		.left_wing,
 		.right_wing {
-			display: inline-block;
+			display: flex;
 
 			svg {
 				color: aliceblue;
 				font-size: 32px;
 			}
 		}
+	}
+}
+
+.css_element {
+	display: flex;
+	margin: 0 20px 0 20px;
+
+	.element {
+		background-color: rgb(199, 199, 175);
+		padding: 20px;
+		width: 50%;
+	}
+
+	.left {
+		border-bottom-right-radius: 50%;
+	}
+	.right {
+		border-bottom-left-radius: 50%;
 	}
 }
 
