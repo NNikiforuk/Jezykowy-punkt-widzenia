@@ -27,10 +27,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div className="css_element">
-				<div className="element left"></div>
-				<div className="element right"></div>
-			</div>
+			
 			<div className="home_boxes_mobile">
 				<Box />
 			</div>

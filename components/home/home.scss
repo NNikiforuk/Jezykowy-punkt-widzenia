@@ -1,7 +1,6 @@
 .home_mobile {
-	position: relative;
-	margin: 20px 20px 0 20px;
-	padding: 20px;
+	margin: 20px;
+	padding: 20px 0 60px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -51,28 +50,11 @@
 			}
 		}
 	}
-}
 
-.css_element {
-	display: flex;
-	margin: 0 20px 0 20px;
-
-	.element {
-		background-color: rgb(199, 199, 175);
-		padding: 20px;
-		width: 50%;
-	}
-
-	.left {
-		border-bottom-right-radius: 50%;
-	}
-	.right {
-		border-bottom-left-radius: 50%;
-	}
 }
 
 .home_boxes_mobile {
-	margin: 20px 20px 40px 20px;
+	margin: 0 20px 40px 20px;
 
 	.wrapper {
 		.box_container {
