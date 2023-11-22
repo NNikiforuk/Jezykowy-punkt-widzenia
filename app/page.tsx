@@ -1,4 +1,5 @@
-import { IoTriangleOutline } from "react-icons/io5";
+import { GiButterflyFlower } from "react-icons/gi";
+
 import { RiArrowLeftSFill, RiArrowRightSFill } from "react-icons/ri";
 
 import { MdOutlineCompareArrows } from "react-icons/md";
@@ -26,8 +27,16 @@ const Home = () => {
 						<RiArrowRightSFill />
 					</div>
 				</div>
+				<div className="flowers">
+					<div>
+						<GiButterflyFlower />
+					</div>
+					<div className="right">
+						<GiButterflyFlower />
+					</div>
+				</div>
 			</div>
-			
+
 			<div className="home_boxes_mobile">
 				<Box />
 			</div>
