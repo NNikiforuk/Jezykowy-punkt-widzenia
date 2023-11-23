@@ -159,6 +159,11 @@ nav {
 				.site_name {
 					display: block;
 					margin-left: 10px;
+
+					a {
+						text-decoration: none;
+						color: $text;
+					}
 				}
 			}
 			.navlist {
@@ -185,7 +190,6 @@ nav {
 	}
 
 	.color_change {
-		background-color: aliceblue;
-		background-color: rgba(aliceblue, .8);
+		background-color: rgba(aliceblue, 0.8);
 	}
 }

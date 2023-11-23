@@ -43,7 +43,12 @@ const Navigation = () => {
 					<div className="burger_btn" onClick={() => setOpen(!open)}>
 						{open ? <RxCross1 /> : <RiMenu3Line />}
 					</div>
-					<div className="site_name">Językowy punkt widzenia</div>
+
+					<div className="site_name">
+						<Link href="/" scroll={false}>
+							Językowy punkt widzenia
+						</Link>
+					</div>
 				</div>
 				<ul className="navlist">
 					{links.map((link) => (
