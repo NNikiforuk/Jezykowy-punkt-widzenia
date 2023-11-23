@@ -1,22 +1,13 @@
-import { FaMedal, FaCheck } from "react-icons/fa";
-import Image from "next/image";
+import { FaMedal } from "react-icons/fa";
 import { links } from "@/data/links";
 import Link from "next/link";
+import Subpage_banner from "@/components/Subpage_banner";
 
 const Translations = () => {
 	return (
 		<main className="translations">
-			<div className="translations_img">
-				<Image
-					src={links[2].img}
-					alt={links[2].alt}
-					priority={true}
-					width={0}
-					height={0}
-					sizes="100vw"
-					style={{ width: "100%", height: "auto" }}
-				/>
-			</div>
+			<Subpage_banner src={links[2].img} alt={links[2].alt} />
+
 			<div className="translations_container">
 				<div className="list">
 					<div className="translations_desc">
@@ -55,7 +46,9 @@ const Translations = () => {
 					</ul>
 				</div>
 				<div className="ps">
-					<Link href="/kontakt">Skontaktuj się w celu uzgodnienia szczegółów!</Link>
+					<Link href="/kontakt">
+						Skontaktuj się w celu uzgodnienia szczegółów!
+					</Link>
 				</div>
 			</div>
 		</main>

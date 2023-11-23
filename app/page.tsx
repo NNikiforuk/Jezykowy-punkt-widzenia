@@ -1,9 +1,5 @@
-import { GiButterflyFlower } from "react-icons/gi";
-
 import { RiArrowLeftSFill, RiArrowRightSFill } from "react-icons/ri";
-
 import { MdOutlineCompareArrows } from "react-icons/md";
-
 import Image from "next/legacy/image";
 import img from "../public/assets/images/landing_page/home.jpg";
 import Box from "@/components/home/Box";
@@ -38,7 +34,7 @@ const Home = () => {
 					objectFit="cover"
 					quality={100}
 					alt="opis szkoły językowej"
-					priority
+					priority={true}
 				/>
 				<div className="home_boxes">
 					<Box />

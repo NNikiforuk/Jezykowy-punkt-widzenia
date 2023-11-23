@@ -33,6 +33,7 @@ const GermanB1B2 = () => {
 											alt="rafa koralowa"
 											width={200}
 											height={130}
+											priority={false}
 										/>
 									</div>
 								</div>
@@ -48,6 +49,7 @@ const GermanB1B2 = () => {
 											alt="woda"
 											width={200}
 											height={130}
+											priority={false}
 										/>
 									</div>
 								</div>

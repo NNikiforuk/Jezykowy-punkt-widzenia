@@ -41,6 +41,7 @@ const Navigation = () => {
 							width={70}
 							height={70}
 							className="logo"
+							priority={false}
 						/>
 					</Link>
 					<div className="burger_btn" onClick={() => setOpen(!open)}>

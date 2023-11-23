@@ -6,7 +6,7 @@ const Img = ({ href, img, alt }: linksProps) => {
 	return (
 		<div className="box_container">
 			<Link href={href}>
-				<Image src={img} alt={alt} width={583} height={167} className="box_img" />
+				<Image src={img} alt={alt} width={583} height={167} className="box_img" priority={false}/>
 			</Link>
 		</div>
 	);
