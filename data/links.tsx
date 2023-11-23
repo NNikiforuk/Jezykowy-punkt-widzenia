@@ -73,7 +73,7 @@ export const links: linksProps[] = [
 		sublinks: {
 			Head: "j. niemiecki",
 			sublink: [
-				{ title: "A1/A2", href: "/artykuly/" },
+				{ title: "A1/A2", href: "/artykuly" },
 				{ title: "B1/B2", href: "/artykuly/niemiecki/B1B2" },
 			],
 		},

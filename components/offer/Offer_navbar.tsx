@@ -1,26 +1,35 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface Props {
-    links?: {
-        title: string,
-        href: string
-    }[]
+	links?: {
+		title: string;
+		href: string;
+	}[];
 }
 
-const Offer_navbar = ({links}: Props) => {
-return (
-	<div className="nav">
-		<ul>
-			{links?.map((link) => (
-				<li key={link.title}>
-					<Link className="nav_item" href={link.href} scroll={false}>
-						{link.title}
-					</Link>
-				</li>
-			))}
-		</ul>
-	</div>
-);
-}
+const Offer_navbar = ({ links }: Props) => {
+	const currentRoute = usePathname();
 
-export default Offer_navbar
+	return (
+		<div className="nav">
+			<ul>
+				{links?.map((link) => (
+					<li key={link.title}>
+						<Link
+							href={link.href}
+							scroll={false}
+							className={currentRoute === link.href ? "active" : ""}
+						>
+							{link.title}
+						</Link>
+					</li>
+				))}
+			</ul>
+		</div>
+	);
+};
+
+export default Offer_navbar;

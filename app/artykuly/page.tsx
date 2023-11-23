@@ -3,6 +3,7 @@ import Articles_navbar from "@/components/navigation/Articles_navbar";
 import { links } from "@/data/links";
 
 const Articles = () => {
+
 	return (
 		<main className="articles">
 			<Subpage_banner src={links[3].img} alt={links[3].alt} />

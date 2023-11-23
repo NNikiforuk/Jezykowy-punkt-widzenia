@@ -6,10 +6,13 @@ import { useEffect, useState } from "react";
 import { RiMenu3Line } from "react-icons/ri";
 import { RxCross1 } from "react-icons/rx";
 import { links } from "@/data/links";
+import { usePathname } from "next/navigation";
 
 const Navigation = () => {
 	const [open, setOpen] = useState<boolean>(false);
 	const [backgroundColorChange, setBackgroundColorchange] = useState(false);
+
+	const currentRoute = usePathname();
 
 	const close = () => {
 		setOpen(false);
@@ -53,7 +56,12 @@ const Navigation = () => {
 				<ul className="navlist">
 					{links.map((link) => (
 						<li key={link.name}>
-							<Link onClick={close} href={link.href} scroll={false}>
+							<Link
+								onClick={close}
+								href={link.href}
+								scroll={false}
+								className={currentRoute === link.href ? "active" : ""}
+							>
 								{link.name}
 							</Link>
 						</li>
