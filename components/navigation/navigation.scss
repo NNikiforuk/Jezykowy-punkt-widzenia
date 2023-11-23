@@ -170,6 +170,11 @@ nav {
 
 @media only screen and (min-width: 1200px) {
 	nav {
+		position: sticky;
+		top: 0;
+		z-index: 50;
+		border: none;
+
 		.nav_container {
 			.navlist {
 				li a {
@@ -177,5 +182,10 @@ nav {
 				}
 			}
 		}
+	}
+
+	.color_change {
+		background-color: aliceblue;
+		background-color: rgba(aliceblue, .8);
 	}
 }
