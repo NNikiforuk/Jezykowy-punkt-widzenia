@@ -1,6 +1,7 @@
 import { advantages } from "@/data/offer/offer";
 
 const Advantages = ({ mobile }: { mobile: boolean }) => {
+
 	return (
 		<div
 			className={`advantages ${

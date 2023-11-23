@@ -23,7 +23,7 @@ $text: rgb(70, 68, 68);
 	}
 
 	&_desc {
-		text-align: center;
+		text-align: justify;
 	}
 
 	.desktop_image {
@@ -35,10 +35,6 @@ $text: rgb(70, 68, 68);
 	.offer {
 		padding: 40px;
 		font-size: 22px;
-
-		&_desc {
-			text-align: left;
-		}
 	}
 }
 

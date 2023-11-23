@@ -21,13 +21,26 @@
 	display: none;
 }
 
+@keyframes slide-right {
+	from {
+		left: -1000px;
+	}
+
+	to {
+		left: 400px;
+	}
+}
+
 @media only screen and (min-width: 1200px) {
 	.advantages {
 		padding-top: 0;
+		position: absolute;
+		animation-name: slide-right;
+		animation-duration: 2s;
 
 		&_list {
 			li {
-				padding-top: 20px;
+				padding-top: 10px;
 			}
 		}
 	}
