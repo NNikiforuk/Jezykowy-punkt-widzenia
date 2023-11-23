@@ -5,6 +5,9 @@ $coral: rgb(221, 135, 135);
 	border-radius: 8px;
 	margin-bottom: 30px;
 	padding: 20px 10px 20px 10px;
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(221, 135, 135, 1);
+	-moz-box-shadow: 0px 0px 4px 0px rgba(221, 135, 135, 1);
+	box-shadow: 0px 0px 4px 0px rgba(221, 135, 135, 1);
 
 	.container {
 		padding: 10px 0;
@@ -76,6 +79,7 @@ $coral: rgb(221, 135, 135);
 @media only screen and (min-width: 768px) {
 	.option {
 		padding: 40px;
+		margin-bottom: 50px;
 
 		.container {
 			.list {
@@ -95,6 +99,11 @@ $coral: rgb(221, 135, 135);
 }
 
 @media only screen and (min-width: 1200px) {
+
+	.option {
+		margin: 20px;
+	}
+
 	.highlight {
 		-webkit-box-shadow: 0px 0px 24px 0px rgba(248, 211, 211, 0.94);
 		-moz-box-shadow: 0px 0px 24px 0px rgba(248, 211, 211, 0.94);
