@@ -9,7 +9,7 @@ const Articles_navbar = () => {
 			<ul className="articles_navbar_list">
 				{links[3].sublinks?.sublink?.map((el, index) => (
 					<li key={index}>
-						<Link className="nav_item" href={el.href}>
+						<Link className="nav_item" href={el.href} scroll={false}>
 							{el.title}
 						</Link>
 					</li>
