@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@800&display=swap");
 
 $text: rgb(70, 68, 68);
+$coral: rgb(221, 135, 135);
 
 nav {
 	border-bottom: 2px solid rgb(156, 153, 153);
@@ -69,7 +70,7 @@ nav {
 		}
 
 		.navlist_mobile {
-			background-color: rgb(199, 199, 175);
+			background-color: $coral;
 			position: fixed;
 			width: 100%;
 			top: 0;

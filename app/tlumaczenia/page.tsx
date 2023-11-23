@@ -1,6 +1,7 @@
 import { FaMedal, FaCheck } from "react-icons/fa";
 import Image from "next/image";
 import { links } from "@/data/links";
+import Link from "next/link";
 
 const Translations = () => {
 	return (
@@ -53,7 +54,9 @@ const Translations = () => {
 						</li>
 					</ul>
 				</div>
-				<div className="ps">Skontaktuj się w celu uzgodnienia szczegółów!</div>
+				<div className="ps">
+					<Link href="/kontakt">Skontaktuj się w celu uzgodnienia szczegółów!</Link>
+				</div>
 			</div>
 		</main>
 	);

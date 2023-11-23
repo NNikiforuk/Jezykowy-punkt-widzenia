@@ -20,6 +20,11 @@
 			.tel_icon,
 			.tel_number {
 				padding: 5px;
+
+				a {
+					text-decoration: none;
+					color: gray;
+				}
 			}
 		}
 
@@ -32,6 +37,11 @@
 			.email_icon,
 			.email_address {
 				padding: 5px;
+
+				a {
+					text-decoration: none;
+					color: gray;
+				}
 			}
 
 			.email_icon {
