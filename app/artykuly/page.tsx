@@ -119,7 +119,7 @@ const Articles = () => {
 					</div>
 				</div>
 				<div className="text_container">
-					<div className="title">Vorstellung</div>
+					<h2 className="title">Vorstellung</h2>
 					<div className="wrapper">
 						<div className="text">
 							<p className="paragraph">

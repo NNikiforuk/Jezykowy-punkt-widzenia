@@ -10,7 +10,7 @@ const GermanB1B2 = () => {
 			<Articles_navbar />
 			<div className="german_container">
 				<div className="text_container">
-					<div className="title">Korallen</div>
+					<h2 className="title">Korallen</h2>
 					<div className="wrapper">
 						<div className="text">
 							<p className="paragraph">
@@ -136,7 +136,7 @@ const GermanB1B2 = () => {
 					</div>
 				</div>
 				<div className="text_container">
-					<div className="title">Schulbus in Indien</div>
+					<h2 className="title">Schulbus in Indien</h2>
 					<div className="wrapper">
 						<div className="text">
 							<p className="paragraph italic">

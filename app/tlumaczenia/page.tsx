@@ -40,50 +40,18 @@ const Translations = () => {
 
 				<div className="translations_list">
 					<div className="translations_list_title">Oferujemy tłumaczenie:</div>
-					<div className="list">
-						<div className="list_item">
-							<div className="translations_item_icon">
-								<FaCheck />
-							</div>
-							<div className="translations_item_text">listów, artykułów</div>
-						</div>
-						<div className="list_item">
-							<div className="translations_item_icon">
-								<FaCheck />
-							</div>
-							<div className="translations_item_text">
-								instrukcji obsługi urządzeń lub sprzętu
-							</div>
-						</div>
-						<div className="list_item">
-							<div className="translations_item_icon">
-								<FaCheck />
-							</div>
-							<div className="translations_item_text">
-								broszur, ulotek, katalogów
-							</div>
-						</div>
-						<div className="list_item">
-							<div className="translations_item_icon">
-								<FaCheck />
-							</div>
-							<div className="translations_item_text">stron internetowych</div>
-						</div>
-						<div className="list_item">
-							<div className="translations_item_icon">
-								<FaCheck />
-							</div>
-							<div className="translations_item_text">publikacji naukowych</div>
-						</div>
-						<div className="list_item">
-							<div className="translations_item_icon">
-								<FaCheck />
-							</div>
-							<div className="translations_item_text">
-								opisów produktów, tekstów biznesowych i marketingowych
-							</div>
-						</div>
-					</div>
+					<ul className="list">
+						<li className="list_item">listów, artykułów</li>
+						<li className="list_item">
+							instrukcji obsługi urządzeń lub sprzętu
+						</li>
+						<li className="list_item">broszur, ulotek, katalogów</li>
+						<li className="list_item">stron internetowych</li>
+						<li className="list_item">publikacji naukowych</li>
+						<li className="list_item">
+							opisów produktów, tekstów biznesowych i marketingowych
+						</li>
+					</ul>
 				</div>
 				<div className="ps">Skontaktuj się w celu uzgodnienia szczegółów!</div>
 			</div>

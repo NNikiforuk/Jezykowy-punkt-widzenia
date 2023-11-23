@@ -47,6 +47,16 @@ $yellow: rgb(244, 237, 198);
 		&_container {
 			padding: 40px;
 			font-size: 22px;
+
+			.text_container {
+				.wrapper {
+					.legend {
+						ul li {
+							font-size: 20px;
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -66,8 +76,8 @@ $yellow: rgb(244, 237, 198);
 
 		&_container {
 			padding: 80px 150px 0 150px;
-			font-size: 20px;
-			line-height: 30px;
+			font-size: 16px;
+			line-height: 40px;
 
 			.text_container {
 				.wrapper {
@@ -97,8 +107,8 @@ $yellow: rgb(244, 237, 198);
 						flex: 1;
 						margin: 0 0 0 15px;
 
-						ul {
-							font-size: 12px;
+						ul li{
+							font-size: 16px;
 						}
 					}
 				}

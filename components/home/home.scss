@@ -1,3 +1,5 @@
+$green: rgb(199, 199, 175);
+
 .home_mobile {
 
 	padding: 20px;
@@ -5,8 +7,6 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	// background-color: rgb(199, 199, 175);
-	// z-index: -5;
 
 	.home_headline,
 	.home_headline-secondary,
@@ -14,12 +14,12 @@
 		font-weight: bold;
 		margin: 0;
 		padding: 0;
-		color: rgb(199, 199, 175);
+		color:$green;
 	}
 
 	.arrow_icon {
 		svg {
-			color: rgb(199, 199, 175);
+			color:$green;
 			font-size: 46px;
 		}
 	}
@@ -38,14 +38,14 @@
 		display: flex;
 		align-items: center;
 		padding-top: 10px;
-		color: rgb(199, 199, 175);
+		color:$green;
 
 		.left_wing,
 		.right_wing {
 			display: flex;
 
 			svg {
-				color: rgb(199, 199, 175);
+				color:$green;
 				font-size: 32px;
 			}
 		}

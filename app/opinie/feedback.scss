@@ -1,9 +1,12 @@
+$text: rgb(70, 68, 68);
+
 .feedback {
 	display: flex;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	color: $text;
 
 	.container {
 		padding: 20px;
@@ -15,7 +18,7 @@
 		.feed {
 			display: flex;
 			flex-direction: column;
-			margin: 10px 20px;
+			margin-bottom: 20px;
 			padding: 15px;
 			background-color: rgb(224, 228, 226);
 			border-radius: 8px;
@@ -57,11 +60,15 @@
 	.feedback {
 		.container {
 			padding: 50px 150px 0 150px;
-			font-size: 20px;
-			line-height: 30px;
+			font-size: 16px;
+			line-height: 40px;
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
+
 			.feed {
+				margin: 10px;
+				padding: 15px;
+
 				.name {
 					padding: 0;
 				}
