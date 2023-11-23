@@ -22,9 +22,22 @@ $grey: rgba(217, 215, 215, 0.5);
 	}
 }
 
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 @media only screen and (min-width: 1200px) {
 	.main_img {
 		float: none;
+
+		animation: fadeInAnimation ease 3s;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
 
 		.img {
 			width: 500px;
