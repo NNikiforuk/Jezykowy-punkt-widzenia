@@ -27,14 +27,6 @@ const Home = () => {
 						<RiArrowRightSFill />
 					</div>
 				</div>
-				<div className="flowers">
-					<div>
-						<GiButterflyFlower />
-					</div>
-					<div className="right">
-						<GiButterflyFlower />
-					</div>
-				</div>
 			</div>
 
 			<div className="home_boxes_mobile">
