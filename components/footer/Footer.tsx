@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
 	const year = new Date().getFullYear();
 
@@ -7,13 +9,19 @@ const Footer = () => {
 				<div className="info">
 					<div className="title">Informacje</div>
 					<div className="privacy_policy">
-						<div>Polityka prywatności</div>
+						<Link href="/assets/files/Polityka_prywatnosci.pdf">
+							<div>Polityka prywatności</div>
+						</Link>
 					</div>
 					<div className="statute">
-						<div>Regulamin kursu online</div>
+						<Link href="/assets/files/Regulamin.pdf">
+							<div>Regulamin kursu online</div>
+						</Link>
 					</div>
 					<div className="data">
-						<div>Przetwarzanie danych osobowych</div>
+						<Link href="/assets/files/Przetwarzanie_danych_osobowych.pdf">
+							<div>Przetwarzanie danych osobowych</div>
+						</Link>
 					</div>
 				</div>
 				<div className="second_column">
@@ -31,8 +39,14 @@ const Footer = () => {
 							<div>NIP: 9241915728</div>
 						</div>
 						<div className="footer_contact">
-							<div>tel.: (+48) 603 156 142 </div>
-							<div>e-mail: kddobrzanska@gmail.com </div>
+							<div>
+								<Link href="tel:48603156142">(+48) 603 156 142</Link>
+							</div>
+							<div className="email_address">
+								<Link href="mailto:kddobrzanska@gmail.com">
+									kddobrzanska@gmail.com
+								</Link>
+							</div>
 						</div>
 					</div>
 				</div>
