@@ -19,35 +19,50 @@
 		text-align: center;
 		line-height: 25px;
 
-		.info {
-			.title {
-				font-weight: bold;
-				margin-bottom: 10px;
-			}
+		.icons {
+			padding: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-			a {
-				text-decoration: none;
-				color: rgb(38, 41, 39);
+			.icon {
+				padding: 15px;
+				font-size: 24px;
+				color: rgb(109, 99, 99);
 			}
 		}
 
-		.second_column {
-			.company_data {
-				margin-top: 20px;
-
+		.text_container {
+			.info {
 				.title {
 					font-weight: bold;
 					margin-bottom: 10px;
 				}
+
+				a {
+					text-decoration: none;
+					color: rgb(38, 41, 39);
+				}
 			}
-			.sub_column {
-				.nip_regon,
-				.footer_contact {
+
+			.second_column {
+				.company_data {
 					margin-top: 20px;
 
-					a {
-						text-decoration: none;
-						color: rgb(38, 41, 39);
+					.title {
+						font-weight: bold;
+						margin-bottom: 10px;
+					}
+				}
+				.sub_column {
+					.nip_regon,
+					.footer_contact {
+						margin-top: 20px;
+
+						a {
+							text-decoration: none;
+							color: rgb(38, 41, 39);
+						}
 					}
 				}
 			}
@@ -59,6 +74,19 @@
 	}
 }
 
+@media only screen and (min-width: 375px) {
+	.footer {
+		&_content {
+			.icons {
+				.icon {
+					font-size: 28px;
+					padding: 20px;
+				}
+			}
+		}
+	}
+}
+
 @media only screen and (min-width: 768px) {
 	.footer {
 		padding: 40px;
@@ -66,6 +94,13 @@
 
 		&_content {
 			line-height: 40px;
+
+			.icons {
+				.icon {
+					font-size: 44px;
+					padding: 30px;
+				}
+			}
 		}
 
 		&_year {
@@ -79,24 +114,34 @@
 		font-size: 14px;
 
 		&_content {
-			flex-direction: row;
-			align-items: flex-start;
-			gap: 50px;
+			flex-direction: column;
 
-			.second_column {
-				display: flex;
-				gap: 50px;
-
-				.company_data {
-					margin-top: 0;
+			.icons {
+				.icon {
+					font-size: 26px;
 				}
+			}
 
-				.sub_column {
+			.text_container {
+				display: flex;
+				gap: 20px;
+				
+				.second_column {
 					display: flex;
-					flex-direction: column;
+					flex-direction: row;
+					gap: 50px;
 
-					.nip_regon {
+					.company_data {
 						margin-top: 0;
+					}
+
+					.sub_column {
+						display: flex;
+						flex-direction: column;
+
+						.nip_regon {
+							margin-top: 0;
+						}
 					}
 				}
 			}
