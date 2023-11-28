@@ -31,7 +31,7 @@ const Navigation = () => {
 	}, []);
 
 	return (
-		<nav className={backgroundColorChange ? "color_change" : ""}>
+		<nav className={`navigation ${backgroundColorChange ? "color_change" : ""}`}>
 			<div className="nav_container">
 				<div className="logo_container">
 					<Link href="/" scroll={false}>

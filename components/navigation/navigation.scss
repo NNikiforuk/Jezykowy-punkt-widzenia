@@ -1,7 +1,7 @@
 $text: rgb(70, 68, 68);
 $coral: rgb(221, 135, 135);
 
-nav {
+.navigation {
 	border-bottom: 2px solid rgb(156, 153, 153);
 
 	.nav_container {
@@ -103,7 +103,7 @@ nav {
 }
 
 @media only screen and (min-width: 390px) {
-	nav {
+	.navigation {
 		.navlist_mobile {
 			height: 100vh;
 		}
@@ -111,7 +111,7 @@ nav {
 }
 
 @media only screen and (min-width: 768px) {
-	nav {
+	.navigation {
 		.nav_container {
 			flex-direction: row;
 			padding: 20px;
@@ -155,7 +155,7 @@ nav {
 }
 
 @media only screen and (min-width: 1024px) {
-	nav {
+	.navigation {
 		.nav_container {
 			.logo_container {
 				.site_name {
@@ -176,7 +176,7 @@ nav {
 }
 
 @media only screen and (min-width: 1200px) {
-	nav {
+	.navigation {
 		position: sticky;
 		top: 0;
 		z-index: 50;
