@@ -75,8 +75,8 @@ const Footer = () => {
 									<Link href="tel:48603156142">(+48) 603 156 142</Link>
 								</div>
 								<div className="email_address">
-									<Link href="mailto:kddobrzanska@gmail.com">
-										kddobrzanska@gmail.com
+									<Link href="mailto:kontakt@jpw-kursy.pl">
+										kontakt@jpw-kursy.pl
 									</Link>
 								</div>
 							</div>

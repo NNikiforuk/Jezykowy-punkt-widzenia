@@ -23,9 +23,7 @@ const Contact = () => {
 						<AiOutlineMail />
 					</div>
 					<div className="email_address">
-						<Link href="mailto:kddobrzanska@gmail.com">
-							kddobrzanska@gmail.com
-						</Link>
+						<Link href="mailto:kontakt@jpw-kursy.pl">kontakt@jpw-kursy.pl</Link>
 					</div>
 				</div>
 			</div>
