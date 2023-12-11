@@ -18,4 +18,3 @@
 * Made in React, Next.js and Typescript
 * Styled in SCSS
 * Responsive
-* Deployed on Vercel (hosting on-going)
