@@ -41,17 +41,29 @@ const Footer = () => {
 					<div className="info">
 						<div className="title">Informacje</div>
 						<div className="privacy_policy">
-							<Link href="/assets/files/Polityka_prywatnosci.pdf">
+							<Link
+								target="_blank"
+								href="/assets/files/Polityka_prywatnosci.pdf"
+								download={true}
+							>
 								<div>Polityka prywatności</div>
 							</Link>
 						</div>
 						<div className="statute">
-							<Link href="/assets/files/Regulamin.pdf">
+							<Link
+								target="_blank"
+								href="/assets/files/Regulamin.pdf"
+								download={true}
+							>
 								<div>Regulamin kursu online</div>
 							</Link>
 						</div>
 						<div className="data">
-							<Link href="/assets/files/Przetwarzanie_danych_osobowych.pdf">
+							<Link
+								download={true}
+								target="_blank"
+								href="/assets/files/Przetwarzanie_danych_osobowych.pdf"
+							>
 								<div>Przetwarzanie danych osobowych</div>
 							</Link>
 						</div>
