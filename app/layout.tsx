@@ -4,7 +4,7 @@ import { Open_Sans } from "next/font/google";
 import Footer from "@/components/footer/Footer";
 import Nav from "../components/navigation/Navigation";
 
-const openSans = Open_Sans({ subsets: ["latin"], weight: "400"});
+const openSans = Open_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
 	title: "Językowy punkt widzenia",

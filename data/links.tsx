@@ -5,12 +5,13 @@ import translationsIMG from "../public/assets/images/landing_page/translations.j
 import materialsIMG from "../public/assets/images/landing_page/materials.jpg";
 import feedbackIMG from "../public/assets/images/landing_page/feedback.jpg";
 import contactIMG from "../public/assets/images/landing_page/contact.jpg";
+import aboutmeIMG from "../public/assets/images/landing_page/aboutme.png";
 
 export interface linksProps {
 	name: string;
 	img: StaticImageData;
 	alt: string;
-    href: string;
+	href: string;
 	sublinks?: {
 		Head: string;
 		sublink?: {
@@ -18,7 +19,7 @@ export interface linksProps {
 			href: string;
 		}[];
 	};
-	priority?: true | false
+	priority?: true | false;
 }
 
 export const links: linksProps[] = [
@@ -83,6 +84,12 @@ export const links: linksProps[] = [
 		img: feedbackIMG,
 		alt: "opinie",
 		href: "/opinie",
+	},
+	{
+		name: "O mnie",
+		img: aboutmeIMG,
+		alt: "o zalozycielce",
+		href: "/omnie",
 	},
 	{
 		name: "Kontakt",

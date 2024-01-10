@@ -60,6 +60,10 @@ $yellow: rgb(244, 237, 198);
 				border-right: 2px solid $border;
 				font-weight: bold;
 
+				a {
+					font-size: 16px;
+				}
+
 				a:hover {
 					color: $text-hover;
 				}

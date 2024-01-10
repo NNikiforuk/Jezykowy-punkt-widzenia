@@ -7,7 +7,7 @@ import Link from "next/link";
 const Contact = () => {
 	return (
 		<div className="contact">
-			<Subpage_banner src={links[5].img} alt={links[5].alt} />
+			<Subpage_banner src={links[6].img} alt={links[6].alt} />
 
 			<div className="container">
 				<div className="tel">

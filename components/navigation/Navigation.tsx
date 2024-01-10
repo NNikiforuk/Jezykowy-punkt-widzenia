@@ -19,7 +19,7 @@ const Navigation = () => {
 	};
 
 	const changeNavbarColor = () => {
-		if (window.scrollY >= 80) {
+		if (window.scrollY >= 50) {
 			setBackgroundColorchange(true);
 		} else {
 			setBackgroundColorchange(false);
@@ -31,7 +31,9 @@ const Navigation = () => {
 	}, []);
 
 	return (
-		<nav className={`navigation ${backgroundColorChange ? "color_change" : ""}`}>
+		<nav
+			className={`navigation ${backgroundColorChange ? "color_change" : ""}`}
+		>
 			<div className="nav_container">
 				<div className="logo_container">
 					<Link href="/" scroll={false}>
@@ -46,12 +48,6 @@ const Navigation = () => {
 					</Link>
 					<div className="burger_btn" onClick={() => setOpen(!open)}>
 						{open ? <RxCross1 /> : <RiMenu3Line />}
-					</div>
-
-					<div className="site_name">
-						<Link href="/" scroll={false}>
-							Językowy punkt widzenia
-						</Link>
 					</div>
 				</div>
 				<ul className="navlist">

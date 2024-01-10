@@ -7,8 +7,7 @@ $coral: rgb(221, 135, 135);
 	.nav_container {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
-		padding: 5px;
+		padding: 5px 0 5px 5px;
 		flex-direction: column;
 		height: 90px;
 
@@ -32,11 +31,6 @@ $coral: rgb(221, 135, 135);
 				}
 			}
 
-			.site_name {
-				display: none;
-				font-family: "Playpen Sans", cursive;
-				color: rgb(46, 45, 45);
-			}
 		}
 
 		.navlist {
@@ -114,10 +108,9 @@ $coral: rgb(221, 135, 135);
 	.navigation {
 		.nav_container {
 			flex-direction: row;
-			padding: 20px;
+			padding: 10px;
 
 			.logo_container {
-				justify-content: flex-start;
 
 				.burger_btn {
 					display: none;
@@ -131,6 +124,7 @@ $coral: rgb(221, 135, 135);
 			.navlist {
 				display: flex;
 				z-index: 50;
+				gap: 15px;
 
 				li a {
 					transition: 0.3s;
@@ -140,6 +134,7 @@ $coral: rgb(221, 135, 135);
 				.mainlink_title {
 					font-size: 18px;
 					transition: 0.3s;
+					min-width: max-content;
 
 					&:hover {
 						color: rgb(221, 135, 135);
@@ -157,17 +152,6 @@ $coral: rgb(221, 135, 135);
 @media only screen and (min-width: 1024px) {
 	.navigation {
 		.nav_container {
-			.logo_container {
-				.site_name {
-					display: block;
-					margin-left: 10px;
-
-					a {
-						text-decoration: none;
-						color: $text;
-					}
-				}
-			}
 			.navlist {
 				margin-right: 15px;
 			}

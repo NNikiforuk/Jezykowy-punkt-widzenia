@@ -64,13 +64,26 @@ $yellow: rgb(244, 237, 198);
 		justify-content: center;
 		align-content: center;
 
+		&_title {
+			font-size: 16px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			line-height: 16px;
+		}
+
 		ul {
 			justify-content: flex-start;
+			line-height: 16px;
 
 			li {
 				padding: 10px;
 				border-right: 2px solid $border;
 				font-weight: bold;
+
+				a {
+					font-size: 16px;
+				}
 
 				a:hover {
 					color: $text-hover;
