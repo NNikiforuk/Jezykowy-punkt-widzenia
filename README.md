@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="www.jpw-kursy.pl" target="_blank"><p>Językowy punkt widzenia</p></a>
+  <p>Językowy punkt widzenia</p>
 
   <br>
 </h1>
