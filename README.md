@@ -10,7 +10,8 @@
 <h4 align="center"> <a href="www.jpw-kursy.pl" target="_blank">Click to see the project</a> </h4>
 
 <h4 align="center">
-  <img src="https://github.com/NNikiforuk/Jezykowy-punkt-widzenia/assets/104830490/60d80f07-4038-496a-8dc0-24b688c603cc" width="1500"/>
+  <img src="https://github.com/NNikiforuk/Jezykowy-punkt-widzenia/assets/104830490/dcf15b12-f0f2-425d-8267-fa6950f1b69c" width="1500"/>
+
 </h4>
 
 ## Key Features
