@@ -9,7 +9,7 @@ const openSans = Open_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 export const metadata: Metadata = {
 	title: "Językowy punkt widzenia",
 	description:
-		"Z nami nauka języków jest przyjemna, a także przynosi rezultaty",
+		"Szkoła języków obcych online. Dowiedz się, jak osiągnąć biegłość w j. angielskim, niemieckim i holenderskim dzięki naszym specjalistycznym kursom.",
 };
 
 export default function RootLayout({

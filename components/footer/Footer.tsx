@@ -79,8 +79,8 @@ const Footer = () => {
 						</div>
 						<div className="sub_column">
 							<div className="nip_regon_contact">
-								<div>REGON: 386531965</div>
-								<div>NIP: 9241915728</div>
+								<div>REGON 386531965</div>
+								<div>NIP 9241915728</div>
 							</div>
 							<div className="footer_contact">
 								<div>
