@@ -32,14 +32,7 @@ const Prices = () => {
 						"2x w tygodniu",
 						"max. 4 osoby w grupie",
 						"online",
-						"godziny zajęć:",
-					]}
-					hours={[
-						"9.00 – 10.30",
-						"11.00 – 12.30",
-						"13.00 – 14.30",
-						"18.00 – 19.30",
-						"20.00 – 21.30",
+						"elastyczne godziny zajęć",
 					]}
 					highlight={false}
 				/>
@@ -70,14 +63,7 @@ const Prices = () => {
 						"4x w tygodniu",
 						"max. 4 osoby w grupie",
 						"online",
-						"godziny zajęć:",
-					]}
-					hours={[
-						"9.00 – 10.30",
-						"11.00 – 12.30",
-						"13.00 – 14.30",
-						"18.00 – 19.30",
-						"20.00 – 21.30",
+						"elastyczne godziny zajęć",
 					]}
 					highlight={true}
 				/>
@@ -132,14 +118,7 @@ const Prices = () => {
 						"2x w tygodniu",
 						"max. 6 osób w grupie",
 						"online",
-						"godziny zajęć:",
-					]}
-					hours={[
-						"9.00 – 10.30",
-						"11.00 – 12.30",
-						"13.00 – 14.30",
-						"18.00 – 19.30",
-						"20.00 – 21.30",
+						"elastyczne godziny zajęć",
 					]}
 					highlight={false}
 				/>
@@ -170,13 +149,7 @@ const Prices = () => {
 						"2x w tygodniu",
 						"max. 4 osób w grupie",
 						"online",
-						"godziny zajęć:",
-					]}
-					hours={[
-						"9.00 – 10.30",
-						"11.00 – 12.30",
-						"13.00 – 14.30",
-						"18.00 – 19.30",
+						"elastyczne godziny zajęć",
 					]}
 					highlight={false}
 				/>
@@ -212,14 +185,7 @@ const Prices = () => {
 						"2x w tygodniu",
 						"max. 6 osób w grupie",
 						"online",
-						"godziny zajęć:",
-					]}
-					hours={[
-						"9.00 – 10.30",
-						"11.00 – 12.30",
-						"13.00 – 14.30",
-						"18.00 – 19.30",
-						"20.00 – 21.30",
+						"elastyczne godziny zajęć",
 					]}
 					highlight={false}
 				/>
