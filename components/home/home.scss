@@ -167,11 +167,6 @@ $coral: rgb(153, 41, 41);
 		font-size: 16px;
 		line-height: 40px;
 
-		&_headline,
-		&_headline-secondary {
-			display: none;
-		}
-
 		.home_description {
 			.welcome {
 				flex-direction: row-reverse;
@@ -181,38 +176,16 @@ $coral: rgb(153, 41, 41);
 				}
 
 				.img_desktop {
-					// display: flex;
-					flex: 1;
-					margin-left: 15px;
+					display: flex;
+					justify-content: center;
 
 					img {
 						border-radius: 8px;
 						border-top-left-radius: 50%;
 						border-bottom-right-radius: 25%;
 						z-index: -1;
-					}
-				}
-
-				.description {
-					flex: 1.8;
-
-					.headline_desktop {
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						flex-direction: column;
-
-						.primary {
-							font-size: 36px;
-							font-weight: bold;
-							color: $green;
-						}
-
-						.secondary {
-							padding: 5px 5px 25px 5px;
-							color: $green;
-							font-size: 34px;
-						}
+						width: 60%;
+						height: 60%;
 					}
 				}
 			}
@@ -226,6 +199,9 @@ $coral: rgb(153, 41, 41);
 				ul li {
 					list-style-type: none;
 					text-align: center;
+					a {
+						font-weight: bold;
+					}
 				}
 			}
 		}
