@@ -1,7 +1,7 @@
 import Subpage_banner from "@/components/Subpage_banner";
 import Articles_navbar from "@/components/navigation/Articles_navbar";
 import { links } from "@/data/links";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const GermanB1B2 = () => {
 	return (
