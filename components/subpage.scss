@@ -1,0 +1,17 @@
+.subpage_banner {
+	.img_desktop {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.subpage_banner {
+		.img {
+			display: none;
+		}
+
+		.img_desktop {
+			display: block;
+		}
+	}
+}

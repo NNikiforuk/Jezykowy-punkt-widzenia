@@ -1,14 +1,11 @@
 $text: rgb(70, 68, 68);
 
 .feedback {
-	display: flex;
 	width: 100%;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 	color: $text;
 
 	.container {
+		justify-content: center;
 		padding: 20px;
 		display: flex;
 		flex-direction: column;

@@ -5,7 +5,7 @@ import Option from "@/components/prices/Option";
 const Prices = () => {
 	return (
 		<main>
-			<Subpage_banner src={links[1].img} alt={links[1].alt} />
+			<Subpage_banner src={links[1].img} alt={links[1].alt} srcSmaller={links[1].imgSmaller} />
 			<div className="prices">
 				<Option
 					title="Standardowy"

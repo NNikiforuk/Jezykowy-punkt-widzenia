@@ -5,7 +5,11 @@ import { links } from "@/data/links";
 const Feedback = () => {
 	return (
 		<div className="feedback">
-			<Subpage_banner src={links[4].img} alt={links[4].alt} />
+			<Subpage_banner
+				src={links[4].img}
+				alt={links[4].alt}
+				srcSmaller={links[4].imgSmaller}
+			/>
 
 			<div className="container">
 				{feedback.map((feed) => (

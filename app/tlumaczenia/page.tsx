@@ -6,7 +6,11 @@ import Subpage_banner from "@/components/Subpage_banner";
 const Translations = () => {
 	return (
 		<main className="translations">
-			<Subpage_banner src={links[2].img} alt={links[2].alt} />
+			<Subpage_banner
+				src={links[2].img}
+				alt={links[2].alt}
+				srcSmaller={links[2].imgSmaller}
+			/>
 
 			<div className="translations_container">
 				<div className="list">

@@ -11,7 +11,11 @@ import Image from "next/image";
 const About = () => {
 	return (
 		<main>
-			<Subpage_banner src={links[5].img} alt={links[5].alt} />
+			<Subpage_banner
+				src={links[5].img}
+				alt={links[5].alt}
+				srcSmaller={links[5].imgSmaller}
+			/>
 
 			<div className="about">
 				<div className="description">
