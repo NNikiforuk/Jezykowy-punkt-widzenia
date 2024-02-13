@@ -36,7 +36,17 @@ const Navigation = () => {
 		>
 			<div className="nav_container">
 				<div className="logo_container">
-					<Link aria-label="Powrót do strony głównej" href="/" scroll={false}>
+					<Link className="link" aria-label="Powrót do strony głównej" href="/" scroll={false}>
+						<Image
+							src="/assets/images/navbar/logo-small.png"
+							alt="logo"
+							width={70}
+							height={70}
+							className="logo"
+							priority={false}
+						/>
+					</Link>
+					<Link className="link_desktop" aria-label="Powrót do strony głównej" href="/" scroll={false}>
 						<Image
 							src="/assets/images/navbar/logo.png"
 							alt="logo"

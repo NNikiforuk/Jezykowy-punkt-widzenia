@@ -18,8 +18,15 @@ $coral: rgb(221, 135, 135);
 			justify-content: space-between;
 			align-items: center;
 
-			img {
-				cursor: pointer;
+			.link,
+			.link_desktop {
+				img {
+					cursor: pointer;
+				}
+			}
+
+			.link_desktop {
+				display: none;
 			}
 
 			.burger_btn {
@@ -30,7 +37,6 @@ $coral: rgb(221, 135, 135);
 					color: $text;
 				}
 			}
-
 		}
 
 		.navlist {
@@ -112,7 +118,6 @@ $coral: rgb(221, 135, 135);
 			padding: 10px;
 
 			.logo_container {
-
 				.burger_btn {
 					display: none;
 				}
@@ -168,6 +173,16 @@ $coral: rgb(221, 135, 135);
 		border: none;
 
 		.nav_container {
+			.logo_container {
+				.link {
+					display: none;
+				}
+
+				.link_desktop {
+					display: block;
+				}
+			}
+
 			.navlist {
 				li a {
 					font-size: 18px;
