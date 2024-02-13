@@ -36,7 +36,7 @@ const Navigation = () => {
 		>
 			<div className="nav_container">
 				<div className="logo_container">
-					<Link href="/" scroll={false}>
+					<Link aria-label="Powrót do strony głównej" href="/" scroll={false}>
 						<Image
 							src="/assets/images/navbar/logo.png"
 							alt="logo"
@@ -54,6 +54,7 @@ const Navigation = () => {
 					{links.map((link) => (
 						<li key={link.name}>
 							<Link
+								aria-label={link.name}
 								onClick={close}
 								href={link.href}
 								scroll={false}
@@ -69,7 +70,12 @@ const Navigation = () => {
 				<ul className={`navlist_mobile ${open ? "left0" : "left100"}`}>
 					{links.map((link) => (
 						<li key={link.name}>
-							<Link onClick={close} href={link.href} scroll={false}>
+							<Link
+								aria-label={link.name}
+								onClick={close}
+								href={link.href}
+								scroll={false}
+							>
 								{link.name}
 							</Link>
 						</li>

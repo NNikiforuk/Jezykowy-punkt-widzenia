@@ -10,7 +10,7 @@ const Box = () => {
 					href={link.href}
 					img={link.img}
 					alt={link.alt}
-					name={""}
+					name={link.name}
 				/>
 			))}
 		</div>

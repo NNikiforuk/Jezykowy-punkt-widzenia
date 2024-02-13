@@ -46,7 +46,7 @@ const Translations = () => {
 					</ul>
 				</div>
 				<div className="ps">
-					<Link href="/kontakt">
+					<Link href="/kontakt" aria-label="Zapraszam do kontaktu">
 						Skontaktuj się w celu uzgodnienia szczegółów!
 					</Link>
 				</div>

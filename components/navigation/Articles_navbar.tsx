@@ -15,6 +15,7 @@ const Articles_navbar = () => {
 				{links[3].sublinks?.sublink?.map((el, index) => (
 					<li key={index}>
 						<Link
+							aria-label={el.title}
 							href={el.href}
 							className={currentRoute === el.href ? "active" : ""}
 							scroll={false}

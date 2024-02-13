@@ -19,6 +19,7 @@ const Offer_navbar = ({ links }: Props) => {
 				{links?.map((link) => (
 					<li key={link.title}>
 						<Link
+							aria-label={link.title}
 							href={link.href}
 							scroll={false}
 							className={currentRoute === link.href ? "active" : ""}

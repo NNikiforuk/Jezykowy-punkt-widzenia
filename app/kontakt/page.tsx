@@ -15,7 +15,9 @@ const Contact = () => {
 						<FaPhone />
 					</div>
 					<div className="tel_number">
-						<Link href="tel:48603156142">(+48) 603 156 142</Link>
+						<Link href="tel:48603156142" aria-label="Numer kontaktowy">
+							(+48) 603 156 142
+						</Link>
 					</div>
 				</div>
 				<div className="email">
@@ -23,7 +25,9 @@ const Contact = () => {
 						<AiOutlineMail />
 					</div>
 					<div className="email_address">
-						<Link href="mailto:kontakt@jpw-kursy.pl">kontakt@jpw-kursy.pl</Link>
+						<Link href="mailto:kontakt@jpw-kursy.pl" aria-label="Adres mailowy">
+							kontakt@jpw-kursy.pl
+						</Link>
 					</div>
 				</div>
 			</div>

@@ -87,25 +87,40 @@ const Home = () => {
 						<ul>
 							<li>
 								Przeraża Cię nauka przy książkach?{" "}
-								<Link href="/oferta">
+								<Link
+									href="/oferta"
+									aria-label="Poznaj i wypróbuj moje metody nauczania"
+								>
 									Poznaj i wypróbuj moje metody nauczania!
 								</Link>
 							</li>
 							<li>
 								Potrzebujesz tłumaczenia?{" "}
-								<Link href="/tlumaczenia">Nic prostszego!</Link>
+								<Link
+									href="/tlumaczenia"
+									aria-label="Więcej informacji o ofercie tłumaczeń"
+								>
+									Nic prostszego!
+								</Link>
 							</li>
 							<li>
-								<Link href="/artykuły">
+								<Link
+									href="/artykuły"
+									aria-label="Ucz się słownictwa z artykułów mojego autorstwa"
+								>
 									Ucz się słownictwa z artykułów mojego autorstwa
 								</Link>
 							</li>
 							<li>
-								<Link href="/opinie">Sprawdź opinie o szkole</Link>
+								<Link href="/opinie" aria-label="Sprawdź opinie o szkole">
+									Sprawdź opinie o szkole
+								</Link>
 							</li>
 							<li>
 								Masz pytania?{" "}
-								<Link href="/kontakt">Świetnie, jestem tu dla Ciebie!</Link>
+								<Link href="/kontakt" aria-label="Zapraszam do kontaktu">
+									Świetnie, jestem tu dla Ciebie!
+								</Link>
 							</li>
 						</ul>
 					</div>

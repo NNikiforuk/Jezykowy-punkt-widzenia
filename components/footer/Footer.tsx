@@ -9,6 +9,7 @@ const Footer = () => {
 			<div className="footer_content">
 				<div className="icons">
 					<Link
+						aria-label="Zapraszam na Facebook"
 						target="_blank"
 						className="icon"
 						href="https://www.facebook.com/profile.php?id=100077329971505"
@@ -16,6 +17,7 @@ const Footer = () => {
 						<FaFacebookF />
 					</Link>
 					<Link
+						aria-label="Zapraszam na Youtube"
 						target="_blank"
 						className="icon"
 						href="https://www.youtube.com/@jezykowypunktwidzenia"
@@ -23,6 +25,7 @@ const Footer = () => {
 						<FaYoutube />
 					</Link>
 					<Link
+						aria-label="Zapraszam na Instagram"
 						target="_blank"
 						className="icon"
 						href="https://www.instagram.com/jpw_jezykowy_punkt_widzenia/"
@@ -30,6 +33,7 @@ const Footer = () => {
 						<FaInstagram />
 					</Link>
 					<Link
+						aria-label="Zapraszam na Tik Tok"
 						target="_blank"
 						className="icon"
 						href="https://www.tiktok.com/@kasiaddobrzanska"
@@ -42,6 +46,7 @@ const Footer = () => {
 						<div className="title">Informacje</div>
 						<div className="privacy_policy">
 							<Link
+								aria-label="Zapraszam do zapoznania się z polityką prywatności"
 								target="_blank"
 								href="/assets/files/Polityka_prywatnosci.pdf"
 								download={true}
@@ -51,6 +56,7 @@ const Footer = () => {
 						</div>
 						<div className="statute">
 							<Link
+								aria-label="Zapraszam do zapoznania się z regulaminem strony internetowej"
 								target="_blank"
 								href="/assets/files/Regulamin.pdf"
 								download={true}
@@ -60,6 +66,7 @@ const Footer = () => {
 						</div>
 						<div className="data">
 							<Link
+								aria-label="Zapraszam do zapoznania się z regułami przetwarzania danych osobowych"
 								download={true}
 								target="_blank"
 								href="/assets/files/Przetwarzanie_danych_osobowych.pdf"
@@ -84,10 +91,15 @@ const Footer = () => {
 							</div>
 							<div className="footer_contact">
 								<div>
-									<Link href="tel:48603156142">(+48) 603 156 142</Link>
+									<Link aria-label="Numer kontaktowy" href="tel:48603156142">
+										(+48) 603 156 142
+									</Link>
 								</div>
 								<div className="email_address">
-									<Link href="mailto:kontakt@jpw-kursy.pl">
+									<Link
+										aria-label="Adres mailowy"
+										href="mailto:kontakt@jpw-kursy.pl"
+									>
 										kontakt@jpw-kursy.pl
 									</Link>
 								</div>
