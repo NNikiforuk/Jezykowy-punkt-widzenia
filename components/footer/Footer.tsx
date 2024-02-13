@@ -56,7 +56,7 @@ const Footer = () => {
 						</div>
 						<div className="statute">
 							<Link
-								aria-label="Zapraszam do zapoznania się z regulaminem strony internetowej"
+								aria-label="Zapraszam do zapoznania się z regulaminem kursu online"
 								target="_blank"
 								href="/assets/files/Regulamin.pdf"
 								download={true}

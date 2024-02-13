@@ -34,6 +34,10 @@
 
 		.text_container {
 			.info {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+
 				.title {
 					font-weight: bold;
 					margin-bottom: 10px;
@@ -61,6 +65,10 @@
 					}
 
 					.footer_contact {
+						display: flex;
+						flex-direction: column;
+						gap: 10px;
+
 						a {
 							text-decoration: none;
 							color: rgb(38, 41, 39);
