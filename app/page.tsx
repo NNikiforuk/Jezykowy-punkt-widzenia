@@ -23,7 +23,7 @@ const Home = () => {
 						<div className="img">
 							<Image
 								src={imgOwner}
-								alt="zdjęcie załozycielki szkoły"
+								alt="zdjęcie założycielki szkoły"
 								priority={true}
 							/>
 						</div>
