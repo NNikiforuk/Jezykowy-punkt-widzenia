@@ -6,7 +6,7 @@ import Image from "next/legacy/image";
 const GermanB1B2 = () => {
 	return (
 		<div className="german">
-			<Subpage_banner src={links[3].img} alt={links[3].alt} />
+			<Subpage_banner src={links[3].img} alt={links[3].alt} srcSmaller={links[3].imgSmaller} />
 			<Articles_navbar />
 			<div className="german_container">
 				<div className="text_container">
