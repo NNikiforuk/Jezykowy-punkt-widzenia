@@ -34,6 +34,10 @@ $coral: rgb(221, 135, 135);
 				}
 			}
 
+			.img_desktop {
+				display: none;
+			}
+
 			.description {
 				margin: 20px 0;
 
@@ -175,8 +179,20 @@ $coral: rgb(221, 135, 135);
 				flex-direction: row-reverse;
 
 				.img {
+					display: none;
+				}
+
+				.img_desktop {
+					display: flex;
 					flex: 1;
 					margin-left: 15px;
+
+					img {
+						border-radius: 8px;
+						border-top-left-radius: 50%;
+						border-bottom-right-radius: 25%;
+						z-index: -1;
+					}
 				}
 
 				.description {

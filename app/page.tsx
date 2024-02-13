@@ -1,5 +1,6 @@
 import Image from "next/legacy/image";
-import imgOwner from "../public/assets/images/landing_page/kasia.png";
+import imgOwner from "../public/assets/images/landing_page/kasia_sizes/kasia_xt84cr_c_scale,w_442.png";
+import imgOwnerBigger from "../public/assets/images/landing_page/kasia_sizes/kasia.png";
 import { Caveat } from "next/font/google";
 import Link from "next/link";
 import { TbSignRight } from "react-icons/tb";
@@ -23,6 +24,13 @@ const Home = () => {
 						<div className="img">
 							<Image
 								src={imgOwner}
+								alt="zdjęcie założycielki szkoły"
+								priority={true}
+							/>
+						</div>
+						<div className="img_desktop">
+							<Image
+								src={imgOwnerBigger}
 								alt="zdjęcie założycielki szkoły"
 								priority={true}
 							/>
