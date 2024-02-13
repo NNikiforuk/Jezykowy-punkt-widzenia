@@ -2,7 +2,7 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 import { linksProps } from "@/data/links";
 
-const Img = ({ href, img, alt, name }: linksProps) => {
+const Img = ({ href, img, alt, name, imgSmaller }: linksProps) => {
 	return (
 		<div className="box_container">
 			<Link aria-label={name} href={href}>
@@ -20,4 +20,3 @@ const Img = ({ href, img, alt, name }: linksProps) => {
 };
 
 export default Img;
-

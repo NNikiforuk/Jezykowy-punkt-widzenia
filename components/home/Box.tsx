@@ -11,6 +11,7 @@ const Box = () => {
 					img={link.img}
 					alt={link.alt}
 					name={link.name}
+					imgSmaller={link.imgSmaller}
 				/>
 			))}
 		</div>
